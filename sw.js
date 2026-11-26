@@ -1,6 +1,7 @@
-// Offline support: serve the saved copy right away, refresh it in the background when online.
-// Bump CACHE with every release so phones pick up the new files.
-const CACHE = 'notch-v2';
+// Offline support. Every file of one version is saved together when that version installs, and the app
+// is always served from that saved copy, so a phone never mixes old and new files.
+// Bump CACHE with every release: that's how phones notice there's a new version to fetch.
+const CACHE = 'notch-v3';
 const ASSETS = [
   './', './index.html', './css/style.css', './manifest.webmanifest',
   './js/app.js', './js/db.js', './js/diagrams.js', './js/pdf.js', './js/units.js',
@@ -19,16 +20,12 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   const req = e.request;
   if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
-  const fresh = fetch(req, { cache: 'no-cache' }).then(async res => {
-    if (res.ok) { const c = await caches.open(CACHE); await c.put(req, res.clone()); }
-    return res;
-  }).catch(() => null);
-  e.waitUntil(fresh);
   e.respondWith((async () => {
-    const hit = await caches.match(req, { ignoreSearch: true });
+    const c = await caches.open(CACHE);
+    const hit = await c.match(req, { ignoreSearch: true });
     if (hit) return hit;
-    const net = await fresh;
-    if (net) return net;
-    return (req.mode === 'navigate' && await caches.match('./index.html')) || new Response('Offline', { status: 503 });
+    try { return await fetch(req); } catch (err) {
+      return (req.mode === 'navigate' && await c.match('./index.html')) || new Response('Offline', { status: 503 });
+    }
   })());
 });

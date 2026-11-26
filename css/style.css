@@ -239,3 +239,7 @@ svg .t-mid { text-anchor: middle; } svg .t-end { text-anchor: end; }
 
 @media (min-width: 700px) { .node { width: 70%; } }
 @media print { #tabs, .lesson-nav { display: none; } }
+.linkish { background: none; border: 0; padding: 0; font: inherit; color: var(--accent); text-decoration: underline; cursor: pointer; }
+.scroll-x { overflow-x: auto; }
+.check-row:focus-visible, .term:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+#sheet:focus { outline: none; }

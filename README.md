@@ -27,7 +27,7 @@ Open **More → Export backup** now and then, and save the file to Files or iClo
 
 ## Get updates
 
-Updates arrive by themselves. When a new version is out, open Notch while online; you'll see "Notch was updated" with a **Reload** button. If it doesn't show up, close Notch fully (swipe it away in the app switcher) and open it again.
+Updates arrive by themselves. When a new version is out, open Notch while online; you'll see "Notch was updated" with a **Reload** button. Until you reload (or reopen the app), you keep using the old version. If it doesn't show up, close Notch fully (swipe it away in the app switcher) and open it again.
 
 You can check which version you have at the bottom of the **More** tab.
 
@@ -87,4 +87,5 @@ It can later be wrapped as an App Store or Play Store app with Capacitor, with n
 
 ## Changelog
 
+- **0.1.1** (Nov 26, 2026): Second pass. Fixed the pillowcase finished length (30¼ in, not 31½) and its drawings; the tote now asks for 7/8 yd of canvas so it still fits after prewashing; added missing backstitching steps, trimmed corners in the pivot practice, and fixed the backstitch start; the seam allowance example now has the right math; the shopping list now covers everything levels 1 and 2 use. Small metric amounts now show to the millimeter (1/8 in shows as 0.3 cm, not 0.5). Offline updates now swap all files at once. Added a gentle backup reminder on the Path, Mark as not done, larger level numbers, keyboard access for the skill checklist, and safer note saving.
 - **0.1.0** (Nov 26, 2026): Phase 1. App shell and Path map with all 9 levels; levels 1 and 2 (34 lessons and projects: tools, threading, hand stitches, first seams, fabric basics, a pincushion, a drawstring bag, a pillowcase, and a lined tote); tappable glossary words; 24 guided body measurements with history and inches/cm; printable practice sheets (Letter and A4); backups with version checks; offline support; light and dark mode; screen stays awake during lessons.

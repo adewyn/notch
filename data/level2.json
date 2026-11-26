@@ -17,7 +17,7 @@
       "need": ["The straight-lines practice sheet (print it from this lesson or the More tab)", "Your machine, unthreaded", "An old needle (paper dulls needles)"],
       "sheet": "straight",
       "steps": [
-        { "text": "Print the straight-lines sheet. Check the test square measures exactly {{1 in}} (or 5 cm on A4).", "dia": ["paper", { "kind": "straight" }] },
+        { "text": "Print the straight-lines sheet. Check the test square measures exactly 1 in on Letter paper, or 5 cm on A4.", "dia": ["paper", { "kind": "straight" }] },
         { "text": "Unthread the machine and put in an old needle. Set the stitch length to about 3 mm.", "dia": ["machine", { "hi": ["needle", "length"] }], "why": "No thread means nothing can jam, so you can focus only on steering." },
         { "text": "Put the paper under the foot with the needle right on the start dot. Lower the foot.", "dia": ["machine", { "hi": ["foot", "lever"] }] },
         { "text": "Press the pedal gently and steadily. Rest your hands lightly on the paper: they steer, the feed dogs pull. Watch the line just in front of the foot, not the needle.", "dia": ["paper", { "kind": "straight", "holes": true }], "tip": "If you speed up by accident, lift your foot. Slow and steady wins." },
@@ -92,7 +92,7 @@
         ["Edges don't stay together", "Pin every {{3 in}} and match the ends first."]
       ],
       "practice": "Sew three seams on strips. Measure each one with a ruler in five places.",
-      "why": "Patterns are made with the seam allowance built in. If your seams are off by even {{1/8 in}}, a garment with 8 seams can end up {{1 in}} too big or too small."
+      "why": "Patterns are made with the seam allowance built in. If your seams are off by even {{1/8 in}}, each seam changes the size by {{1/4 in}}, so a skirt with 4 seams can end up {{1 in}} too big or too small."
     },
     {
       "id": "l2-backstitch", "title": "Lock your stitches", "minutes": 8,
@@ -101,8 +101,8 @@
       "need": ["Two cotton strips", "Threaded machine"],
       "words": ["backstitch"],
       "steps": [
-        { "text": "Start at the edge. Sew forward 3 or 4 stitches.", "dia": ["sew", { "guide": true, "sewn": 20, "layers": 2, "side": "wrong" }] },
-        { "text": "Hold the reverse button and sew back 3 or 4 stitches, then let go and sew forward. That's a machine [[backstitch]].", "dia": ["sew", { "guide": true, "sewn": 34, "layers": 2, "back": true, "side": "wrong" }], "why": "Sewing over the same spot ties the threads together, so the seam won't pull open at the end." },
+        { "text": "Start about {{1/4 in}} in from the edge. Sew forward 3 or 4 stitches.", "dia": ["sew", { "guide": true, "sewn": 20, "layers": 2, "side": "wrong" }] },
+        { "text": "Hold the reverse button and sew back to the edge, then let go and sew forward. That's a machine [[backstitch]].", "dia": ["sew", { "guide": true, "sewn": 34, "layers": 2, "back": true, "side": "wrong" }], "why": "Sewing over the same spot ties the threads together, so the seam won't pull open at the end." },
         { "text": "At the end of the seam, do the same: reverse 3 or 4 stitches, then forward to the edge.", "dia": ["machine", { "hi": ["reverse"] }] }
       ],
       "looks": "A short, slightly thicker spot of stitching at each end of the seam.",
@@ -129,7 +129,7 @@
         ["A gap or curve at the corner", "Stop with the needle down before lifting the foot."],
         ["Corner is too far from the edge", "Use the handwheel for the last stitch or two to land on the dot."]
       ],
-      "practice": "Sew around all four corners of two squares (leave a gap), then turn them right side out and press. You've made a little potholder shape!"
+      "practice": "Sew around all four corners of two squares (leave a gap), trim the corners, then turn them right side out and press. You've made a little potholder shape!"
     },
     {
       "id": "l2-curves", "title": "Sewing curves, then clip and notch", "minutes": 15,
@@ -299,22 +299,22 @@
     {
       "id": "l2-pillowcase", "title": "Project: pillowcase with a cuff", "kind": "project", "minutes": 90,
       "summary": "A big, satisfying project with long straight seams and a contrast cuff.",
-      "finished": "about {{20 3/8 in}} × {{31 1/2 in}}, for a standard {{20 in}} × {{26 in}} pillow",
+      "finished": "about {{20 3/8 in}} × {{30 1/4 in}}, for a standard {{20 in}} × {{26 in}} pillow",
       "learn": ["Long straight seams", "Attaching a folded band", "Finishing seams together"],
       "fabric": ["Body: {{7/8 yd}} of cotton, 44 in (112 cm) wide", "Cuff: {{3/8 yd}} of a contrast cotton, 44 in (112 cm) wide", "Or {{1 1/8 yd}} of one fabric for both"],
       "need": ["Thread", "Pins", "Ruler and chalk, or a rotary cutter and mat", "Iron"],
       "cut": [{ "name": "Body", "qty": 1, "w": 42, "h": 27 }, { "name": "Cuff", "qty": 1, "w": 42, "h": 10.25 }],
-      "cutNote": "Trim off the selvedges first. The 42 in edges run across the fabric, from selvedge side to selvedge side, which is fine for a pillowcase. If your fabric is narrower after washing, cut as wide as it allows: the case will just be a little snugger.",
+      "cutNote": "Cut the body and cuff the same width. Trim off the selvedges first. The 42 in edges run across the fabric, from selvedge side to selvedge side, which is fine for a pillowcase. If your fabric is narrower after washing, cut as wide as it allows: the case will just be a little snugger.",
       "layout": { "fw": 44, "len": 40.5, "pieces": [{ "name": "Body", "w": 42, "h": 27, "x": 1, "y": 1 }, { "name": "Cuff", "w": 42, "h": 10.25, "x": 1, "y": 29.5, "side": "right2" }] },
       "steps": [
         { "text": "Cut the body {{42 in}} × {{27 in}} and the cuff {{42 in}} × {{10 1/4 in}}.", "dia": ["layout", { "fw": 44, "len": 40.5, "pieces": [{ "name": "Body", "w": 42, "h": 27, "x": 1, "y": 1 }, { "name": "Cuff", "w": 42, "h": 10.25, "x": 1, "y": 29.5, "side": "right2" }] }] },
         { "text": "Fold the cuff in half the long way, wrong sides together, so it's {{5 1/8 in}} tall. Press.", "dia": ["panel", { "w": 42, "h": 10.25, "side": "right2", "folds": [[0, 5.125, 42, 5.125]], "arrows": [[21, 9.5, 21, 5.8]], "labels": [[21, 3, "Fold here, wrong sides together"]] }] },
-        { "text": "Pin the cuff's raw edges to the top edge of the body, on the body's right side. Sew at {{SA}}.", "dia": ["panel", { "w": 42, "h": 27, "side": "right", "pieces": [{ "x": 0, "y": 0, "w": 42, "h": 5.125, "side": "right2" }], "stitch": [[0, 0.625], [42, 0.625]], "stitchHi": 0, "labels": [[21, 3.2, "Cuff (folded)"], [21, 16, "Body, right side up"]] }] },
-        { "text": "Zigzag the raw edges together, then press the seam toward the body.", "dia": ["xsec", { "kind": "side" }], "tip": "For extra neatness, topstitch on the body {{1/8 in}} from the seam to hold it down." },
-        { "text": "Fold the whole piece in half, right sides together, so it's {{21 in}} wide. Line up the cuff seams. Pin the long side and the bottom.", "dia": ["panel", { "w": 21, "h": 31.5, "side": "wrong", "under": "right", "folds": [[0, 4.5, 21, 4.5]], "pins": [[20.6, 8, 180], [20.6, 18, 180], [20.6, 28, 180], [10, 31.1, 270]], "labels": [[1.5, 16, "Fold", "start"], [10.5, 2.4, "Cuff"]] }] },
-        { "text": "Sew down the long side from the cuff, pivot {{SA}} from the corner, and sew across the bottom to the fold.", "dia": ["panel", { "w": 21, "h": 31.5, "side": "wrong", "under": "right", "folds": [[0, 4.5, 21, 4.5]], "stitch": [[20.375, 0], [20.375, 30.875], [0, 30.875]], "stitchHi": 0 }] },
-        { "text": "Trim the corner, and zigzag the raw edges together along the side and bottom.", "dia": ["panel", { "w": 21, "h": 31.5, "side": "wrong", "under": "right", "stitch": [[20.375, 0], [20.375, 30.875], [0, 30.875]], "trim": ["br"], "zig": ["r", "b"] }] },
-        { "text": "Turn right side out, push out the corner gently, and press. Put a pillow in it!", "dia": ["panel", { "w": 20.375, "h": 31.5, "side": "right", "pieces": [{ "x": 0, "y": 0, "w": 20.375, "h": 4.5, "side": "right2" }] }] }
+        { "text": "Pin the cuff's raw edges to one {{42 in}} edge of the body, on the body's right side. Sew at {{SA}}. Backstitch at both ends.", "dia": ["panel", { "w": 42, "h": 27, "side": "right", "pieces": [{ "x": 0, "y": 0, "w": 42, "h": 5.125, "side": "right2" }], "stitch": [[0, 0.625], [42, 0.625]], "stitchHi": 0, "labels": [[21, 3.2, "Cuff (folded)"], [21, 16, "Body, right side up"]] }] },
+        { "text": "Fold the cuff up, away from the body. Zigzag the raw edges together, then press the seam toward the body.", "dia": ["xsec", { "kind": "side" }], "tip": "For extra neatness, [[edgestitch]] on the body {{1/8 in}} from the seam to hold it down." },
+        { "text": "Fold the whole piece in half, right sides together, so it's {{21 in}} wide. Line up the cuff seams. Pin the long side and the bottom.", "dia": ["panel", { "w": 21, "h": 30.875, "side": "wrong", "under": "right", "folds": [[0, 4.5, 21, 4.5]], "pins": [[20.6, 8, 180], [20.6, 18, 180], [20.6, 28, 180], [10, 30.5, 270]], "labels": [[1.5, 16, "Fold", "start"], [10.5, 2.4, "Cuff"]] }] },
+        { "text": "Sew down the long side from the cuff, pivot {{SA}} from the corner, and sew across the bottom to the fold. Backstitch at both ends.", "dia": ["panel", { "w": 21, "h": 30.875, "side": "wrong", "under": "right", "folds": [[0, 4.5, 21, 4.5]], "stitch": [[20.375, 0], [20.375, 30.25], [0, 30.25]], "stitchHi": 0 }] },
+        { "text": "Trim the corner, and zigzag the raw edges together along the side and bottom.", "dia": ["panel", { "w": 21, "h": 30.875, "side": "wrong", "under": "right", "stitch": [[20.375, 0], [20.375, 30.25], [0, 30.25]], "trim": ["br"], "zig": ["r", "b"] }] },
+        { "text": "Turn right side out, push out the corner gently, and press. Put a pillow in it!", "dia": ["panel", { "w": 20.375, "h": 30.25, "side": "right", "pieces": [{ "x": 0, "y": 0, "w": 20.375, "h": 4.5, "side": "right2" }] }] }
       ],
       "looks": "Straight seams, a cuff of even depth all the way around, and a sharp bottom corner.",
       "mistakes": [
@@ -327,9 +327,9 @@
     {
       "id": "l2-tote", "title": "Project: lined tote bag", "kind": "project", "minutes": 150,
       "summary": "Straps, a lining, and topstitching: a bag you'll actually carry.",
-      "finished": "{{14 in}} wide × {{15 in}} tall, straps about {{24 in}} long",
+      "finished": "{{14 in}} wide × {{15 in}} tall, straps about {{24 3/4 in}} long",
       "learn": ["Making sturdy straps", "Bagging out a lining", "Topstitching an edge"],
-      "fabric": ["Outer and straps: {{3/4 yd}} of cotton canvas or duck (medium weight), 44 in (112 cm) wide", "Lining: {{1/2 yd}} of quilting cotton, 44 in (112 cm) wide"],
+      "fabric": ["Outer and straps: {{7/8 yd}} of cotton canvas or duck (medium weight), 44 in (112 cm) wide", "Lining: {{1/2 yd}} of quilting cotton, 44 in (112 cm) wide"],
       "need": ["Thread", "A denim needle, size 100/16 (or 90/14)", "Pins or clips", "Ruler, chalk, and a seam gauge", "Iron"],
       "cut": [{ "name": "Outer (canvas)", "qty": 2, "w": 15.25, "h": 16.25 }, { "name": "Lining (cotton)", "qty": 2, "w": 15.25, "h": 16.25 }, { "name": "Strap (canvas)", "qty": 2, "w": 4, "h": 26 }],
       "cutNote": "All pieces run their long side along the lengthwise grain.",
@@ -339,10 +339,10 @@
         { "text": "Cut two outer pieces and two straps from canvas, and two lining pieces from cotton. Put in the denim needle.", "dia": ["layout", { "fw": 44, "len": 27, "pieces": [{ "name": "Outer", "w": 15.25, "h": 16.25, "x": 0.75, "y": 1 }, { "name": "Outer", "w": 15.25, "h": 16.25, "x": 16.5, "y": 1 }, { "name": "Strap", "w": 4, "h": 26, "x": 33, "y": 0.5, "side": "right2" }, { "name": "Strap", "w": 4, "h": 26, "x": 37.75, "y": 0.5, "side": "right2" }] }] },
         { "text": "Straps: fold each strip in half the long way and press. Open it, fold both long edges in to meet the center crease, and press.", "dia": ["panel", { "w": 4, "h": 10, "side": "wrong", "folds": [[1, 0, 1, 10], [2, 0, 2, 10], [3, 0, 3, 10]], "arrows": [[0.3, 5, 0.9, 5], [3.7, 5, 3.1, 5]], "labels": [[2, 1.5, "Center crease"]], "label": "Strap folding (part of the strip)" }] },
         { "text": "Fold in half again so it's {{1 in}} wide with all raw edges inside. [[edgestitch|Edgestitch]] both long edges {{1/8 in}} from the edge.", "dia": ["panel", { "w": 1, "h": 10, "side": "right2", "stitch": [[[0.125, 0], [0.125, 10]], [[0.875, 0], [0.875, 10]]], "dims": [[0, 10, 1, 10, "{{1 in}}", 16]], "label": "Finished strap (part)" }] },
-        { "text": "Outer bag: pin the canvas pieces right sides together. Sew down one side, across the bottom, and up the other side, pivoting at the corners. Leave the top open.", "dia": ["panel", { "w": 15.25, "h": 16.25, "side": "wrong", "under": "right", "stitch": [[0.625, 0], [0.625, 15.625], [14.625, 15.625], [14.625, 0]], "stitchHi": 0 }] },
+        { "text": "Outer bag: pin the canvas pieces right sides together. Sew down one side, across the bottom, and up the other side, pivoting at the corners. Backstitch at both ends. Leave the top open.", "dia": ["panel", { "w": 15.25, "h": 16.25, "side": "wrong", "under": "right", "stitch": [[0.625, 0], [0.625, 15.625], [14.625, 15.625], [14.625, 0]], "stitchHi": 0 }] },
         { "text": "Trim the bottom corners and press the seams open. Turn the outer bag right side out.", "dia": ["panel", { "w": 15.25, "h": 16.25, "side": "wrong", "under": "right", "stitch": [[0.625, 0], [0.625, 15.625], [14.625, 15.625], [14.625, 0]], "trim": ["bl", "br"] }], "why": "This bag is lined, so these raw edges will be hidden. No zigzag needed!" },
         { "text": "Lining: sew the same way, but leave a {{5 in}} gap in the middle of the bottom for turning later. Backstitch on both sides of the gap. Trim corners, press seams open, and leave it wrong side out.", "dia": ["panel", { "w": 15.25, "h": 16.25, "side": "lining", "under": "lining", "stitch": [[[0.625, 0], [0.625, 15.625], [5.125, 15.625]], [[10.125, 15.625], [14.625, 15.625], [14.625, 0]]], "gap": [[5.125, 15.625, 10.125, 15.625]], "trim": ["bl", "br"], "labels": [[7.625, 14.6, "Gap"]] }] },
-        { "text": "Pin one strap's ends to the top edge of the outer bag, raw ends lined up with the top, {{3 1/2 in}} in from each side seam. The strap hangs down. Do the same on the back. Check that neither strap is twisted.", "dia": ["panel", { "w": 14, "h": 15.625, "side": "right", "straps": [[3.5, 0, 1, 8], [9.5, 0, 1, 8]], "dims": [[0, 0, 3.5, 0, "{{3 1/2 in}}", -14]], "labels": [[7, 11, "Strap hangs down"]] }] },
+        { "text": "Pin one strap's ends to the top edge of the outer bag, raw ends lined up with the top, with the outer edge of each strap end {{3 1/2 in}} from the side seam. The strap hangs down. Do the same on the back. Check that neither strap is twisted.", "dia": ["panel", { "w": 14, "h": 15.625, "side": "right", "straps": [[3.5, 0, 1, 8], [9.5, 0, 1, 8]], "dims": [[0, 0, 3.5, 0, "{{3 1/2 in}}", -14]], "labels": [[7, 11, "Strap hangs down"]] }] },
         { "text": "[[baste|Baste]] the straps in place {{3/8 in}} from the top edge. This stitching hides inside the seam allowance.", "dia": ["panel", { "w": 14, "h": 15.625, "side": "right", "straps": [[3.5, 0, 1, 8], [9.5, 0, 1, 8]], "stitch": [[[3.4, 0.375], [4.6, 0.375]], [[9.4, 0.375], [10.6, 0.375]]], "stitchHi": "all" }] },
         { "text": "Slip the outer bag (right side out) inside the lining (wrong side out), so their right sides face each other. Match the side seams and top edges, and pin all the way around. The straps are sandwiched in between.", "dia": ["panel", { "w": 14, "h": 15.625, "side": "lining", "pins": [[3, 0.5, 90], [7, 0.5, 90], [11, 0.5, 90]], "labels": [[7, 6, "Lining, outside"], [7, 9, "Outer bag hidden inside"]] }] },
         { "text": "Sew all the way around the top at {{SA}}. Sew over the straps slowly.", "dia": ["panel", { "w": 14, "h": 15.625, "side": "lining", "stitch": [[0, 0.625], [14, 0.625]], "stitchHi": 0 }], "tip": "Use your machine's free arm, or sew with the lining facing you and the opening around the bed." },

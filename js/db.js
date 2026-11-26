@@ -4,7 +4,7 @@
 //   blobs:   photos and other files, each with an id
 // Never rename the database or change these stores without a migration below.
 
-export const APP_VERSION = '0.1.0';
+export const APP_VERSION = '0.1.1';
 export const DB_NAME = 'notch';
 export const DB_VERSION = 1;      // IndexedDB schema (stores). Raise only with an onupgradeneeded step.
 export const DATA_VERSION = 1;    // shape of the saved values. Raise only with a step in MIGRATIONS.
@@ -26,7 +26,7 @@ export function open() {
         db.createObjectStore('blobs', { keyPath: 'id' });
       }
     };
-    r.onsuccess = () => resolve(r.result);
+    r.onsuccess = () => { const db = r.result; db.onversionchange = () => db.close(); resolve(db); };
     r.onerror = () => reject(r.error);
     r.onblocked = () => reject(new Error('Close other Notch tabs and try again.'));
   });

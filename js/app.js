@@ -53,9 +53,10 @@ function toast(msg, action, fn, ms = 3200) {
 function sheet(html) {
   const w = document.getElementById('sheet-wrap'), sh = document.getElementById('sheet');
   sh.innerHTML = html + `<button class="btn soft wide" data-act="close-sheet" style="margin-top:14px">Close</button>`;
-  w.hidden = false;
+  sh.tabIndex = -1; w.hidden = false; sh.scrollTop = 0; sh.focus({ preventScroll: true });
 }
 function closeSheet() { document.getElementById('sheet-wrap').hidden = true; }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSheet(); });
 document.getElementById('sheet-wrap').addEventListener('click', e => {
   if (e.target.id === 'sheet-wrap' || e.target.closest('[data-act="close-sheet"]')) closeSheet();
   const t = e.target.closest('.term'); if (t) showTerm(t.dataset.term);
@@ -111,7 +112,7 @@ function setTab(tab) {
 const BUTTON_ICON = (n, state) => `<svg class="btnface" viewBox="0 0 60 60" aria-hidden="true">
   <circle cx="30" cy="30" r="27" fill="${state === 'done' ? 'var(--sage)' : state === 'here' ? 'var(--accent)' : 'var(--card2)'}" stroke="var(--line)" stroke-width="1.5"/>
   <circle cx="30" cy="30" r="21" fill="none" stroke="${state === 'soon' ? 'var(--line)' : 'rgba(255,255,255,.45)'}" stroke-width="1.5" stroke-dasharray="3 3"/>
-  <text x="30" y="37" text-anchor="middle" font-family="ui-serif, Georgia, serif" font-size="25" font-weight="700" style="fill:${state === 'soon' ? 'var(--soft)' : state === 'done' || state === 'here' ? 'var(--on-accent)' : 'var(--ink)'}">${n}</text></svg>`;
+  <text x="30" y="39" text-anchor="middle" style="font-family:var(--serif);font-size:28px;font-weight:700;fill:${state === 'soon' ? 'var(--soft)' : state === 'done' || state === 'here' ? 'var(--on-accent)' : 'var(--ink)'}">${n}</text></svg>`;
 
 function viewPath() {
   setTab('path');
@@ -126,11 +127,16 @@ function viewPath() {
   } else {
     h += `<div class="card sage"><h2>All open lessons done</h2><p>More levels are on the way. Practice, sew, and come back soon.</p></div>`;
   }
+  const nDone = Object.keys(S.progress.done).length;
+  const old = !S.settings.lastBackup || Date.now() - new Date(S.settings.lastBackup) > 30 * 864e5;
+  if (old && (nDone >= 3 || S.meas.length)) {
+    h += `<div class="card row"><div class="grow small">${S.settings.lastBackup ? 'Your last backup was over a month ago.' : "You haven't saved a backup yet."} It keeps your progress and measurements safe if anything happens to this phone.</div><button class="btn soft sm" data-act="export">Back up</button></div>`;
+  }
   h += `<div class="map"><svg class="thread" preserveAspectRatio="none" viewBox="0 0 100 100"><path d="M22 0C22 6 78 6 78 11S22 16 22 22S78 28 78 33S22 39 22 44S78 50 78 55S22 61 22 66S78 72 78 77S22 83 22 88S78 94 78 100"/></svg>`;
   S.course.levels.forEach((l, i) => {
     const st = levelStats(l.n), ready = !!l.file;
     const state = !ready ? 'soon' : st.done === st.total && st.total ? 'done' : l.n === hereLevel ? 'here' : 'open';
-    h += `<a class="node ${i % 2 ? 'right' : ''} ${state}" href="${ready ? `#/level/${l.n}` : `#/level/${l.n}`}">
+    h += `<a class="node ${i % 2 ? 'right' : ''} ${state}" href="#/level/${l.n}">
       ${state === 'here' ? '<span class="here-tag">You are here</span>' : ''}
       ${BUTTON_ICON(l.n, state)}
       <div><div class="t">${esc(l.title)}</div><div class="s">${ready ? `${st.done} of ${st.total} done` : 'Coming soon'}</div></div></a>`;
@@ -162,7 +168,7 @@ function viewLevel(n) {
     const ck = S.progress.checks[meta.n] || {};
     const got = lv.check.filter((_, i) => ck[i]).length;
     h += `<div class="card gold" style="margin-top:18px"><h3>Level ${meta.n} skill check</h3><p class="small">Can you do these? Tick them off when you can. It's for you, not a test: every level stays open.</p>`;
-    lv.check.forEach((c, i) => { h += `<div class="check-row" data-act="check" data-level="${meta.n}" data-i="${i}"><div class="box ${ck[i] ? 'on' : ''}"></div><div>${fmt(c)}</div></div>`; });
+    lv.check.forEach((c, i) => { h += `<div class="check-row" role="checkbox" tabindex="0" aria-checked="${!!ck[i]}" data-act="check" data-level="${meta.n}" data-i="${i}"><div class="box ${ck[i] ? 'on' : ''}"></div><div>${fmt(c)}</div></div>`; });
     if (got === lv.check.length) h += `<p class="done-badge" style="margin-top:8px">★ Skill earned: ${esc(lv.skill || meta.title)}</p>`;
     h += `</div>`;
   }
@@ -204,7 +210,7 @@ function viewLesson(id) {
   $app.innerHTML = `<div class="lesson">
     <div class="lesson-head"><a class="back" href="#/level/${ls.level}">Level ${ls.level}</a><div class="title">${esc(ls.title)}</div></div>
     <div class="dots">${Array.from({ length: total }, (_, i) => `<i class="${i <= pg ? 'on' : ''}"></i>`).join('')}</div>
-    <div class="lesson-body" id="lesson-body">${pg === 0 ? '' : `<h2 style="font-size:1.1rem" class="muted">${esc(ls.title)}</h2>`}${body}</div>
+    <div class="lesson-body" id="lesson-body">${body}</div>
     <div class="lesson-nav"><div class="inner">
       ${pg > 0 ? `<button class="btn ghost" data-act="prev">Back</button>` : ''}
       <button class="btn" data-act="${last ? 'done' : 'next'}" ${last && isDone(id) ? 'data-already="1"' : ''}>${nextLabel}</button>
@@ -224,9 +230,9 @@ function lessonIntro(ls, kind) {
     if (ls.fabric) h += `<div class="card"><h3>Fabric</h3>${list(ls.fabric)}</div>`;
     if (ls.need) h += `<div class="card"><h3>Supplies</h3>${list(ls.need)}</div>`;
     if (ls.cut) {
-      h += `<div class="card"><h3>Cut</h3><p class="small muted">Sizes include the ${showIn(5 / 8, unit())} seam allowance.</p><table class="cut"><tr><th>Piece</th><th>Cut</th><th>Size</th></tr>`;
+      h += `<div class="card"><h3>Cut</h3><p class="small muted">Sizes include the ${showIn(5 / 8, unit())} seam allowance.</p><div class="scroll-x"><table class="cut"><tr><th>Piece</th><th>Cut</th><th>Size</th></tr>`;
       ls.cut.forEach(c => { h += `<tr><td>${fmt(c.name)}</td><td>${c.qty}</td><td>${showIn(c.w, unit())} × ${showIn(c.h, unit())}</td></tr>`; });
-      h += `</table>${c_note(ls)}</div>`;
+      h += `</table></div>${c_note(ls)}</div>`;
       if (ls.layout) h += dia(['layout', ls.layout], 'A layout that fits. Arrows point along the lengthwise grain.');
     }
   } else if (ls.need) h += `<div class="card"><h3>What you need</h3>${list(ls.need)}</div>`;
@@ -246,6 +252,7 @@ function lessonWrap(ls, kind) {
   }
   if (ls.practice) h += `<div class="card gold"><h3>${kind === 'project' ? 'Before the next level' : 'Practice task'}</h3><p>${fmt(ls.practice)}</p>${ls.sheet ? `<button class="btn soft sm" data-act="sheet" data-kind="${ls.sheet}">Get the ${ls.sheet} practice sheet</button>` : ''}</div>`;
   if (ls.more) h += `<div class="callout"><b>Other ways</b>${fmt(ls.more)}</div>`;
+  if (isDone(ls.id)) h += `<p class="small muted center">Done on ${dateStr(S.progress.done[ls.id])}. <button class="linkish" data-act="undone">Mark as not done</button></p>`;
   h += `<div class="card"><h3>My notes</h3><textarea id="note" data-id="${ls.id}" placeholder="What worked, what to try next time, settings you used...">${esc(S.notes?.[ls.id] || '')}</textarea></div>`;
   return h;
 }
@@ -363,7 +370,7 @@ function viewMore() {
     <p class="small">Everything you save (progress, measurements, and notes) stays on this phone only. Save a backup now and then, and keep it somewhere safe like Files or iCloud Drive.</p>
     ${s.lastBackup ? `<p class="small muted">Last backup: ${dateStr(s.lastBackup)}</p>` : '<p class="small muted">No backup saved yet.</p>'}
     <button class="btn wide" data-act="export">Export backup</button>
-    <label class="btn ghost wide" style="margin-top:10px">Import backup<input type="file" accept="application/json,.json" id="import" hidden></label>
+    <label class="btn ghost wide" style="margin-top:10px">Import backup<input type="file" id="import" hidden></label>
     <p class="small muted" style="margin:10px 0 0">Importing replaces what's in Notch now. A backup from a newer Notch is refused until this app updates, so nothing gets lost.</p>
   </div>
   <div class="card"><h3>Practice sheets</h3><p class="small">Print these and stitch along the lines with no thread. Each has a test square so you can check the size.</p>
@@ -402,7 +409,7 @@ async function saveFile(file, title) {
 }
 async function importBackup(file) {
   let data = null;
-  try { data = JSON.parse(await file.text()); } catch (e) { data = null; }
+  try { data = file.size < 200e6 ? JSON.parse(await file.text()) : null; } catch (e) { data = null; }
   const ck = db.checkBackup(data);
   if (!ck.ok) { toast(ck.why + ' Nothing was changed.', null, null, 6000); return; }
   const when = data.exportedAt ? dateStr(data.exportedAt) : 'an unknown date';
@@ -431,6 +438,7 @@ $app.addEventListener('click', async e => {
   if (act === 'next') goPage(id, 1);
   else if (act === 'prev') goPage(id, -1);
   else if (act === 'done') { if (a.dataset.already) { location.hash = `#/level/${S.lessons[id].level}`; } else markDone(id); }
+  else if (act === 'undone') { delete S.progress.done[id]; await saveProgress(); viewLesson(id); toast('Marked as not done.'); }
   else if (act === 'check') {
     const lv = a.dataset.level, i = a.dataset.i; S.progress.checks[lv] = S.progress.checks[lv] || {};
     S.progress.checks[lv][i] = !S.progress.checks[lv][i]; await saveProgress(); viewLevel(lv);
@@ -451,19 +459,23 @@ $app.addEventListener('click', async e => {
   else if (act === 'sheet') makeSheet(a.dataset.kind);
 });
 $app.addEventListener('change', e => { if (e.target.id === 'import' && e.target.files[0]) { importBackup(e.target.files[0]); e.target.value = ''; } });
-let noteTimer;
+const noteTimers = {};
+function saveNote(id) { clearTimeout(noteTimers[id]); delete noteTimers[id]; return db.set('note:' + id, S.notes[id] || ''); }
+function flushNotes() { Object.keys(noteTimers).forEach(saveNote); }
 $app.addEventListener('input', e => {
   if (e.target.id !== 'note') return;
-  const id = e.target.dataset.id, v = e.target.value; S.notes[id] = v;
-  clearTimeout(noteTimer); noteTimer = setTimeout(() => db.set('note:' + id, v), 400);
+  const id = e.target.dataset.id; S.notes[id] = e.target.value;
+  clearTimeout(noteTimers[id]); noteTimers[id] = setTimeout(() => saveNote(id), 400);
 });
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flushNotes(); });
 $app.addEventListener('keydown', e => {
   if (e.key === 'Enter' && e.target.id === 'mval') document.querySelector('[data-act="save-m"]').click();
   if ((e.key === 'Enter' || e.key === ' ') && e.target.classList.contains('term')) { e.preventDefault(); showTerm(e.target.dataset.term); }
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList.contains('check-row')) { e.preventDefault(); e.target.click(); }
 });
 // Swipe left/right between lesson steps.
 let tx0 = null, ty0 = null;
-$app.addEventListener('touchstart', e => { if (!document.body.classList.contains('lesson-mode') || e.target.closest('textarea')) { tx0 = null; return; } tx0 = e.touches[0].clientX; ty0 = e.touches[0].clientY; }, { passive: true });
+$app.addEventListener('touchstart', e => { if (!document.body.classList.contains('lesson-mode') || e.target.closest('textarea, .scroll-x, input')) { tx0 = null; return; } tx0 = e.touches[0].clientX; ty0 = e.touches[0].clientY; }, { passive: true });
 $app.addEventListener('touchend', e => {
   if (tx0 == null) return;
   const dx = e.changedTouches[0].clientX - tx0, dy = e.changedTouches[0].clientY - ty0; tx0 = null;
@@ -476,7 +488,7 @@ $app.addEventListener('touchend', e => {
 // ---------------- router ----------------
 let lastPath = '';
 async function route() {
-  closeSheet();
+  closeSheet(); flushNotes();
   const h = location.hash || '#/path';
   if (h.split('?')[0] !== lastPath) { lastPath = h.split('?')[0]; window.scrollTo(0, 0); }
   const [path, query] = h.slice(1).split('?');

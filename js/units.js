@@ -17,11 +17,15 @@ export function fmtCm(cm) { const r = Math.round(cm * 2) / 2; return (Number.isI
 
 // Display a length given in cm.
 export function showCm(cm, unit) { return unit === 'cm' ? `${fmtCm(cm)} cm` : `${fracIn(cm / CM_PER_IN)} in`; }
-// Display a length given in inches (lesson text is written in inches; metric is rounded to 0.5 cm).
+// Display a length given in inches (lesson text is written in inches; metric is rounded to 0.5 cm,
+// or to 0.1 cm under 2.5 cm).
 export function showIn(inches, unit) {
   if (unit === 'cm') {
     if (Math.abs(inches - SA_IN) < 1e-6) return `${SA_CM} cm`;
-    return `${fmtCm(inches * CM_PER_IN)} cm`;
+    const cm = inches * CM_PER_IN;
+    // Small amounts (edgestitching, folds) need millimeter care: 1/8 in is 0.3 cm, not 0.5.
+    if (cm < 2.5) return `${+(Math.round(cm * 10) / 10).toFixed(1)} cm`;
+    return `${fmtCm(cm)} cm`;
   }
   return `${fracIn(inches)} in`;
 }

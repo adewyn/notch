@@ -171,7 +171,7 @@
       ],
       "looks": "Pins straight across the edge with heads out, and marks you can see but that wash out.",
       "mistakes": [
-        ["Layers shift while sewing", "Pin closer, every 2 to 3 in, and match the ends first, then the middle."],
+        ["Layers shift while sewing", "Pin closer, every {{2 in}} to {{3 in}}, and match the ends first, then the middle."],
         ["Ripper cut through the fabric", "Point it at the threads, not the fabric, and cut one stitch at a time."]
       ],
       "practice": "Pin two scraps together along one edge the right way, then unpick a row of practice stitches with the seam ripper."
@@ -180,7 +180,7 @@
       "id": "l1-measuring", "title": "Measuring tools", "minutes": 5,
       "summary": "Accurate measuring is the quiet secret of good sewing.",
       "learn": ["Which tool to use for bodies, fabric, and hems"],
-      "need": ["A soft tape measure", "A clear ruler (2 × 18 in is a great size)", "A seam gauge (later is fine)"],
+      "need": ["A soft tape measure", "A clear ruler (2 × 18 in, or 5 × 45 cm, is a great size)", "A seam gauge"],
       "words": ["seam gauge"],
       "steps": [
         { "text": "A soft **tape measure** bends around bodies and curves. Use it for your own measurements.", "dia": ["tools", { "list": ["tape"] }], "tip": "Old tapes stretch. Check yours against a ruler now and then." },
@@ -201,7 +201,7 @@
         { "text": "**Ironing** slides back and forth. **Pressing** lifts the iron, sets it down, holds, and lifts again. Sewists [[press]].", "dia": ["press", { "mode": "press" }], "why": "Sliding can stretch and warp fabric, especially along curves. Pressing flattens without pulling." },
         { "text": "Sliding is fine for wrinkly fabric before you cut, but not for seams.", "dia": ["press", { "mode": "iron" }] },
         { "text": "Press every seam right after you sew it, first flat as sewn. This sinks the stitches into the fabric.", "dia": ["xsec", { "kind": "set" }] },
-        { "text": "Match the heat to the fiber: cotton and linen hot, wool medium, synthetics cool. Use a [[pressing cloth]] on dark or delicate fabric to avoid shiny marks.", "dia": ["tools", { "list": ["iron", "board", "ham"] }] }
+        { "text": "Match the heat to the fiber: cotton and linen hot, wool medium, and synthetics cool. Use a [[pressing cloth]] on dark or delicate fabric to avoid shiny marks.", "dia": ["tools", { "list": ["iron", "board", "ham"] }] }
       ],
       "looks": "A seam that lies flat and crisp, with no shine and no stretched edges.",
       "mistakes": [
@@ -216,7 +216,7 @@
       "learn": ["How long to cut your thread", "Single vs. double thread", "A simple knot"],
       "need": ["Hand sewing needles", "Thread", "Snips"],
       "steps": [
-        { "text": "Cut thread about as long as your arm (18 to 24 in). Longer thread tangles. Snip the end at an angle and push it through the eye.", "dia": ["handNeedle", { "step": 1 }] },
+        { "text": "Cut thread about as long as your arm ({{18 in}} to {{24 in}}). Longer thread tangles. Snip the end at an angle and push it through the eye.", "dia": ["handNeedle", { "step": 1 }] },
         { "text": "Pull it through so one end is short. Sewing with one strand is called single thread; most hand stitches use it.", "dia": ["handNeedle", { "step": 2 }], "tip": "For buttons, bring the ends together for double thread. It's twice as strong." },
         { "text": "Knot the long end: wrap it once around your fingertip, roll it off with your thumb, and pull the twist down into a knot.", "dia": ["handNeedle", { "step": 3 }] }
       ],
@@ -329,9 +329,9 @@
       "steps": [
         { "text": "**Must have: a machine.** A basic mechanical one with straight and zigzag stitches and adjustable stitch length is plenty. A serviced secondhand or borrowed machine is great.", "dia": ["tools", { "list": ["machine", "mneedle", "bobbins"] }], "tip": "Buy extra bobbins made for your exact model." },
         { "text": "**Must have for cutting and marking:** fabric shears, thread snips, pins and a pincushion, a seam ripper, and chalk or a washable pen.", "dia": ["tools", { "list": ["shears", "snips", "pins", "ripper", "chalk", "pen"] }] },
-        { "text": "**Must have for measuring and pressing:** a tape measure, a clear ruler, an iron, and an ironing board.", "dia": ["tools", { "list": ["tape", "ruler", "iron"] }] },
-        { "text": "**Must have for sewing:** universal machine needles (80/12 and 90/14), hand needles, a safety pin, and all-purpose polyester thread in a few colors.", "dia": ["tools", { "list": ["needles", "thread", "bodkin"] }] },
-        { "text": "**Later:** a rotary cutter and mat, pinking shears, a seam gauge, clips, a pressing ham, and much later a serger and a dress form.", "dia": ["tools", { "list": ["rotary", "pinking", "gauge", "clips", "ham", "mat"] }] }
+        { "text": "**Must have for measuring and pressing:** a tape measure, a clear ruler, a seam gauge, an iron, and an ironing board.", "dia": ["tools", { "list": ["tape", "ruler", "gauge", "iron"] }] },
+        { "text": "**Must have for sewing:** universal machine needles (80/12 and 90/14), a denim needle (100/16) for canvas, hand needles, a safety pin, and all-purpose polyester thread in a few colors.", "dia": ["tools", { "list": ["needles", "thread", "bodkin"] }] },
+        { "text": "**For the first projects:** polyester stuffing and about {{40 in}} of cord. **Later:** a rotary cutter and mat, pinking shears, clips, a pressing ham, and much later a serger and a dress form.", "dia": ["tools", { "list": ["stuffing", "cord", "rotary", "pinking", "clips", "ham"] }] }
       ],
       "looks": "A small kit that covers every lesson in levels 1 and 2.",
       "mistakes": [["Buying a fancy machine first", "Start simple. You'll know what features you want after a few projects."]],
