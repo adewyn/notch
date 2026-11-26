@@ -1,66 +1,12 @@
 // Notch: the app. Screens are drawn from the data files in /data; your own data is saved with db.js.
 import * as db from './db.js';
-import { draw, setUnit } from './diagrams.js';
+import { draw } from './diagrams.js';
+import { $app, S, esc, unit, amount, fmt, list, dia, dateStr, toast, sheet, closeSheet, showTerm, saveFile } from './core.js';
 import { showIn, showCm, parseLen, CM_PER_IN, fracIn, fmtCm } from './units.js';
 import { practiceSheet } from './pdf.js';
-
-const $app = document.getElementById('app');
-const S = {
-  course: null, levels: {}, lessons: {}, order: [], glossary: {}, measures: [],
-  settings: { units: 'in', size: 'normal', theme: 'auto', awake: true, paper: 'letter' },
-  progress: { done: {}, step: {}, checks: {} },
-  meas: [], // measurement entries
-  page: {}, // current page per lesson (kept in memory; also saved in progress.step)
-};
-
-// ---------------- helpers ----------------
-const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-const unit = () => S.settings.units;
-function amount(raw) {
-  // "{{5/8 in}}", "{{12 in}}", "{{SA}}", "{{1/2 yd}}"
-  raw = raw.trim();
-  if (raw === 'SA') return showIn(5 / 8, unit());
-  const m = raw.match(/^([\d.\s/]+)\s*(in|yd)$/);
-  if (!m) return esc(raw);
-  const v = parseLen(m[1]);
-  if (isNaN(v)) return esc(raw);
-  if (m[2] === 'yd') return unit() === 'cm' ? `${(Math.ceil(v * 0.9144 * 10) / 10).toFixed(1).replace(/\.0$/, '')} m` : `${fracIn(v)} yd`;
-  return showIn(v, unit());
-}
-function fmt(text) {
-  let s = esc(text);
-  s = s.replace(/\{\{([^}]+)\}\}/g, (_, a) => `<span class="amt">${amount(a)}</span>`);
-  // [[term]] or [[term id|shown words]]
-  s = s.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, (_, a, b) => {
-    const id = a.toLowerCase().trim().replace(/&#39;|&amp;#39;/g, "'"), shown = b || a;
-    return S.glossary[id] ? `<span class="term" data-term="${esc(id)}" role="button" tabindex="0">${shown}</span>` : shown;
-  });
-  s = s.replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
-  return s.replace(/\n/g, '<br>');
-}
-const list = arr => arr && arr.length ? `<ul>${arr.map(x => `<li>${fmt(x)}</li>`).join('')}</ul>` : '';
-const dia = (spec, cap) => spec ? (setUnit(unit(), a => amount(a).replace(/<[^>]+>/g, '')), '') + `<div class="dia">${draw(spec)}${cap ? `<div class="cap">${fmt(cap)}</div>` : ''}</div>` : '';
-const dateStr = iso => new Date(iso).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
-
-let toastTimer;
-function toast(msg, action, fn, ms = 3200) {
-  const t = document.getElementById('toast');
-  t.innerHTML = `<span>${esc(msg)}</span>${action ? `<button>${esc(action)}</button>` : ''}`;
-  t.hidden = false;
-  if (action) t.querySelector('button').onclick = () => { t.hidden = true; fn(); };
-  clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.hidden = true; }, ms);
-}
-function sheet(html) {
-  const w = document.getElementById('sheet-wrap'), sh = document.getElementById('sheet');
-  sh.innerHTML = html + `<button class="btn soft wide" data-act="close-sheet" style="margin-top:14px">Close</button>`;
-  sh.tabIndex = -1; w.hidden = false; sh.scrollTop = 0; sh.focus({ preventScroll: true });
-}
-function closeSheet() { document.getElementById('sheet-wrap').hidden = true; }
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSheet(); });
-document.getElementById('sheet-wrap').addEventListener('click', e => {
-  if (e.target.id === 'sheet-wrap' || e.target.closest('[data-act="close-sheet"]')) closeSheet();
-  const t = e.target.closest('.term'); if (t) showTerm(t.dataset.term);
-});
+import './dia3.js'; import './dia4.js'; import './dia5.js';
+import { viewLibrary, viewGlossary, viewCards, viewFabrics, viewFabric, viewFix, viewFixOne, resetCardSession } from './library.js';
+import { viewProjects, viewProject, newProject, flushProject } from './projects.js';
 
 async function saveProgress() { await db.set('progress', S.progress); }
 async function saveSettings() { await db.set('settings', S.settings); applySettings(); }
@@ -74,8 +20,8 @@ function applySettings() {
 async function loadJSON(path) { const r = await fetch(path); if (!r.ok) throw new Error(path); return r.json(); }
 async function loadAll() {
   S.course = await loadJSON('data/course.json');
-  const [gl, ms] = await Promise.all([loadJSON('data/glossary.json'), loadJSON('data/measurements.json')]);
-  S.glossary = gl.terms; S.measures = ms.measurements; S.measureGroups = ms.groups;
+  const [gl, ms, fb, tr] = await Promise.all(['data/glossary.json', 'data/measurements.json', 'data/fabrics.json', 'data/troubleshoot.json'].map(loadJSON));
+  S.glossary = gl.terms; S.measures = ms.measurements; S.measureGroups = ms.groups; S.fabrics = fb.fabrics; S.trouble = tr;
   const ready = S.course.levels.filter(l => l.file);
   const files = await Promise.all(ready.map(l => loadJSON(l.file)));
   ready.forEach((l, i) => {
@@ -84,7 +30,8 @@ async function loadAll() {
   });
 }
 async function loadUser() {
-  const [settings, progress, meas] = await Promise.all([db.get('settings'), db.get('progress'), db.list('measure')]);
+  const [settings, progress, meas, cards, projects] = await Promise.all([db.get('settings'), db.get('progress'), db.list('measure'), db.get('cards'), db.list('project')]);
+  S.cards = cards || {}; S.projects = projects || []; resetCardSession();
   if (settings) Object.assign(S.settings, settings);
   if (progress) S.progress = { done: {}, step: {}, checks: {}, ...progress };
   S.meas = meas || [];
@@ -236,6 +183,10 @@ function lessonIntro(ls, kind) {
       if (ls.layout) h += dia(['layout', ls.layout], 'A layout that fits. Arrows point along the lengthwise grain.');
     }
   } else if (ls.need) h += `<div class="card"><h3>What you need</h3>${list(ls.need)}</div>`;
+  if (kind === 'project') {
+    const mine = S.projects.find(p => p.lesson === ls.id);
+    h += mine ? `<a class="btn soft wide" href="#/project/${mine.id}">Open it in My projects</a>` : `<button class="btn soft wide" data-act="pj-from-lesson" data-id="${ls.id}">Track this in My projects</button>`;
+  }
   if (ls.why) h += `<div class="callout why"><b>Why it matters</b>${fmt(ls.why)}</div>`;
   if (ls.words) h += `<p class="small muted">Words in this lesson: ${ls.words.map(w => fmt(`[[${w}]]`)).join(', ')}. Tap any underlined word for its meaning.</p>`;
   return h;
@@ -279,12 +230,6 @@ async function markDone(id) {
     <p>${esc(ls.title)} is done.${lvDone.done === lvDone.total ? ` That's all of level ${ls.level}. Check the skill list on the level page.` : ''}</p>
     ${nl ? `<a class="btn wide" href="#/lesson/${nl.id}" data-act="close-sheet">Next: ${esc(nl.title)}</a>` : ''}
     <a class="btn ghost wide" style="margin-top:10px" href="#/level/${ls.level}" data-act="close-sheet">Back to level ${ls.level}</a></div>`);
-}
-
-// ---------- glossary term ----------
-function showTerm(id) {
-  const t = S.glossary[id]; if (!t) return;
-  sheet(`<h2>${esc(t.t)}</h2><p class="big">${fmt(t.d)}</p>${t.dia ? dia(t.dia) : ''}${t.also ? `<p class="small muted">Also called: ${esc(t.also)}</p>` : ''}`);
 }
 
 // ---------- measurements ----------
@@ -367,7 +312,7 @@ function viewMore() {
     <div class="set-row"><span>Paper for printing</span>${seg('set-paper', s.paper, [['letter', 'Letter'], ['a4', 'A4']])}</div>
   </div>
   <div class="card"><h3>Your data</h3>
-    <p class="small">Everything you save (progress, measurements, and notes) stays on this phone only. Save a backup now and then, and keep it somewhere safe like Files or iCloud Drive.</p>
+    <p class="small">Everything you save (progress, measurements, notes, projects, and photos) stays on this phone only. Save a backup now and then, and keep it somewhere safe like Files or iCloud Drive.</p>
     ${s.lastBackup ? `<p class="small muted">Last backup: ${dateStr(s.lastBackup)}</p>` : '<p class="small muted">No backup saved yet.</p>'}
     <button class="btn wide" data-act="export">Export backup</button>
     <label class="btn ghost wide" style="margin-top:10px">Import backup<input type="file" id="import" hidden></label>
@@ -399,13 +344,6 @@ async function exportBackup() {
     S.settings.lastBackup = new Date().toISOString(); await saveSettings();
     if (location.hash.startsWith('#/more')) viewMore();
   } catch (e) { if (e.name !== 'AbortError') toast('Could not make the backup: ' + e.message); }
-}
-async function saveFile(file, title) {
-  try {
-    if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title }); return; }
-  } catch (e) { if (e.name === 'AbortError') throw e; }
-  const a = document.createElement('a'); a.href = URL.createObjectURL(file); a.download = file.name;
-  document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
 }
 async function importBackup(file) {
   let data = null;
@@ -456,6 +394,7 @@ $app.addEventListener('click', async e => {
     S.settings[k] = k === 'awake' ? v === 'on' : v; await saveSettings(); viewMore();
   }
   else if (act === 'export') exportBackup();
+  else if (act === 'pj-from-lesson') newProject(a.dataset.id);
   else if (act === 'sheet') makeSheet(a.dataset.kind);
 });
 $app.addEventListener('change', e => { if (e.target.id === 'import' && e.target.files[0]) { importBackup(e.target.files[0]); e.target.value = ''; } });
@@ -488,7 +427,7 @@ $app.addEventListener('touchend', e => {
 // ---------------- router ----------------
 let lastPath = '';
 async function route() {
-  closeSheet(); flushNotes();
+  closeSheet(); flushNotes(); flushProject();
   const h = location.hash || '#/path';
   if (h.split('?')[0] !== lastPath) { lastPath = h.split('?')[0]; window.scrollTo(0, 0); }
   const [path, query] = h.slice(1).split('?');
@@ -499,6 +438,15 @@ async function route() {
   else if (parts[0] === 'measure' && parts[1]) viewMeasureOne(parts[1], /guided=1/.test(query || ''));
   else if (parts[0] === 'measure') viewMeasure();
   else if (parts[0] === 'more') viewMore();
+  else if (parts[0] === 'library' && parts[1] === 'glossary') viewGlossary();
+  else if (parts[0] === 'library' && parts[1] === 'cards') viewCards();
+  else if (parts[0] === 'library' && parts[1] === 'fabrics') viewFabrics();
+  else if (parts[0] === 'library' && parts[1] === 'fabric') viewFabric(parts[2]);
+  else if (parts[0] === 'library') viewLibrary();
+  else if (parts[0] === 'fix' && parts[1]) viewFixOne(parts[1]);
+  else if (parts[0] === 'fix') viewFix();
+  else if (parts[0] === 'projects') viewProjects();
+  else if (parts[0] === 'project' && parts[1]) viewProject(parts[1]);
   else viewPath();
 }
 window.addEventListener('hashchange', route);

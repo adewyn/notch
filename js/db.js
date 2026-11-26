@@ -4,7 +4,7 @@
 //   blobs:   photos and other files, each with an id
 // Never rename the database or change these stores without a migration below.
 
-export const APP_VERSION = '0.1.1';
+export const APP_VERSION = '0.2.0';
 export const DB_NAME = 'notch';
 export const DB_VERSION = 1;      // IndexedDB schema (stores). Raise only with an onupgradeneeded step.
 export const DATA_VERSION = 1;    // shape of the saved values. Raise only with a step in MIGRATIONS.
@@ -46,6 +46,10 @@ export async function list(type) {
 }
 export async function put(rec) { const db = await open(); const tx = db.transaction('records', 'readwrite'); tx.objectStore('records').put(rec); return done(tx); }
 export async function remove(id) { const db = await open(); const tx = db.transaction('records', 'readwrite'); tx.objectStore('records').delete(id); return done(tx); }
+
+export async function getBlob(id) { const db = await open(); return req(db.transaction('blobs').objectStore('blobs').get(id)); }
+export async function putBlob(b) { const db = await open(); const tx = db.transaction('blobs', 'readwrite'); tx.objectStore('blobs').put(b); return done(tx); }
+export async function delBlob(id) { const db = await open(); const tx = db.transaction('blobs', 'readwrite'); tx.objectStore('blobs').delete(id); return done(tx); }
 
 export const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
 

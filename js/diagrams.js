@@ -269,7 +269,7 @@ function button(o = {}) {
     if (st === 1) { s += P('M150 90l20 20M170 90l-20 20', 'hi') + lab(176, 84, 'Mark the spot', { hi: true, size: 12 }); return svg(320, 200, s, 'Button'); }
     s += C(160, 100, 34, 'metal') + C(160, 100, 27, 'thin');
     const holes = [[150, 90], [170, 90], [150, 110], [170, 110]];
-    if (st === 3) s += L(100, 100, 220, 100, 'metal') + R(96, 97, 128, 6, 'metal2', 3) + lab(228, 96, 'Toothpick', { hi: true, size: 12 });
+    if (st === 3) s += L(100, 100, 220, 100, 'metal') + R(96, 97, 128, 6, 'metal2', 3) + lab(230, 118, 'Toothpick', { hi: true, size: 12, anchor: 'middle' });
     s += holes.map(h => C(h[0], h[1], 4, 'card-f')).join('');
     if (st === 2) s += P('M150 90L170 110', 'thread') + arrow(140, 150, 150, 98, true) + lab(40, 166, 'Come up from the back', { hi: true, size: 12 });
     if (st === 3) s += P('M150 90L150 110M170 90L170 110', 'thread') + P('M150 90L170 90M150 110L170 110', 'stitch-s') + lab(40, 166, '4 to 6 times through each pair', { hi: false, size: 12 });
@@ -435,7 +435,7 @@ function finish(o = {}) {
   if (k === 'zigzag') { let d = 'M238 24'; for (let y = 24; y < 156; y += 8) d += `L248 ${y + 4}L238 ${y + 8}`; s += P(d, 'zig'); s += lab(256, 70, 'Zigzag over', { hi: true, size: 12 }) + lab(256, 90, 'the raw edge', { hi: true, size: 12 }); }
   if (k === 'pinked') s += lab(258, 80, 'Pinked edge', { hi: true, size: 12 });
   if (k === 'serged') { for (let y = 24; y < 156; y += 5) s += P(`M236 ${y}L250 ${y + 2}`, 'zig'); s += lab(258, 80, 'Serged edge', { hi: true, size: 12 }); }
-  return svg(360, 184, s, 'Edge finish');
+  return svg(372, 184, s, 'Edge finish');
 }
 
 // Clipping and trimming. kind corner | outer | inner
@@ -704,6 +704,12 @@ function legend(o = {}) {
   return svg(54, 34, m[k] || '', k);
 }
 
+// Shared drawing helpers, so each level's own diagram file (js/dia3.js, ...) draws the same way.
+export const H = { svg, P, L, R, C, T, PL, PG, pts, lab, callout, arrow, curveArrow, dim, smooth, len, esc, f, asArr, fmtIn, yards };
+// Add more named scenes from another file. Names must be new.
+export function register(scenes) {
+  for (const [k, fn] of Object.entries(scenes)) { if (DIAGRAMS[k]) throw new Error('Diagram name taken: ' + k); DIAGRAMS[k] = fn; }
+}
 export const DIAGRAMS = { machine, bobbin, needleUp, needleParts, handNeedle, hand, button, tools, sew, stitchLook, xsec, finish, clip, grain, weave, fold, press, square, shirt, panel, layout, body, paper, legend };
 
 export function draw(spec) {

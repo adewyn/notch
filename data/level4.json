@@ -1,0 +1,391 @@
+{
+  "skill": "Pattern reader",
+  "check": [
+    "Read a pattern envelope: the views, fabrics, notions, and yardage for my size",
+    "Pick my size from my own measurements: hip for pants, bust or high bust for tops",
+    "Explain ease, and compare finished measurements with my body",
+    "Blend from one size to another on a multi-size pattern",
+    "Trace my size and copy every marking",
+    "Name the grainline, place-on-fold, notch, dot, dart, and lengthen/shorten marks",
+    "Lengthen or shorten a pattern piece at its line",
+    "Lay out, pin, and cut pieces on grain, with nap when needed",
+    "Transfer marks with snips, chalk, a tracing wheel, or tailor's tacks",
+    "Sew elastic-waist pajama pants from a store-bought pattern"
+  ],
+  "lessons": [
+    {
+      "id": "l4-envelope-front", "title": "The envelope front and its views", "kind": "design", "minutes": 8,
+      "summary": "A store-bought pattern comes in an envelope. The front shows what you'll make and the different versions inside.",
+      "learn": ["What a pattern is and what comes in the envelope", "What a view is, and how views differ", "How to spot a beginner-friendly pattern"],
+      "need": ["Any sewing pattern, or the sample one in this lesson", "Optional: a few patterns to compare, in a fabric store or online"],
+      "words": ["pattern", "pattern envelope", "view", "technical flat", "instruction sheet"],
+      "why": "The front is where you decide if a pattern is right for you, before you spend anything on fabric.",
+      "hero": ["l4Envelope", {}], "heroCap": "An invented sample pattern. You'll use it all through this level.",
+      "steps": [
+        { "text": "A [[pattern]] is a set of paper templates, one for each piece of a garment, plus instructions. Store patterns come folded in a [[pattern envelope|paper envelope]]. The front shows the garment, the pattern's name, and its size range.", "dia": ["l4Envelope", { "hi": ["title", "sizes"] }] },
+        { "text": "Many patterns hold more than one version of the design, called [[view|views]]. They're named with letters. Here, view A is long pants, view B is cropped with cuffs, and view C is shorts with pockets and a drawstring.", "dia": ["l4Views", {}] },
+        { "text": "Find the small flat drawings, on the front, the back, or the side. These [[technical flat|line drawings]] show every seam and detail plainly, with no model and no pose.", "dia": ["l4Envelope", { "hi": "views" }], "why": "Photos and paintings are styled to look their best. Line drawings are honest: what you see is what the pieces make." },
+        { "text": "Each view uses some of the pattern pieces. All three views use the front and back. View B adds a cuff, and view C adds a pocket and a drawstring. The instruction sheet lists which pieces go with each view.", "dia": ["l4Views", { "mode": "pieces", "hi": "B" }], "tip": "Views often share pieces but cut them at different lengths. Piece 1 here has separate cutting lines for views B and C across the leg." },
+        { "text": "For a first pattern, look for words like easy, beginner, or quick, and for few pieces. An elastic waist, a loose fit, and no zipper or buttons make it friendlier still.", "dia": ["l4Envelope", { "hi": "level" }], "tip": "Every company labels difficulty its own way. Counting pieces and closures is a better guide than the label." },
+        { "text": "Inside the envelope you'll find large sheets of thin paper with the pieces printed on them (the pattern tissue) and an [[instruction sheet]]. PDF patterns come as pages you print at home and tape together instead.", "dia": ["l4Instr", {}] }
+      ],
+      "looks": "You can pick up any pattern and say what each view is, which pieces it uses, and whether it's a good first project.",
+      "mistakes": [
+        ["Choosing from the photo alone", "Check the line drawings too. They show seams, darts, and closures that a photo can hide."],
+        ["Mixing up views later", "Circle your view's letter on the envelope and on the instruction sheet right away."]
+      ],
+      "practice": "Look at three patterns, in a store or online. For each, write down the views, how many pieces your favorite view uses, and its closures (zipper, buttons, elastic, or none).",
+      "more": "Indie and PDF patterns put the same information on a web page or in the first pages of the PDF instead of on an envelope."
+    },
+    {
+      "id": "l4-envelope-back", "title": "The envelope back: fabric, notions, and yardage", "minutes": 14,
+      "summary": "The back tells you what fabric to buy, what else you need, and how much.",
+      "learn": ["What each section of the back is for", "How to read the yardage chart for your view, width, and size", "What finished measurements tell you"],
+      "need": ["The sample pattern in this lesson, or a real one", "A ruler or a strip of paper to read across the chart"],
+      "words": ["notions", "yardage chart", "yardage", "finished measurements", "with nap", "size chart"],
+      "steps": [
+        { "text": "The back is packed with small print, but it's always the same few sections: a description, suggested fabrics, notions, a body measurement chart, a yardage chart, and finished garment measurements.", "dia": ["l4Envelope", { "side": "back" }] },
+        { "text": "**Description** says what the garment is, for example: 'Pull-on pants with an elastic waist. View B has cuffs. View C has side pockets and a drawstring.' Read it to check you picked the right view.", "dia": ["l4Envelope", { "side": "back", "hi": "desc" }] },
+        { "text": "**Fabrics** lists what the pattern was designed for, like cotton, flannel, linen, or rayon challis. Choose from this list for your first makes. Warnings like 'not suitable for obvious diagonals' or 'extra fabric needed to match plaids' are there to save you trouble.", "dia": ["l4Envelope", { "side": "back", "hi": "fabrics" }], "why": "The shape and the ease were planned for fabric of a certain weight and drape. A stiff fabric in a pattern meant for a drapey one can look boxy." },
+        { "text": "**[[notions|Notions]]** are everything except the fabric: thread, elastic, buttons, zippers, and interfacing. Our sample asks for {{1 yd}} of elastic {{1 in}} wide, and thread.", "dia": ["l4Envelope", { "side": "back", "hi": "notions" }] },
+        { "text": "The **body measurement chart** is how you choose your size. You'll use it properly in a later lesson. For now, know this: pattern sizes are not the sizes on clothes in shops.", "dia": ["l4Envelope", { "side": "back", "hi": "chart" }] },
+        { "text": "Your fabric's width matters next. It's printed on the end of the bolt or the listing. Common widths are 44 to 45 in (112 to 115 cm) and 58 to 60 in (147 to 150 cm). Measure from selvedge to selvedge if you're not sure.", "dia": ["grain", { "show": "selvedge" }] },
+        { "text": "The [[yardage chart]] says how much fabric to buy. Find your view, then the row for your fabric's width, then your size's column. Where they meet is your amount. Here: view A, size 14, on 45 in (115 cm) fabric needs {{2 1/2 yd}}.", "dia": ["l4Yardage", { "pick": { "view": "A", "w": 45, "size": 14 } }], "tip": "Lay a ruler under your row and run a finger down your column. It's easy to slip a line." },
+        { "text": "Watch the stars. Here, one star means the amount works with or without [[with nap|nap]], and two stars mean without nap only. If your fabric has nap or a one-way print, use a row that allows it. A with-nap amount for narrower fabric always works on wider fabric too.", "dia": ["l4Yardage", { "views": ["A"], "pick": { "view": "A", "w": 60, "size": 14 } }], "why": "With nap, every piece has to point the same way, so pieces can't be turned around to squeeze in. That often takes more fabric." },
+        { "text": "**[[finished measurements|Finished measurements]]** are the size of the garment itself, not your body. Here, size 14 has a finished hip of {{46 in}}. You'll compare these with your own measurements in the ease lesson.", "dia": ["l4Chart", { "rows": ["fhip", "flen"], "size": 14 }] },
+        { "text": "When you buy, add a little extra: about 10% for a fabric that shrinks when you [[prewash]] it, like cotton or linen, and more for large plaids or one-way prints.", "dia": ["l4Yardage", { "views": ["A"], "pick": { "view": "A", "w": 45, "size": 14 } }] }
+      ],
+      "looks": "For any pattern, you can find the fabric to buy, the notions, and the exact yardage for your view, size, and fabric width.",
+      "mistakes": [
+        ["Reading the wrong row or column", "Use a ruler under the row, and say your view, width, and size out loud as you find them."],
+        ["Buying exactly the chart amount of a fabric that shrinks", "Add about 10% for prewashing, and more for plaids or one-way prints."],
+        ["Using a 'without nap' amount for corduroy or a one-way print", "Use a row that allows nap, even if it's for narrower fabric."]
+      ],
+      "practice": "In the sample yardage chart, find view B, size 10, on 60 in (150 cm) fabric. Then find view C, size 16, on 45 in (115 cm) fabric. Answers: {{1 1/4 yd}} and {{1 3/8 yd}}."
+    },
+    {
+      "id": "l4-flats", "title": "Design eye: reading a line drawing", "kind": "design", "minutes": 8,
+      "summary": "A line drawing is a map of the garment. Learn to read its seams, darts, and stitching.",
+      "learn": ["What solid and dashed lines mean", "How to spot seams, darts, and closures", "How a drawing hints at how many pieces there are"],
+      "need": ["The line drawings from any pattern, or the ones here"],
+      "words": ["technical flat", "seam", "dart", "topstitch", "center back", "crotch seam", "inseam"],
+      "steps": [
+        { "text": "A [[technical flat|line drawing]] shows a garment laid flat, front and back, with no body inside. Solid lines inside the outline are seams or edges. Every seam means two pieces are joined there.", "dia": ["l4Flat", { "hi": ["shoulder", "armhole", "side"] }] },
+        { "text": "Short V shapes pointing in from a seam are [[dart|darts]]. A dart is a wedge of fabric folded and stitched to a point. It shapes flat fabric around a curve of the body, like the bust.", "dia": ["l4Flat", { "hi": ["dart"] }] },
+        { "text": "Dashed lines are [[topstitch|topstitching]], stitching that shows on the outside. Here it holds down the neckline and the hem. Notch diagrams draw stitching as red dashes in the same way.", "dia": ["l4Flat", { "hi": ["topstitch"] }] },
+        { "text": "The back view shows what the front hides. A line down the middle is a [[center back]] seam, so the back is two pieces. The little circle and loop at the neck is a button closure.", "dia": ["l4Flat", { "hi": ["cb", "button"] }] },
+        { "text": "Pants drawings have their own signs. Ripples at the waist mean elastic. The short line from the waist down the middle is the [[crotch seam]]. The inside edges of the legs are the [[inseam|inseams]].", "dia": ["l4Flat", { "kind": "pants", "hi": ["elastic", "crotch", "inseam"] }] },
+        { "text": "Dashed lines near the waist and hems are the stitching that holds the casing and the hems. Shapes on the back, like these, are patch pockets.", "dia": ["l4Flat", { "kind": "pants", "hi": ["hem", "patch"] }] },
+        { "text": "Now count the pieces. Each area closed in by seams and edges is usually one pattern piece, cut once or twice. View A of the pants is a front and a back, each cut twice: four pieces of fabric from two pattern pieces.", "dia": ["l4Views", { "mode": "pieces", "hi": "A" }] }
+      ],
+      "looks": "You can look at a line drawing and point out every seam, dart, closure, and line of topstitching, and guess how many pieces it takes.",
+      "mistakes": [
+        ["Reading dashed lines as seams", "Dashed lines are stitching you can see. Solid lines are seams and edges."],
+        ["Forgetting the back view", "Always check it. Back seams, zippers, and pockets often only show there."]
+      ],
+      "practice": "Find the line drawing of a garment you'd like to make. List its seams, darts, closures, and topstitching. Then check your list against the pattern's piece list."
+    },
+    {
+      "id": "l4-instructions", "title": "The instruction sheet and its abbreviations", "minutes": 10,
+      "summary": "The instruction sheet walks you through every step. It has its own little language, and it takes ten minutes to learn.",
+      "learn": ["The parts of an instruction sheet", "How to read the shading key", "Common abbreviations", "How to check a pattern's seam allowance"],
+      "need": ["An instruction sheet from any pattern, or the sample here", "A highlighter or pencil"],
+      "words": ["instruction sheet", "cutting layout", "right side", "wrong side", "right sides together", "seam allowance", "center front", "center back"],
+      "steps": [
+        { "text": "An [[instruction sheet]] (also called a guide sheet) usually has five parts: the pattern pieces, cutting layouts, a key, abbreviations and terms, and numbered sewing steps.", "dia": ["l4Instr", {}] },
+        { "text": "**Pattern pieces**: small pictures of every piece, with its number and name. Find the ones for your view. You'll cut them out of the tissue, or trace them (coming up soon).", "dia": ["l4Instr", { "hi": "pieces" }] },
+        { "text": "**[[cutting layout|Cutting layouts]]**: maps of how to place the pieces on the fabric, one for each view, fabric width, and group of sizes. Circle the one that matches yours.", "dia": ["l4Instr", { "hi": "layouts" }] },
+        { "text": "The **key** shows how the drawings shade fabric: [[right side]], [[wrong side]], lining, interfacing (a stiffening layer you'll meet in level 5), and the pattern paper. Read it before any step. Mixing these up means sewing the wrong faces together.", "dia": ["l4Instr", { "part": "key" }] },
+        { "text": "**Abbreviations** save space. The ones you'll see most are RS, WS, [[right sides together|RST]], SA, CF, CB, WOF, and SS. Every company has its own short list, so read the one on your sheet.", "dia": ["l4Instr", { "part": "abbr" }] },
+        { "text": "**Sewing steps** are numbered and in order. Before you start, read them all once, start to finish. Then work one step at a time and tick each one off.", "dia": ["l4Instr", { "hi": "steps" }], "why": "Reading ahead catches things like 'finish the edges before sewing' or 'transfer the dots now,' which are hard to fix later." },
+        { "text": "Check the [[seam allowance]]. It's usually printed near the top of the sheet. Most US store patterns use {{5/8 in}}, like Notch. Many indie and European patterns use {{3/8 in}}, {{1/2 in}}, or 1 cm, and a few include no seam allowance at all.", "dia": ["sew", { "guide": true, "sewn": 70 }], "warn": "If a pattern says 'seam allowance not included,' add {{SA}} beyond every sewn edge when you trace or cut (not along folds). Measure out from the line with a ruler or seam gauge and join the marks." }
+      ],
+      "looks": "You can find your view's pieces, your layout, and the first step, you know every abbreviation, and you know the seam allowance to use.",
+      "mistakes": [
+        ["Jumping straight to step 1", "Read every step once first. It takes five minutes and saves an hour."],
+        ["Using {{5/8 in}} on a pattern made for {{3/8 in}}", "Find the seam allowance on the sheet and use it for every seam, unless a step says otherwise."]
+      ],
+      "practice": "On a real or printed instruction sheet, highlight everything for your view: its pieces, its layout, and any steps marked for that view only. Write the seam allowance at the top."
+    },
+    {
+      "id": "l4-ease", "title": "Ease: why patterns are bigger than you", "minutes": 10,
+      "summary": "Patterns add room on purpose. Knowing how much helps you pick a size and a style.",
+      "learn": ["What ease is", "Wearing ease and design ease", "How to work out ease from the charts"],
+      "need": ["A tape measure", "A woven pair of pants you like the fit of", "Your hip measurement from the Measure tab"],
+      "words": ["ease", "wearing ease", "design ease", "finished measurements"],
+      "why": "Hold a pattern piece up to yourself and it looks far too big. That extra room is called ease, and it's planned.",
+      "steps": [
+        { "text": "[[Ease]] is the difference between your body and the garment. Without it, woven clothes would be skin-tight, and you couldn't sit, reach, or breathe deeply.", "dia": ["l4Ease", { "kind": "ring" }] },
+        { "text": "Start with your body measurement. For pants, that's your full hip, from the Measure tab.", "dia": ["l4Ease", { "kind": "bars", "step": 1 }] },
+        { "text": "[[Wearing ease]] is the least room you need to move. For a woven garment, it's roughly {{2 in}} at the hip, {{2 in}} to {{3 in}} at the bust, and about {{1 in}} at the waist.", "dia": ["l4Ease", { "kind": "bars", "step": 2 }] },
+        { "text": "[[Design ease]] is the extra room the designer adds for the style: a relaxed fit, a flowing dress, or roomy pajamas. Body plus wearing ease plus design ease gives the garment's finished size.", "dia": ["l4Ease", { "kind": "bars", "step": 3 }] },
+        { "text": "Fits range from close to roomy. Pajama pants are relaxed to roomy, often {{6 in}} to {{10 in}} or more of ease at the hip. Some envelopes name the fit, like 'close-fitting' or 'loose-fitting.'", "dia": ["l4Ease", { "kind": "compare" }] },
+        { "text": "Work out the ease yourself: finished measurement minus body measurement. In our sample, every size has {{7 in}} of ease at the hip.", "dia": ["l4Chart", { "rows": ["hip", "fhip", "ease"], "title": "Hip: body and finished" }] },
+        { "text": "Check against clothes you love. Lay woven pants flat, measure straight across the hips, and double it. Subtract your hip. That's the amount of ease you like.", "dia": ["l4Ease", { "kind": "flat" }], "tip": "Write it in your notes. Next time, compare it with a pattern's finished hip before you buy fabric." }
+      ],
+      "looks": "You can work out a pattern's ease from its charts and decide whether that much room suits you.",
+      "mistakes": [
+        ["Going down a size because the finished size looks huge", "That's planned ease. Choose by your body measurements first, then use the finished measurements to fine-tune."],
+        ["Measuring a garment while stretching it", "Lay it flat and smooth, don't pull, and measure straight across."]
+      ],
+      "practice": "Measure the hip of two pants you own (flat, across, doubled). Work out the ease of each, and note which fit you prefer.",
+      "more": "Knits can have no ease or even negative ease: the garment is smaller than you and stretches to fit. You'll meet that in level 9."
+    },
+    {
+      "id": "l4-size", "title": "Picking your size from your measurements", "minutes": 12,
+      "summary": "Pattern sizes aren't shop sizes. Your tape measure picks the size, not the label in your clothes.",
+      "learn": ["Why pattern sizes differ from shop sizes", "Which measurement to use for pants and for tops", "What to do between sizes"],
+      "need": ["Your measurements in the Measure tab: full bust, high bust, waist, and hip", "The sample size chart here, or your pattern's chart"],
+      "words": ["size chart", "high bust", "finished measurements", "ease"],
+      "why": "Many people are two or three sizes bigger in patterns than in shops. That's normal. Pattern sizing has its own charts and never followed shop sizes.",
+      "steps": [
+        { "text": "Take or check your measurements in the Measure tab: full bust, high bust, waist, and hip at least. Measure over the underwear you'll wear with the garment, snug but not tight.", "dia": ["body", { "m": "hip" }] },
+        { "text": "Find the [[size chart|body measurement chart]] on the envelope back. Each column is a size, and each row is a body measurement. These are body numbers, not garment numbers: the pattern adds ease on top.", "dia": ["l4Chart", {}] },
+        { "text": "**For pants and skirts, choose by your hip.** The hip is the hardest place to add room. The waist is easy to adjust, and an elastic waist adjusts itself.", "dia": ["l4Chart", { "row": "hip" }], "why": "Taking in a waist is a quick fix. Adding room at the hip once it's cut is not." },
+        { "text": "Between two sizes? Choose the larger one, then check its finished measurements. Example: a hip of {{38 1/2 in}} sits between size 12 and size 14, so start with 14.", "dia": ["l4Chart", { "rows": ["hip"], "size": 14, "you": { "row": "hip", "v": 38.5 } }] },
+        { "text": "**For tops and dresses, start with the full bust.** But if your full bust is {{2 in}} or more bigger than your [[high bust]], read your high bust on the bust row instead. That picks a size that fits your shoulders and neck.", "dia": ["body", { "m": "highBust" }], "why": "Most patterns are drafted for a B cup. If the full bust is much bigger than the high bust, choosing by full bust makes the shoulders and neck too big. Level 6 shows how to add room at the bust instead." },
+        { "text": "Example: high bust {{34 1/2 in}}, full bust {{37 1/2 in}}. That's {{3 in}} apart, so read {{34 1/2 in}} on the bust row: size 12.", "dia": ["l4Chart", { "rows": ["bust"], "size": 12, "you": { "row": "bust", "v": 34.5 } }] },
+        { "text": "Write your sizes in pencil on the envelope, with the date. Bodies change, and your size will change with them.", "dia": ["l4Envelope", { "hi": "sizes" }] }
+      ],
+      "looks": "You have a size for pants and a size for tops, picked from your own numbers, and you can say why.",
+      "mistakes": [
+        ["Picking your shop size", "Ignore the label in your clothes. Use the chart and your tape measure."],
+        ["Measuring too tight, or over thick clothes", "Snug, not tight, over light underwear. The pattern adds the ease."],
+        ["Being one size on top and another below", "Very common. For a dress, you'll blend between them (next lesson)."]
+      ],
+      "practice": "With your own measurements, pick your size in the sample chart for pants and for a top. If they're different, write both down. You'll blend between them next.",
+      "more": "Every company has its own chart, and some change their charts over the years. Check the chart every time, even for a brand you've sewn before."
+    },
+    {
+      "id": "l4-blend", "title": "Blending between sizes", "minutes": 10,
+      "summary": "Bodies don't follow one column of the chart. On a multi-size pattern you can draw a smooth line from one size to another.",
+      "learn": ["How nested size lines work", "How to blend from one size to another", "When you don't need to blend"],
+      "need": ["A multi-size pattern, or the drawing here", "A pencil and a highlighter", "A clear ruler", "Optional: a curved ruler"],
+      "words": ["multi-size pattern", "blend sizes", "cutting line"],
+      "steps": [
+        { "text": "A [[multi-size pattern]] prints several sizes on each piece, one inside the other. Each size has its own line style: solid, dashed, dotted, and so on. The key on the tissue says which is which.", "dia": ["l4Multi", {}] },
+        { "text": "Follow your one line all the way around the piece. Highlight it first, so you don't drift onto a neighbor's line in the busy spots.", "dia": ["l4Multi", { "hi": 14 }] },
+        { "text": "To [[blend sizes|blend]], find your size at each body point. Say your waist is a 12 and your hip is a 16. Mark the size 12 line at the waist and the size 16 line at the hip.", "dia": ["l4Multi", { "marks": [12, 16] }], "tip": "For elastic-waist pants you rarely need to blend. Choose by the hip, and the elastic takes care of the waist." },
+        { "text": "Draw a smooth line between the marks, following the curve of the lines around it. Spread the change over several inches. Below the hip, follow size 16 down to the hem.", "dia": ["l4Multi", { "blend": [12, 16] }] },
+        { "text": "Make the same change on every edge that meets it. If you blend the front side seam, blend the back side seam the same way, so the seams match and the notches still line up.", "dia": ["l4Pants", { "step": "pieces" }] }
+      ],
+      "looks": "One smooth, continuous cutting line that starts on one size and ends on another, with no corners or jumps, on both matching edges.",
+      "mistakes": [
+        ["Blending on one piece only", "Blend the matching edge too, or the seam won't line up."],
+        ["A sharp jog between sizes", "Spread the change over a few inches and use a curved ruler."],
+        ["Trying to fix a very full bust by blending", "A full bust {{2 in}} or more bigger than the high bust needs a bust adjustment, which you'll learn in level 6."]
+      ],
+      "practice": "On paper, draw three nested curves about {{1/2 in}} apart, like the drawing. Blend from the inside curve at the top to the outside curve at the bottom."
+    },
+    {
+      "id": "l4-markings", "title": "Pattern markings", "minutes": 15,
+      "summary": "Pattern pieces are covered in little symbols. Each one tells you how to cut, match, or sew.",
+      "learn": ["The piece label, grainline, and place-on-fold mark", "Cutting lines, notches, and dots", "Darts, lengthen/shorten lines, and button marks"],
+      "need": ["A pattern piece from any pattern, or the drawings here"],
+      "words": ["grainline", "place on fold", "cutting line", "stitching line", "notch", "dot", "dart", "lengthen/shorten line"],
+      "hero": ["l4Mark", { "m": "symbols" }], "heroCap": "The marks you'll see most. Shapes vary a little between companies, so check your pattern's key.",
+      "steps": [
+        { "text": "The **piece label** says what the piece is, how many to cut, and which views use it: '1 Front, cut 1 on fold, views A and B.'", "dia": ["l4Piece", { "hi": "label" }] },
+        { "text": "The [[grainline]] is a long arrow with a head at each end. Lay it parallel to the [[selvedge]]: measure from each end of the arrow to the selvedge, and make the two numbers match.", "dia": ["l4Mark", { "m": "grain" }] },
+        { "text": "A bracket with arrows pointing at an edge means [[place on fold]]. Put that edge exactly on the fabric's fold. You get one piece that opens out twice as wide, with no seam down the middle.", "dia": ["l4Mark", { "m": "fold" }], "warn": "Never cut along the fold. It's the middle of the piece, not an edge." },
+        { "text": "The thick outer line is the [[cutting line]]. Most store patterns don't print the [[stitching line]]: it sits one seam allowance inside the cutting line.", "dia": ["l4Piece", { "hi": "cut" }] },
+        { "text": "[[notch|Notches]] are little triangles on the cutting line. They match notches on another piece, like the marks that join two pages of a map. One notch usually means a front edge, and two mean a back edge.", "dia": ["l4Mark", { "m": "notches" }], "why": "Notches line pieces up in the right spot, and the number tells you which way round they go." },
+        { "text": "On a sleeve, a single notch on one side and a double notch on the other means it only fits one way: front to front, back to back. The dot at the top meets the shoulder seam.", "dia": ["l4Mark", { "m": "match" }] },
+        { "text": "[[dot|Dots]] mark places to start, stop, turn, or match, as in 'stitch to the dot' or 'gather between the dots.' Big and small dots can mean different things, so check the key.", "dia": ["l4Mark", { "m": "dot" }] },
+        { "text": "A [[dart]] is drawn as two lines (the legs) meeting at a point, often with dots along them. Later you'll fold the fabric so the legs meet and stitch from the wide end to the point.", "dia": ["l4Mark", { "m": "dart", "step": 1 }] },
+        { "text": "The [[lengthen/shorten line]] is a pair of parallel lines. It's the place to add or take away length without spoiling the shape. A later lesson shows how.", "dia": ["l4Mark", { "m": "lengthen" }] },
+        { "text": "Buttonholes are drawn as a line with a bar at each end. Buttons are an X or a circle on the [[center front]]. If you change the length, space them evenly again.", "dia": ["l4Mark", { "m": "button" }] },
+        { "text": "Here they are together on one piece. Find each one.", "dia": ["l4Piece", { "hi": "all" }] }
+      ],
+      "looks": "You can point at every mark on a pattern piece and say what it means and what you'll do with it.",
+      "mistakes": [
+        ["A grainline that's 'close enough'", "Measure both ends to the selvedge. Even a small tilt makes pant legs twist."],
+        ["Cutting notches off", "Cut notches outward or snip them in, so you can still see them."],
+        ["Forgetting dots", "Transfer every dot before you unpin the pattern. They're hard to find again later."]
+      ],
+      "practice": "Take one piece from a pattern you own, or use the drawing here. Name every mark on it and write down what you'd do with each."
+    },
+    {
+      "id": "l4-trace", "title": "Tracing a pattern instead of cutting it", "minutes": 15,
+      "summary": "Trace your size onto new paper and keep the original whole, so every size is still there later.",
+      "learn": ["Why tracing beats cutting the tissue", "Which paper and tools to use", "How to copy every mark and label"],
+      "need": ["Pattern tissue", "Tracing paper, medical exam paper, or any thin paper you can see through", "A pencil and a fine marker", "A clear ruler", "Pattern weights, or cans from the kitchen", "Paper scissors (never your fabric shears)"],
+      "words": ["trace", "multi-size pattern", "pattern weights"],
+      "why": "Cutting out a multi-size tissue cuts off every bigger size. Tracing keeps them all, for a friend or for you in a year's time.",
+      "steps": [
+        { "text": "Press the tissue flat with a warm, dry iron. No steam: it can wrinkle and shrink the paper.", "dia": ["press", { "mode": "press" }] },
+        { "text": "Find your size line and go over it lightly with a highlighter, including any blending.", "dia": ["l4Multi", { "hi": 14 }] },
+        { "text": "Lay tracing paper on top and hold both still with [[pattern weights|weights]]. [[trace|Trace]] your line in pencil: a ruler for straight edges, a slow, steady hand for curves.", "dia": ["l4Trace", { "step": 1 }] },
+        { "text": "Copy every marking: the whole grainline, notches, dots, darts, fold brackets, and lengthen/shorten lines. Then write the label: piece name and number, your size, your view, and how many to cut.", "dia": ["l4Trace", { "step": 2 }], "tip": "Before you lift the tracing, lay it back on the tissue and count: same number of notches and dots on both?" },
+        { "text": "Cut out your copy on the line with paper scissors. Fold the original back into its envelope.", "dia": ["l4Trace", { "step": 3 }], "tip": "Keep traced pieces in a big envelope, or hang them from a clip hanger, labeled with the pattern's name." }
+      ],
+      "looks": "A clean copy in your size with every mark and label, and an original that's still whole.",
+      "mistakes": [
+        ["Paper shifting while you trace", "Use more weights, and trace one section at a time."],
+        ["A missing mark", "Check notches and dots against the tissue before you move anything."],
+        ["Following the wrong line in a crowded spot", "Highlight your line before you start."]
+      ],
+      "practice": "Trace one piece from a pattern in your size, with every mark and a full label.",
+      "more": "Many PDF patterns let you print only your size by switching off the other sizes' layers in your PDF viewer. Look for 'layers' in the pattern's printing notes."
+    },
+    {
+      "id": "l4-lengthen", "title": "Simple length changes", "minutes": 12,
+      "summary": "Taller or shorter than the pattern? Change the length at the line made for it.",
+      "learn": ["How to tell if you need a length change", "Lengthening by spreading", "Shortening by folding", "Truing the edges afterward"],
+      "need": ["Your traced pattern pieces", "Scrap paper and tape", "A ruler and pencil", "Your waist-to-floor or inseam measurement, or pants whose length you like"],
+      "words": ["lengthen/shorten line", "true", "finished measurements"],
+      "steps": [
+        { "text": "Compare first. Find the finished length on the envelope back and compare it with your waist-to-floor measurement, or with pants whose length you like. The difference is your change.", "dia": ["l4Chart", { "rows": ["flen"], "size": 14 }] },
+        { "text": "Find the [[lengthen/shorten line]] on every piece that needs the change. On pants, the front and back both have one, at the same height.", "dia": ["l4Length", { "step": "mark" }] },
+        { "text": "**To lengthen**: cut the piece apart on the line. Tape paper behind it and spread the two parts by your amount, keeping the grainline in one straight line. Tape it down.", "dia": ["l4Length", { "step": "lengthen", "amt": 2 }], "tip": "Draw a long straight line on the paper first, and line both halves of the grainline up on it." },
+        { "text": "**To shorten**: draw a second line above the first, your amount away. Fold the paper so the two lines meet, like a flat pleat, and tape it.", "dia": ["l4Length", { "step": "shorten", "amt": 2 }] },
+        { "text": "[[true|True]] the edges: draw a smooth new line across the change on each side, so there are no steps. Change the front and back by exactly the same amount.", "dia": ["l4Length", { "step": "lengthen", "amt": 1 }] },
+        { "text": "For straight legs, you can add or take off the length at the hem instead. On tapered or flared legs, use the line, or the hem width changes.", "dia": ["l4Length", { "step": "hem", "amt": 2 }] }
+      ],
+      "looks": "Front and back changed by the same amount at the same height, with smooth edges, a straight grainline, and notches that still match.",
+      "mistakes": [
+        ["Changing only one piece", "Change the front and the back by the same amount, at the same line."],
+        ["A crooked grainline", "Line up both halves of the grainline on a straight line before taping."],
+        ["Comparing cut lengths with your body", "Compare finished lengths. The cut piece also includes the hem and casing."]
+      ],
+      "practice": "On scrap paper, draw a rectangle {{8 in}} long with a lengthen/shorten line across it. Lengthen one copy by {{1 in}} and shorten another by {{1 in}}.",
+      "more": "Changing the rise (how far the crotch sits below the waist) is a separate change, made at its own line above the crotch on some patterns. You'll learn it in level 6."
+    },
+    {
+      "id": "l4-nap", "title": "Nap and one-way prints", "kind": "fabric", "minutes": 8,
+      "summary": "Some fabrics look different upside down. Spot them before you cut.",
+      "learn": ["What nap is and how to find it", "Which fabrics have nap or a one-way print", "Why it changes your layout and yardage"],
+      "need": ["A scrap of corduroy, velvet, flannel, or fleece, if you have one", "A printed fabric"],
+      "words": ["nap", "one-way print", "with nap"],
+      "steps": [
+        { "text": "[[Nap]] is a fuzzy or raised surface whose fibers lean one way, like a pet's fur. Stroke the fabric along the selvedge. It feels smooth one way and rough the other.", "dia": ["l4Nap", { "kind": "pile" }] },
+        { "text": "Napped fabrics include velvet, corduroy, faux fur, fleece, brushed flannel, and some knits. Satin and other shiny fabrics act the same way: they catch the light differently each way up.", "dia": ["l4Nap", { "kind": "pile" }] },
+        { "text": "Look at it from both ends. One way looks lighter, the other darker or richer. Cut two pieces in opposite directions and they look like two different colors.", "dia": ["l4Nap", { "kind": "shade" }] },
+        { "text": "A [[one-way print]] has motifs that only make sense one way up: trees, animals, houses, or words. Cut one leg upside down and its trees hang from the sky.", "dia": ["l4Nap", { "kind": "print" }] },
+        { "text": "For both, use a [[with nap|with-nap layout]]: the top of every piece points the same way. Chalk an arrow on the wrong side so you remember which way.", "dia": ["l4Layout", { "mode": "nap" }] },
+        { "text": "With-nap layouts can't turn pieces around to fit closer, so they may need more fabric. That's why yardage charts mark rows 'with nap' and 'without nap.'", "dia": ["l4Yardage", { "views": ["A"] }] }
+      ],
+      "looks": "Every piece cut the same way up, so the garment is one even color and every motif stands upright.",
+      "mistakes": [
+        ["Finding the nap after cutting", "Check it before you lay out: stroke it and look at it from both ends."],
+        ["Turning one small piece to save fabric", "With nap, never turn a piece head to toe, not even a pocket."]
+      ],
+      "practice": "Look at five fabrics you own or see in a shop. Sort them into three groups: nap, one-way print, or neither.",
+      "more": "Nap running up (rough when you stroke down) looks darker and richer. Nap running down looks lighter and wears smoother. Either is fine, as long as every piece matches."
+    },
+    {
+      "id": "l4-layouts", "title": "Cutting layouts", "minutes": 15,
+      "summary": "Fold the fabric and place the pieces so every one is on grain and nothing is wasted.",
+      "learn": ["Folded layouts and why they're used", "With-nap, crosswise-fold, and single-layer layouts", "When a piece goes printed side down"],
+      "need": ["Your prewashed, pressed fabric", "Your pattern pieces for one view", "The cutting layout from your instruction sheet", "A big table or a clean floor", "A ruler"],
+      "words": ["cutting layout", "place on fold", "grainline", "selvedge", "with nap", "right sides together"],
+      "steps": [
+        { "text": "Fold the [[prewash|prewashed]], pressed fabric in half lengthwise, selvedges together, usually [[right sides together]]. If the fold ripples, slide the selvedges against each other until it lies flat.", "dia": ["square", { "step": 1 }] },
+        { "text": "Find the [[cutting layout]] on your sheet for your view, fabric width, and size, and circle it.", "dia": ["l4Instr", { "hi": "layouts" }] },
+        { "text": "Place the fold pieces first, their fold edges exactly on the fold. Then add the rest, with every grainline parallel to the selvedge.", "dia": ["l4Layout", { "mode": "fold" }] },
+        { "text": "Without nap, pieces can turn head to toe to fit closer. With nap or a one-way print, every top points the same way.", "dia": ["l4Layout", { "mode": "nap" }] },
+        { "text": "Some layouts fold the fabric across instead (a crosswise fold) to fit wide pieces. The grain still runs along the selvedges. With nap, cut along the fold first and turn the top layer around, so both layers point the same way.", "dia": ["l4Layout", { "mode": "cross" }] },
+        { "text": "On a single layer, you cut one piece at a time from open fabric. Cut each piece once printed side up, then turn the pattern over (printed side down) for the second, so you get a left and a right.", "dia": ["l4Layout", { "mode": "single" }], "why": "Cutting both with the printed side up gives you two left legs." },
+        { "text": "Layout drawings show which pieces go printed side down by shading or outlining them differently. The key says how.", "dia": ["l4Instr", { "part": "key" }] },
+        { "text": "Lay out every piece before you cut anything. This is when you find out whether it all fits.", "dia": ["l4Layout", { "mode": "pants" }] }
+      ],
+      "looks": "Every piece on the fabric, every grainline parallel to the selvedge, fold pieces on the fold, and nothing hanging off an edge.",
+      "mistakes": [
+        ["A fold that isn't on grain", "The selvedges must line up all the way along. Adjust until the fold lies flat with no ripples."],
+        ["Pieces slightly off grain", "Measure both ends of every grainline to the selvedge."],
+        ["Two left legs", "On a single layer, turn the pattern over for the second cut."]
+      ],
+      "practice": "Lay out the pieces for one view on your fabric, or on a folded bedsheet for practice. Check every grainline with a ruler, but don't cut yet."
+    },
+    {
+      "id": "l4-cutting", "title": "Pinning, weights, and cutting accurately", "minutes": 12,
+      "summary": "Hold the pieces still and cut cleanly. Accurate cutting makes the sewing easy.",
+      "learn": ["Pins or weights, and where they go", "Smooth cutting with shears or a rotary cutter", "Cutting notches you can find later"],
+      "need": ["Your laid-out fabric and pattern", "Pins or pattern weights", "Sharp fabric shears, or a rotary cutter and mat", "A ruler"],
+      "words": ["pattern weights", "rotary cutter", "grainline", "notch", "cutting line"],
+      "steps": [
+        { "text": "Check the grain one last time: measure from both ends of each [[grainline]] to the selvedge.", "dia": ["l4Pin", { "mode": "grain" }] },
+        { "text": "Pin inside the cutting line and across the edge, about every {{4 in}} to {{6 in}}, plus one at each corner. Go through both layers, and keep the paper flat.", "dia": ["l4Pin", { "mode": "pins" }] },
+        { "text": "Or use [[pattern weights]]: cans, big washers, or smooth stones all work. They're faster, and nothing goes through the fabric. Weights are best with a [[rotary cutter]].", "dia": ["l4Pin", { "mode": "weights" }] },
+        { "text": "Cut with long, smooth strokes, using the middle to back of the blades. Keep the lower blade on the table and your other hand flat on the pattern beside the cut.", "dia": ["l4Cut", { "mode": "shears" }], "why": "Lifting the fabric to cut shifts the layers, so the top and bottom pieces come out different." },
+        { "text": "On tight curves, take shorter cuts and walk around the table instead of turning the fabric.", "dia": ["l4Cut", { "mode": "curve" }] },
+        { "text": "Cut [[notch|notches]] outward as little points, or snip into the seam allowance {{1/4 in}} or less. Never snip as far as the stitching line.", "dia": ["l4Cut", { "mode": "notch" }] },
+        { "text": "Leave the pattern on until you've transferred every dot and dart (next lesson).", "dia": ["l4Piece", { "hi": ["dot", "dart"] }] }
+      ],
+      "looks": "Smooth edges right on the line, notches you can see, and top and bottom layers that match.",
+      "mistakes": [
+        ["Choppy edges", "Take long strokes, and close the blades only about three quarters of the way each time."],
+        ["Pins lifting and bending the paper", "Use fewer pins, flat to the table and inside the line."],
+        ["Shears that chew", "Cut only fabric with them, and get them sharpened."]
+      ],
+      "practice": "Fold a scrap in half and cut a test shape through both layers: one curve, one corner, and two notches. Compare the two layers."
+    },
+    {
+      "id": "l4-marking", "title": "Transferring marks", "minutes": 12,
+      "summary": "Move dots, darts, and other marks from the paper to the fabric before you unpin.",
+      "learn": ["Snips, pin and chalk, tracing paper and wheel, and tailor's tacks", "Which method suits which fabric", "Why marks go on the wrong side"],
+      "need": ["Cut pieces with the pattern still pinned on", "Tailor's chalk or a washable marking pen", "Optional: dressmaker's tracing paper and a tracing wheel", "A hand needle and thread in a contrasting color"],
+      "words": ["tailor's chalk", "snip", "tracing paper", "tracing wheel", "tailor's tack", "dot", "dart"],
+      "steps": [
+        { "text": "Test first. Mark a scrap and make sure the mark comes out the way the packet says: brushing, water, or washing. Put marks on the wrong side.", "dia": ["tools", { "list": ["chalk", "pen"] }] },
+        { "text": "**[[snip|Snips]]** are the quickest: tiny cuts, {{1/8 in}} to {{1/4 in}} deep, into the seam allowance. Use them for notches, the ends of fold lines, and the middle of a fold edge.", "dia": ["l4Cut", { "mode": "notch" }] },
+        { "text": "**Pin and chalk**: push a pin straight down through the dot and both layers. Chalk where it comes out on top. Turn the layers over and chalk where it comes out underneath.", "dia": ["l4Transfer", { "mode": "pin" }] },
+        { "text": "Then lift off the pattern and join the dots with [[tailor's chalk|chalk]] and a ruler, for darts and placement lines.", "dia": ["l4Transfer", { "mode": "chalk" }] },
+        { "text": "**[[tracing paper|Tracing paper]] and a [[tracing wheel]]**: slide the paper's colored side against the wrong side of each layer. With two layers right sides together, that's one sheet under the bottom layer and one between the pattern and the top layer.", "dia": ["l4Transfer", { "mode": "stack" }] },
+        { "text": "Roll the wheel firmly along each line once, with a ruler for straight lines. Lift a corner to check it shows on both layers.", "dia": ["l4Transfer", { "mode": "wheel" }] },
+        { "text": "**[[tailor's tack|Tailor's tacks]]** suit fabrics where chalk won't show or might stain, like silk and wool. With doubled thread and no knot, take a loose stitch through the dot and both layers, leaving a loop and long tails.", "dia": ["l4Transfer", { "mode": "tack", "step": 1 }] },
+        { "text": "Gently pull the layers apart and snip the threads between them. Each layer keeps a little tuft that marks the dot.", "dia": ["l4Transfer", { "mode": "tack", "step": 2 }] }
+      ],
+      "looks": "Every notch, dot, and dart on both pieces, easy to see on the wrong side, with nothing showing on the right side.",
+      "mistakes": [
+        ["Marks that won't come out", "Always test on a scrap. On light or delicate fabric, use chalk or tailor's tacks."],
+        ["Marking the right side", "Marks go on the wrong side. When a mark must show on the outside, like a pocket position, use tacks or a removable pen."],
+        ["Snips that go too deep", "Keep snips well inside the seam allowance: {{1/4 in}} at most."]
+      ],
+      "practice": "On two layers of scrap fabric, mark the same dart three ways: pin and chalk, tracing wheel (if you have one), and tailor's tacks. Note which you like best."
+    },
+    {
+      "id": "l4-pajamas", "title": "Project: elastic-waist pajama pants", "kind": "project", "minutes": 180,
+      "summary": "Your first garment from a real pattern. Choose it, size it, cut it, mark it, and sew it.",
+      "finished": "Your size, from your pattern's chart",
+      "learn": ["Choosing a beginner pattern and your size", "Reading a real yardage chart and cutting layout", "Sewing a crotch seam that lasts", "Making an elastic casing"],
+      "fabric": ["Woven cotton, flannel, lawn, or quilting cotton (prewashed). Buy the amount on your pattern's yardage chart for your view, size, and fabric width. Long pants usually take about {{2 1/4 yd}} to {{3 yd}} of 44 in (112 cm) wide fabric."],
+      "need": ["A beginner pajama-pants or pull-on-pants pattern with an elastic waist, store-bought or PDF", "Elastic in the width and length your pattern lists, often {{1 in}} wide", "Matching all-purpose thread", "A large safety pin", "Pins or weights, chalk, a ruler, and a tape measure", "Tracing paper, if you trace your size", "An iron"],
+      "words": ["pattern", "inseam", "crotch seam", "casing", "elastic", "notch", "cutting layout", "right sides together"],
+      "why": "Pajama pants are the classic first garment: a loose fit, no zipper, and only a few pieces, but they take you through the whole pattern process.",
+      "hero": ["l4Pants", { "step": "done" }],
+      "steps": [
+        { "text": "**Choose a pattern.** Look for pajama pants or pull-on pants marked easy, with an elastic waist. Most have two main pieces, a front and a back, and some have a one-piece leg with no side seam. Check the line drawing: no fly and no zipper.", "dia": ["l4Envelope", { "hi": ["level", "views"] }] },
+        { "text": "**Pick your size by your hip**, using the Measure tab and your pattern's chart. Between sizes, go up. Check the finished hip: pajamas should have plenty of [[ease]].", "dia": ["l4Chart", { "rows": ["hip"], "size": 14, "you": { "row": "hip", "v": 38.5 } }] },
+        { "text": "Compare the finished length with your waist-to-floor measurement, and lengthen or shorten both pieces at the line if you need to.", "dia": ["l4Length", { "step": "mark" }] },
+        { "text": "**Read the yardage** for your view, size, and fabric width, and buy about 10% extra for shrinking. Check the notions for the elastic's width and length.", "dia": ["l4Yardage", { "views": ["A"], "pick": { "view": "A", "w": 45, "size": 14 } }] },
+        { "text": "[[prewash|Prewash]] and dry the fabric the way you'll wash the pants. Press it.", "dia": ["press", { "mode": "press" }] },
+        { "text": "**Check your pattern's seam allowance** and use it for every seam. Many pajama patterns use {{5/8 in}}, but some use {{1/2 in}} or {{3/8 in}}. If yours includes none, add {{SA}} beyond every sewn edge when you trace.", "dia": ["sew", { "guide": true, "sewn": 70 }] },
+        { "text": "Trace or cut out your size, with every mark. The front and back look alike, so label each piece clearly.", "dia": ["l4Pants", { "step": "pieces" }], "tip": "The back has the deeper, longer crotch curve and usually two notches on it. The front's is shorter, with one." },
+        { "text": "Fold the fabric, find your [[cutting layout]], and lay out the pieces with grainlines parallel to the selvedge. Pin or weight them, then cut. Snip the notches or cut them outward.", "dia": ["l4Layout", { "mode": "pants" }] },
+        { "text": "Before unpinning, chalk a 'B' on the wrong side of each back piece, and transfer any dots.", "dia": ["l4Pants", { "step": "marks" }] },
+        { "text": "Finish the raw edges of the side seams, inseams, and crotch with a zigzag, now or after each seam. Follow your pattern if it suggests something else.", "dia": ["finish", { "kind": "zigzag" }] },
+        { "text": "**Side seams** (skip this if your pattern has a one-piece leg): pin a front to a back, [[right sides together]], along the outside edge, matching notches. Sew at your pattern's seam allowance and press open. Repeat for the other leg.", "dia": ["l4Pants", { "step": "side" }] },
+        { "text": "**Inseams**: pin the front and back of each leg right sides together along the inside leg, matching notches and the crotch points. Sew from the hem up to the crotch and press open. You now have two leg tubes.", "dia": ["l4Pants", { "step": "inseam" }], "tip": "Matching the crotch points exactly matters more than matching the hems. You can even out the hems later." },
+        { "text": "Turn one leg right side out and leave the other wrong side out. Slip the right-side-out leg inside the other one, so their right sides face. Line up the crotch curves, with the inseams meeting at the bottom and the notches matched on each side. Pin all around.", "dia": ["l4Pants", { "step": "nest" }] },
+        { "text": "Sew the **[[crotch seam]]** in one go, from the front waist, around the curve, to the back waist.", "dia": ["l4Pants", { "step": "crotch" }], "warn": "Only the curved edge gets sewn. Don't stitch across a leg opening." },
+        { "text": "**Reinforce the curve**: stitch a second row in the curved part, between the notches, {{1/8 in}} inside the first row (in the seam allowance). Trim the seam allowance there to about {{1/4 in}} and zigzag the trimmed edges together. Turn the pants right side out.", "dia": ["l4Pants", { "step": "reinforce" }], "why": "The bottom of the crotch takes the most strain when you sit and bend. Two rows of stitching keep it from popping." },
+        { "text": "**Casing**: at the waist, fold the raw edge to the wrong side by the first amount your pattern gives (often {{3/8 in}}) and press. Fold again by the casing depth (often a little more than the elastic width) and press.", "dia": ["fold", { "step": 3, "a": 0.375, "b": 1.25 }] },
+        { "text": "Stitch close to the lower fold all the way around, leaving a {{2 in}} gap at the back for the elastic. Backstitch at both ends of the gap.", "dia": ["panel", { "w": 12, "h": 3, "side": "wrong", "folds": [[0, 1.5, 12, 1.5]], "stitch": [[[0, 1.35], [0.6, 1.35]], [[2.6, 1.35], [12, 1.35]]], "gap": [[0.6, 1.35, 2.6, 1.35]], "labels": [[1.6, 2.4, "Gap"]], "label": "Waist casing, inside view" }] },
+        { "text": "Cut the elastic to your pattern's length. Or wrap it around your waist where you'll wear the pants, snug but comfy, and add {{1 in}} for the overlap. Pin the safety pin to one end and work it through the casing. Pin the other end to the pants so it can't slip in.", "dia": ["l4Pants", { "step": "elastic" }], "tip": "Bunch the fabric up over the pin, then hold the pin and slide the fabric back. Check for twists as you go." },
+        { "text": "Overlap the elastic ends {{1 in}} and zigzag them together, back and forth a few times. Make sure the elastic isn't twisted.", "dia": ["l4Pants", { "step": "join" }] },
+        { "text": "Let the elastic slide into the casing and stitch the gap closed. Spread the gathers evenly. To stop the elastic twisting in the wash, stitch through it at each side seam (or at each side, if your pattern's legs have no side seam).", "dia": ["panel", { "w": 12, "h": 3, "side": "wrong", "folds": [[0, 1.5, 12, 1.5]], "stitch": [[0, 1.35], [12, 1.35]], "label": "Gap closed" }] },
+        { "text": "**Hems**: try the pants on and check the length. Fold the hem up as your pattern says (often {{1/2 in}}, then {{1 in}}), press, and stitch close to the inner fold.", "dia": ["fold", { "step": 4, "a": 0.5, "b": 1 }] },
+        { "text": "Give everything a final press. Sew a ribbon loop or label to the back of the waist so you always know which side is the back.", "dia": ["l4Pants", { "step": "done" }] }
+      ],
+      "looks": "Pants that pull on easily, with seams that meet neatly at the crotch, an even casing with elastic lying flat, and level hems.",
+      "mistakes": [
+        ["Front and back swapped", "The back crotch curve is deeper and has two notches. Check before you sew the crotch seam."],
+        ["The crotch seam splits", "Reinforce the curve with a second row of stitching, and use a normal stitch length (about 2.5 mm)."],
+        ["Elastic twisted in the casing", "Untwist it, then stitch through the casing and elastic at each side seam (or at each side, if there's no side seam)."],
+        ["A leg sewn shut", "In the crotch step, only the curved edge is sewn. Unpick the stitches across the leg."]
+      ],
+      "practice": "Wear them! Then write in your notes: the pattern, the size you cut, any length change, the seam allowance it used, and what you'd change next time. Those notes are the start of your fit notes for level 6."
+    }
+  ]
+}

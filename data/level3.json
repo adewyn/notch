@@ -1,0 +1,338 @@
+{
+  "skill": "Fabric reader",
+  "check": [
+    "Name the main fibers, with one strength and one weakness of each",
+    "Tell plain, twill, and satin weaves apart by looking",
+    "Describe any fabric by its weight, drape, and hand",
+    "Do a burn test safely and read the result",
+    "Read a care label and prewash a fabric the way its fiber needs",
+    "Choose a fabric that suits a project, and spot nap and one-way prints",
+    "Work out how much fabric to buy for my size and fabric width",
+    "Fuse interfacing smoothly, with no bubbles"
+  ],
+  "lessons": [
+    {
+      "id": "l3-plant-fibers", "title": "Plant fibers: cotton and linen", "kind": "fabric", "minutes": 10,
+      "summary": "Every fabric starts as a fiber. Meet the two plant fibers you'll sew most.",
+      "learn": ["What a fiber is, and how it becomes fabric", "How cotton and linen behave", "What each one is good for"],
+      "need": ["A cotton scrap (quilting cotton or an old cotton shirt)", "A linen scrap, or a linen tea towel", "Your phone camera"],
+      "words": ["fiber", "yarn", "cotton", "linen"],
+      "hero": ["l3Spin", {}],
+      "steps": [
+        { "text": "A [[fiber]] is a single hair-thin strand. Fibers are twisted together into [[yarn]], and yarn is woven or knitted into fabric.", "dia": ["l3Spin", { "hi": 1 }], "why": "How a fabric feels, washes, presses, and wears starts with its fiber. Learn the fibers and you can guess how a new fabric will behave." },
+        { "text": "Plant fibers are made of cellulose, the same tough stuff as paper and leaves. That's why cotton and linen breathe, soak up water, and can take a hot iron.", "dia": ["l3Fibers", { "show": "plant" }] },
+        { "text": "[[cotton|Cotton]] grows as fluffy pods around the seeds of the cotton plant. Its short fibers are flat and twisted, like little ribbons, so they grip each other well.", "dia": ["l3Fibers", { "show": ["cotton"], "hi": "cotton" }] },
+        { "text": "Cotton is the easiest fiber to sew. It's stable, presses crisply, and forgives mistakes. It's breathable, washable, and strong. The downsides: it wrinkles, can shrink, and dries slowly.", "dia": ["l3Hand", { "name": "Cotton poplin", "at": [0.6, 0.2, 0.35, 0.55, 0.5] }], "tip": "This chart shows how a fabric feels. You'll learn to fill one in yourself in the lesson on weight, drape, and hand." },
+        { "text": "[[linen|Linen]] comes from the stems of the flax plant. Its fibers are long and stiff, with little joints along them, so linen is crisp, very strong, and cool to wear.", "dia": ["l3Fibers", { "show": ["linen"], "hi": "linen" }] },
+        { "text": "Linen wrinkles easily (that's part of its charm), frays more than cotton, and gets softer with every wash. Press it with a hot iron while it's still a little damp.", "dia": ["l3Scrunch", {}], "tip": "Damp linen presses flat in seconds. Dry linen fights you. Keep a spray bottle of water by the iron." },
+        { "text": "Hold both scraps up to a window and zoom in with your phone. Linen yarns look uneven, thick in some places and thin in others. Cotton looks smoother and more even.", "dia": ["l3Swatches", { "list": ["cotton", "linen"] }] }
+      ],
+      "looks": "You can tell cotton from linen by feel and by a close look, and you can name one strength and one weakness of each.",
+      "mistakes": [
+        ["Thinking all linen is stiff", "Washed linen gets soft and drapey. Wash a scrap and feel the difference."],
+        ["Expecting linen not to wrinkle", "It always will. Choose it when you like a relaxed, lived-in look."]
+      ],
+      "practice": "Scrunch a cotton scrap and a linen scrap in your fist for five seconds, then let go. Which one wrinkles more? Write it in your notes.",
+      "more": "Hemp and ramie are other plant fibers that act a lot like linen. Most \"bamboo\" fabric is really bamboo pulp turned into rayon (you'll meet rayon soon). The Fabric guide in the Library has the details."
+    },
+    {
+      "id": "l3-animal-fibers", "title": "Animal fibers: wool and silk", "kind": "fabric", "minutes": 10,
+      "summary": "Warm, springy wool and smooth, shiny silk, and how to keep them happy.",
+      "learn": ["Where wool and silk come from", "Why wool is warm and silk is smooth", "How to treat them without ruining them"],
+      "need": ["A wool scrap (an old wool sweater or sock works)", "A silk scrap if you have one (an old scarf or tie)"],
+      "words": ["wool", "silk", "felting", "pressing cloth"],
+      "steps": [
+        { "text": "Animal fibers are made of protein, like your own hair. They're warm and a little stretchy, and they don't like hot water, harsh soap, or bleach.", "dia": ["l3Fibers", { "show": "animal" }] },
+        { "text": "[[wool|Wool]] is the fleece of sheep. Each fiber is crimped (wavy) and covered in tiny scales. The crimp traps air, which is why wool keeps you warm, even when it's a little damp.", "dia": ["l3Fibers", { "show": ["wool"], "hi": "wool" }], "why": "The crimp also makes wool springy. Crush it and it bounces back, so it hardly wrinkles." },
+        { "text": "Feel your wool scrap: soft, a little fuzzy, warm, and springy. Cashmere and mohair (from goats) and alpaca feel similar, because they're animal hair too.", "dia": ["l3Hand", { "name": "Wool flannel", "at": [0.3, 0.65, 0.9, 0.7, 0.1] }] },
+        { "text": "Wool is lovely to sew. Steam lets you shape it, shrink away small puckers, and press crisp edges. Use medium heat, lots of steam, and a [[pressing cloth]].", "dia": ["press", { "mode": "press" }] },
+        { "text": "Heat, soap, and rubbing make wool's scales lock together. That's [[felting]]: the fabric shrinks and thickens for good. Wool wants a cool hand wash or a wool cycle, and drying flat.", "dia": ["l3Care", { "show": ["hand", "delicate", "flat"] }], "warn": "Never put wool in a hot wash or a hot dryer unless you want felt." },
+        { "text": "[[silk|Silk]] is the thread a silkworm spins for its cocoon. One cocoon can be a single thread hundreds of meters long, so silk is smooth, shiny, and very strong for how light it is.", "dia": ["l3Fibers", { "show": ["silk"], "hi": "silk" }] },
+        { "text": "Silk drapes beautifully and feels cool in summer and warm in winter. But silk fabrics are often slippery and fine, and drops of water can leave spots. Get to know it now, and sew it later.", "dia": ["l3Swatches", { "list": ["satin", "sheer"], "labels": ["Silk satin", "Silk chiffon"] }], "tip": "Press silk on medium-low heat through a pressing cloth, and skip the spray bottle." }
+      ],
+      "looks": "You can tell wool from cotton by its warmth and spring, you know what silk feels like, and you know to keep both away from hot water.",
+      "mistakes": [
+        ["Washing wool fabric hot", "Pre-shrink wool with steam instead (see the lesson on care labels and prewashing)."],
+        ["Shiny marks after pressing wool", "Always press wool through a pressing cloth, and don't hold the iron down too long in one spot."]
+      ],
+      "practice": "Find three things you own made of wool or silk. Read their labels and write down how each one says to wash it."
+    },
+    {
+      "id": "l3-made-fibers", "title": "Made fibers: rayon, polyester, nylon, and blends", "kind": "fabric", "minutes": 12,
+      "summary": "Fibers made in factories, from plants or from oil, and why fibers get mixed.",
+      "learn": ["The difference between rayon and true synthetics", "What polyester and nylon are good and bad at", "Why fabrics are blended, and how to read the label"],
+      "need": ["Five pieces of clothing with labels", "Scraps of polyester or rayon if you have them"],
+      "words": ["rayon", "polyester", "nylon", "pilling", "spandex", "blend"],
+      "steps": [
+        { "text": "Some fibers are made in factories. There are two kinds: fibers made from plants, like rayon, and fibers made from oil, like polyester and nylon (these are called synthetics).", "dia": ["l3Fibers", { "show": "made" }] },
+        { "text": "[[rayon|Rayon]], also called viscose, is wood pulp that's dissolved and pushed through tiny holes to make new fibers. It's cellulose, like cotton, so it breathes and feels cool. Modal and lyocell are close cousins.", "dia": ["l3Fibers", { "show": ["rayon"], "hi": "rayon" }] },
+        { "text": "Rayon is famous for its drape: it flows and swishes. But it's weak when wet, can shrink a lot, and wrinkles. Wash it cool and gently, and never wring it.", "dia": ["l3Drape", { "kind": "fluid" }] },
+        { "text": "[[polyester|Polyester]] is a kind of plastic, melted and pulled into fibers. It's strong, dries fast, barely shrinks, and resists wrinkles. It also breathes less, can hold smells, and can [[pilling|pill]] (grow tiny fuzz balls).", "dia": ["l3Fibers", { "show": ["synthetic"], "hi": "synthetic" }] },
+        { "text": "[[nylon|Nylon]] is another plastic fiber: very strong, smooth, and a little stretchy. You'll find it in raincoats, bags, swimsuits, and linings.", "dia": ["l3Swatches", { "list": ["satin", "canvas"], "labels": ["Lining", "Bag cloth"] }] },
+        { "text": "Polyester and nylon melt under a hot iron. Use the cool setting (one dot), use a pressing cloth, and test on a scrap first.", "dia": ["l3Care", { "show": ["iron1", "iron2", "iron3"], "hi": ["iron1"] }], "warn": "A hot iron can melt a shiny hole in seconds, and the melted plastic sticks to the iron." },
+        { "text": "[[spandex|Spandex]] (also called elastane) is a very stretchy fiber. Just 2% to 5% mixed in gives stretch jeans and comfy tops their give.", "dia": ["l3Bolt", { "content": "97% cotton, 3% spandex", "care": "Machine wash cold, hang to dry" }] },
+        { "text": "A [[blend]] mixes fibers to get the best of each. Polyester-cotton wrinkles and shrinks less than cotton. Cotton-linen is softer and less wrinkly than linen. The label lists the percent of each fiber.", "dia": ["l3Bolt", { "content": "65% polyester, 35% cotton", "care": "Machine wash warm, tumble dry low" }], "why": "A blend usually acts most like the fiber there's more of. Wash and press it the way its fussiest fiber needs." }
+      ],
+      "looks": "You can read a fiber label and guess how the fabric will feel, wash, and press.",
+      "mistakes": [
+        ["Pressing polyester on high heat", "Turn the iron down to cool, use a pressing cloth, and test on a scrap first."],
+        ["Rayon shrank or went limp in the wash", "Prewash rayon cool and gentle, and dry it flat or on a line."]
+      ],
+      "practice": "Read the labels on five pieces of clothing. Sort them into plant, animal, and made fibers, and note any blends.",
+      "more": "Acrylic (a wool look-alike) and acetate (often used for linings) are two more made fibers you'll meet. Look them up in the Fabric guide in the Library."
+    },
+    {
+      "id": "l3-weaves", "title": "Plain, twill, and satin weaves", "kind": "fabric", "minutes": 12,
+      "summary": "The same fiber can make crisp poplin, sturdy denim, or shiny satin. The weave decides.",
+      "learn": ["How the three basic weaves are built", "How each weave changes the look and feel", "How knits and nonwovens are different"],
+      "need": ["A pair of jeans", "A cotton scrap", "Something satin if you have it (a ribbon works)", "Your phone camera"],
+      "words": ["warp", "weft", "plain weave", "twill", "satin weave", "float", "knit", "nonwoven"],
+      "steps": [
+        { "text": "On a loom, the [[warp]] threads run the long way and are held tight. The [[weft]] threads go across, weaving over and under the warp. The pattern of over and under is the weave.", "dia": ["l3Weave", { "type": "all" }], "why": "The warp runs along the lengthwise grain, parallel to the selvedge. The weft is the crosswise grain. You met both in level 2." },
+        { "text": "[[plain weave|Plain weave]] is the simplest: over one, under one, like a basket. It makes firm, crisp, hard-wearing fabric. Poplin, lawn, quilting cotton, canvas, and chiffon are all plain weaves.", "dia": ["l3Weave", { "type": "plain" }], "cap": "The box shows one repeat: two threads each way." },
+        { "text": "In a [[twill]], each thread goes over two or more threads and under one or more, and each row starts one step over. That makes diagonal lines. Look closely at your jeans: there they are.", "dia": ["l3Weave", { "type": "twill" }], "why": "The longer jumps let threads pack tighter and still move, so twills are strong, soft, and drape better than plain weaves. They hide stains well too." },
+        { "text": "Twills usually have a clear right side. On denim, the front shows mostly the dark blue warp, and the back is lighter because more of the white weft shows there.", "dia": ["l3Swatches", { "list": ["denim", "denimback"], "labels": ["Denim front", "Denim back"] }] },
+        { "text": "In a [[satin weave]], threads [[float]] over four or more threads before going under one. Those long floats make a smooth, shiny face that's slippery and easy to snag.", "dia": ["l3Weave", { "type": "satin" }], "cap": "The box shows one float." },
+        { "text": "Satin made from cotton is called sateen. It's softer and less slippery than silk or polyester satin, and it's popular for sheets.", "dia": ["l3Swatches", { "list": ["satin", "cotton"], "labels": ["Satin", "Sateen"] }], "tip": "Satin's shine changes with direction, so cut every piece the same way up. You'll learn why in the lesson on choosing fabric." },
+        { "text": "A [[knit]] isn't woven at all. It's yarn looped into rows, like a sweater. Knits stretch, don't fray, and their cut edges often curl. They get their own level later (level 9).", "dia": ["weave", { "type": "both" }] },
+        { "text": "A [[nonwoven]] is fibers pressed or bonded into a sheet, with no threads at all. Felt and most interfacing are nonwovens. They don't fray, and they have no grain.", "dia": ["l3Interfacing", { "kind": "types" }], "cap": "Interfacing comes in all three builds. More in the interfacing lesson." }
+      ],
+      "looks": "You can spot a twill's diagonal lines and a satin's shine, and tell a knit from a woven by looking and stretching.",
+      "mistakes": [
+        ["Mixing up satin and sateen", "Satin is the weave, usually in silk or polyester. Sateen is a satin weave in cotton."],
+        ["Thinking stretch always means knit", "Some wovens stretch because of spandex in the yarn. Look for loops (knit) or crossing threads (woven)."]
+      ],
+      "practice": "Zoom in with your phone on five fabrics around your home. Name the weave of each one, or say if it's a knit.",
+      "more": "There are many more weaves: basket weave (like oxford shirting), jacquard (pictures woven in), and pile weaves like velvet and corduroy, where extra yarns stand up from the surface. The Fabric guide in the Library shows examples."
+    },
+    {
+      "id": "l3-weight-drape", "title": "Weight, drape, and hand", "kind": "fabric", "minutes": 12,
+      "summary": "Three ways to describe any fabric: how heavy it is, how it hangs, and how it feels.",
+      "learn": ["What fabric weight means and how it's measured", "How to test drape", "How to describe the way a fabric feels"],
+      "need": ["Three or four different scraps, about {{12 in}} square", "A drinking glass"],
+      "words": ["fabric weight", "drape", "hand"],
+      "steps": [
+        { "text": "[[fabric weight|Fabric weight]] is how heavy a fabric is for its size. It's given in ounces per square yard (oz/yd²) or grams per square meter (g/m²). Heavier fabric is usually thicker and warmer.", "dia": ["l3Weight", {}] },
+        { "text": "Light fabrics (under about 4 oz/yd², or 135 g/m²) suit blouses, linings, and summer dresses. Medium (about 4 to 8 oz/yd², or 135 to 270 g/m²) suits shirts, skirts, and dresses. Heavy (over about 8 oz/yd², or 270 g/m²) is for jeans, jackets, and bags.", "dia": ["l3Weight", { "hi": "medium" }], "why": "Shops also say light, medium, or heavy within one type of fabric, so a \"medium\" canvas is still much heavier than any shirt fabric.", "tip": "Some shops list ounces per linear yard (a yard of the full width), which gives a bigger number. Grams per square meter is always per square meter, so it's the easiest to compare." },
+        { "text": "[[drape|Drape]] is how a fabric hangs and folds. To test it, center a {{12 in}} square over the top of a drinking glass and look at it from the side.", "dia": ["l3Drape", {}] },
+        { "text": "Stiff fabric stands out in a few wide folds. Fluid fabric falls close to the glass in lots of narrow folds. Most fabrics land somewhere in between.", "dia": ["l3Drape", { "kind": "stiff" }] },
+        { "text": "**Weight and drape are not the same thing.** Chiffon is light and fluid, but organza is just as light and crisp. Canvas is heavy and stiff, but velvet is heavy and flows.", "dia": ["l3Grid", {}], "why": "Fiber, yarn, and weave all change drape. That's why you need to know both to choose a fabric." },
+        { "text": "[[hand|Hand]] is how a fabric feels to touch. Sewists describe it with pairs of words: soft or crisp, smooth or textured, cool or warm, slippery or grippy, and springy or limp.", "dia": ["l3Hand", {}] },
+        { "text": "Rub each scrap between your fingers, scrunch it, and hold it to your cheek. Decide where it sits on each line. Here's a linen, for example: crisp, a bit textured, cool, and slow to spring back.", "dia": ["l3Hand", { "name": "Linen", "at": [0.75, 0.6, 0.15, 0.6, 0.7] }] }
+      ],
+      "looks": "You can describe any scrap by three things: its weight, its drape, and its hand.",
+      "mistakes": [
+        ["Judging a fabric only by how thick it looks", "Hang it and scrunch it too. A thin fabric can be crisp, and a thick one can be fluid."],
+        ["Testing drape on a tiny scrap", "Small pieces always look stiff. Use at least a {{12 in}} square, or unroll a length in the shop."]
+      ],
+      "practice": "Do the glass test on three scraps and put them in order from stiffest to most fluid. Write each one's weight (light, medium, or heavy), drape, and hand in your notes.",
+      "more": "You can measure weight at home: weigh a 10 cm × 10 cm square on a scale that shows 0.1 g, then multiply by 100 to get g/m². You'll try it in the swatch book project."
+    },
+    {
+      "id": "l3-design-drape", "title": "Design eye: drape shapes the silhouette", "kind": "design", "minutes": 8,
+      "summary": "The same pattern makes a different shape in a different fabric.",
+      "learn": ["How fabric changes a garment's outline", "When a design needs crisp fabric, and when it needs fluid fabric"],
+      "need": ["Two pieces of fabric about {{1/2 yd}} each: one crisp and one fluid (or a crisp cotton shirt and a flowy one)", "A belt, ribbon, or piece of elastic", "A mirror or your phone camera"],
+      "words": ["silhouette", "drape", "bias"],
+      "steps": [
+        { "text": "A [[silhouette]] is a garment's outline, the shape you'd see in its shadow. The fabric decides a lot of it. The same skirt pattern in crisp cotton and in fluid rayon makes two different shapes.", "dia": ["l3Silhouette", { "kind": "aline" }] },
+        { "text": "Crisp fabric holds its own shape. An A-line skirt stands away from the body in a clean triangle.", "dia": ["l3Silhouette", { "kind": "aline", "hi": "crisp" }] },
+        { "text": "Fluid fabric follows gravity and the body. The same A-line skirt falls closer, and its hem ripples into soft folds.", "dia": ["l3Silhouette", { "kind": "aline", "hi": "fluid" }] },
+        { "text": "Gathers show it even more. Crisp fabric puffs out from the waist. Fluid fabric falls straight down in narrow folds, with hardly any puff.", "dia": ["l3Silhouette", { "kind": "gathered" }], "why": "Gathering squeezes extra width into a seam. Stiff fabric pushes that width outward. Soft fabric lets it hang." },
+        { "text": "Cutting on the [[bias]] adds stretch and swing. In a fluid fabric, a bias skirt skims the hips and swirls at the hem. In a crisp fabric, it stands out in stiff ripples.", "dia": ["l3Silhouette", { "kind": "bias" }] },
+        { "text": "So when you plan a design, ask: should this shape stand away from me, or move with me? Volume and sharp lines need a crisp fabric. Flow and swing need drape.", "dia": ["l3Grid", {}] }
+      ],
+      "looks": "You can look at a garment and guess whether it's crisp or fluid fabric, and predict how a different fabric would change it.",
+      "mistakes": [
+        ["Choosing a fluid fabric for a shape that needs volume", "Puffy sleeves, full skirts, and boxy shapes need crisp fabric (or support, like interfacing)."],
+        ["Choosing a stiff fabric for a soft, draped design", "Cowl necks, bias skirts, and flowing pants need a fabric that falls in soft folds."]
+      ],
+      "practice": "Gather each piece of fabric around your waist with a belt and look in the mirror, or take a photo. Compare the two outlines side by side.",
+      "more": "Designers also build shape with sewing: interfacing, lining, darts, and pleats. You'll learn those in later levels."
+    },
+    {
+      "id": "l3-burn-test", "title": "The burn test", "kind": "fabric", "minutes": 15,
+      "summary": "A tiny, careful flame can tell you what a mystery fabric is made of.",
+      "learn": ["How to do a burn test safely", "How to read the flame, the smell, and what's left", "How to spot a blend"],
+      "need": ["Scraps of fabrics you know for practice (100% cotton, wool, and polyester)", "A mystery scrap to test", "Metal tweezers", "A candle in a steady holder", "A metal tray, a baking tin, or the sink", "A bowl of water", "Scissors"],
+      "words": ["burn test", "fiber", "blend"],
+      "steps": [
+        { "text": "A [[burn test]] shows a fabric's fiber family by how a tiny strip burns. Set up over a sink or a metal tray, with a bowl of water close by and nothing that can catch fire nearby: no paper, cloth, or curtains.", "dia": ["l3Burn", { "kind": "setup" }], "warn": "Tie your hair back and push up loose sleeves. Work by an open window, and don't breathe in the smoke. If you're under 18, do this with an adult." },
+        { "text": "Cut a tiny strip, about {{1/4 in}} × {{1 1/2 in}}. Hold one end with metal tweezers, never your fingers.", "dia": ["panel", { "w": 3, "h": 3, "side": "right", "pieces": [{ "x": 2.4, "y": 0.75, "w": 0.25, "h": 1.5, "side": "right2" }], "dims": [[2.65, 0.75, 2.65, 2.25, "{{1 1/2 in}}", -14]], "labels": [[1.2, 1.6, "Your scrap"]], "label": "Cut a tiny strip" }] },
+        { "text": "Bring the strip slowly to the side of the flame until it catches, then pull it away and hold it over the tray. Watch three things: the flame, the smell, and what's left.", "dia": ["l3Burn", { "kind": "setup" }], "tip": "Don't sniff the smoke straight on. Wave a little of it toward your nose with your other hand." },
+        { "text": "**Plant fibers** (cotton, linen, and rayon) catch fast, burn bright, and may glow after the flame goes out. They smell like burning paper and leave soft gray ash.", "dia": ["l3Burn", { "kind": "plant" }] },
+        { "text": "**Animal fibers** (wool and silk) burn slowly, curl away from the flame, and often go out on their own. They smell like burning hair and leave crumbly black ash.", "dia": ["l3Burn", { "kind": "animal" }] },
+        { "text": "**Synthetics** (polyester and nylon) melt and shrink away from the flame, and may drip. They smell sharp and chemical and leave a hard bead that won't crush.", "dia": ["l3Burn", { "kind": "synthetic" }], "warn": "Melted plastic sticks to skin and burns badly. Let the bead cool on the tray before you touch it." },
+        { "text": "A [[blend]] gives mixed results, like ash with hard bits in it. For a better guess, pull out one lengthwise thread and one crosswise thread and test each alone. Sometimes each direction is a different fiber.", "dia": ["l3Burn", { "kind": "blend" }] },
+        { "text": "Drop the leftovers in the water, and blow out the candle. Write down what you found. In the swatch book project, it goes on the Burn line of each card.", "dia": ["l3Swatch", { "step": "card" }] }
+      ],
+      "looks": "You can tell plant, animal, and synthetic fibers apart by flame, smell, and leftover, and you did it safely.",
+      "mistakes": [
+        ["Holding the strip in your fingers", "Always use metal tweezers. Plastic ones melt."],
+        ["Testing a big piece", "A big piece can flare up. A strip about {{1/4 in}} × {{1 1/2 in}} is plenty."],
+        ["Calling a blend 100% one fiber", "Test lengthwise and crosswise threads separately, and trust the bolt label when there is one."]
+      ],
+      "practice": "Test a known cotton, wool, and polyester scrap first, so you learn each result. Then test one mystery scrap and write down your guess.",
+      "more": "A burn test shows the family, not the exact fiber. It can't tell cotton from linen or rayon, or wool from silk. Feel, a close look, and the bolt label help with the rest."
+    },
+    {
+      "id": "l3-care", "title": "Care labels and prewashing by fiber", "kind": "fabric", "minutes": 12,
+      "summary": "Read the little symbols, and prewash every fiber the way it likes.",
+      "learn": ["How to read care symbols", "Where care info hides for fabric off the bolt", "How to prewash each fiber, and test for shrinkage"],
+      "need": ["A few clothes with care labels", "A fabric you want to prewash", "Chalk and a ruler"],
+      "words": ["care label", "bolt", "prewash", "felting", "shrinkage", "colorfast"],
+      "steps": [
+        { "text": "A [[care label]] uses five little pictures: a tub for washing, a triangle for bleach, a square for drying, an iron for ironing, and a circle for dry cleaning. An X through any of them means don't.", "dia": ["l3Care", { "show": ["tub", "tri", "sq", "ironF", "circ"], "cols": 5 }] },
+        { "text": "Dots mean heat. In the tub, one dot is cold, two is warm, and three is hot. Lines under the tub mean a gentler cycle: one line is gentle, two is very gentle.", "dia": ["l3Care", { "show": ["wash1", "wash2", "wash3", "gentle"] }] },
+        { "text": "In the square, a circle means the dryer, with dots for heat. A curve at the top means hang it on a line, and a flat line means lay it flat to dry.", "dia": ["l3Care", { "show": ["tumble1", "line", "flat", "notumble"] }] },
+        { "text": "On the iron, one dot is cool (for most synthetics), two is warm (wool, silk, and rayon), and three is hot (cotton and linen).", "dia": ["l3Care", { "show": ["iron1", "iron2", "iron3", "noiron"] }] },
+        { "text": "Fabric off the [[bolt]] has no label. The fiber, width, and care are printed on the end of the bolt. Snap a photo of it before you leave the shop.", "dia": ["l3Bolt", {}], "tip": "Online shops list it on the product page. Save a screenshot." },
+        { "text": "Now [[prewash]] by fiber. **Cotton and linen:** wash and dry the way you'll wash the finished piece, often warm and in the dryer. Linen softens a lot, and some sewists wash it twice.", "dia": ["l3Care", { "show": ["wash2", "tumble2", "iron3"] }], "why": "Cotton and linen often shrink 3% to 5% the first time. Loose weaves and flannel can shrink up to about 10%." },
+        { "text": "**Rayon:** wash cool on a gentle cycle, then dry it flat or on a line. It's weak when wet, so don't wring or twist it.", "dia": ["l3Care", { "show": ["gentle", "line", "iron2"] }] },
+        { "text": "**Wool:** keep it out of the washer. Shrink it with steam instead: hold a steam iron just above the fabric, never pressing, and move slowly over every part. Let it dry flat.", "dia": ["l3Steam", {}], "warn": "Hot water and tumbling will [[felting|felt]] wool. Then it's felt, not fabric you can sew into the garment you planned." },
+        { "text": "**Silk:** hand wash cool with mild soap if you'll wash the finished piece, or leave it for the dry cleaner. **Polyester and nylon** barely shrink, but a cool wash takes off factory finishes. **Blends:** treat them like their fussiest fiber.", "dia": ["l3Care", { "show": ["hand", "line", "iron2", "dryclean"] }] },
+        { "text": "Not sure how much a fabric shrinks? Test it. Mark a square 10 in × 10 in (or 20 cm × 20 cm) with chalk, wash and dry it, and measure again.", "dia": ["l3Shrink", { "pct": 5 }], "why": "Divide how much it shrank by where you started. Half an inch out of 10 in is 5% [[shrinkage]], and so is 1 cm out of 20 cm." },
+        { "text": "Check that dark or bright fabric is [[colorfast]]: wet a corner, press it onto a white scrap with an iron set right for the fiber, and look for color. If it bleeds, wash it alone, and wash the finished piece alone too.", "dia": ["l3Swatches", { "list": ["cotton", "white"], "labels": ["Wet corner", "White scrap"] }] }
+      ],
+      "looks": "You can read any care label, find the care info for fabric off the bolt, and prewash each fiber the right way.",
+      "mistakes": [
+        ["Forgetting the bolt info", "Snap a photo of every bolt end you buy from. You won't remember later."],
+        ["Prewashing more gently than you'll really wash it", "Prewash the way you'll wash the finished piece. Shrinkage you skip now just happens later, after you've sewn it."],
+        ["Washing wool or silk like cotton", "Check the fiber first, then choose the prewash."]
+      ],
+      "practice": "Do a shrinkage test on one cotton or linen fabric and write down the percent."
+    },
+    {
+      "id": "l3-choosing", "title": "Choosing fabric for a project", "kind": "fabric", "minutes": 12,
+      "summary": "Match the fabric to the design, start with fabrics that behave, and watch out for prints with a direction.",
+      "learn": ["How to match weight and drape to a garment", "Which fabrics are easy and which to save for later", "What nap and one-way prints mean for cutting"],
+      "need": ["A project you'd like to make", "Your notes from the drape test"],
+      "words": ["fabric weight", "drape", "one-way design", "nap"],
+      "steps": [
+        { "text": "Start with the shape. Should it stand away from the body, or flow? Crisp fabrics suit structured shapes like A-line skirts, shirts, jackets, and totes. Fluid fabrics suit flowy ones like wide pants, bias skirts, and soft tops.", "dia": ["l3Silhouette", { "kind": "aline" }] },
+        { "text": "Then match the weight to the job: light for a blouse, medium for a skirt or dress, and heavy for jeans or a bag. Store patterns list suggested fabrics on the envelope, so start there (more in level 4).", "dia": ["l3Weight", {}] },
+        { "text": "Easy to start with: stable woven cottons and linens in a medium weight, like quilting cotton, poplin, chambray, cotton twill, and cotton-linen blends. Solids and small prints hide wobbly stitches.", "dia": ["l3Swatches", { "title": "Easy to start", "list": ["cotton", "linen", "twill", "print"], "labels": ["Poplin", "Linen blend", "Twill", "Small print"] }] },
+        { "text": "Save for later: slippery fabrics (satin and chiffon), stretchy knits, velvet and other napped fabrics, sequins, leather, loose weaves that fray, and plaids or stripes that need matching.", "dia": ["l3Swatches", { "title": "Save for later", "list": ["satin", "sheer", "knit", "velvet", "plaid", "sequin", "leather", "loose"], "labels": ["Satin", "Chiffon", "Knit", "Velvet", "Plaid", "Sequins", "Leather", "Loose weave"] }] },
+        { "text": "Test it in the shop. Unroll a length and let it hang from your hand (drape). Scrunch a corner for five seconds (wrinkles). Pull gently along both grains and the bias (stretch). Hold it up to the light (is it see-through?).", "dia": ["l3Scrunch", {}] },
+        { "text": "Look at the print. In a [[one-way design]], the motifs all face one way, like trees standing up. Two-way prints look right either way up, and tossed prints point every direction.", "dia": ["l3Nap", { "kind": "types" }] },
+        { "text": "With a one-way design, every pattern piece must point the same way, or some pieces end up upside down. That often takes more fabric.", "dia": ["l3Nap", { "kind": "oneway" }] },
+        { "text": "A [[nap]] means the surface itself has a direction, like velvet, corduroy, faux fur, and brushed fabrics. They look lighter or darker depending on which way they point. Satin can too. Cut every piece the same way up.", "dia": ["l3Nap", { "kind": "nap" }], "tip": "Stroke the fabric along its length. Smooth one way and rough the other means it has a nap. Pick one direction and chalk an arrow on the back of every piece." }
+      ],
+      "looks": "You can choose a fabric whose weight and drape suit the project, and you know when everything must be cut the same way up.",
+      "mistakes": [
+        ["Falling for a fabric that fights the design", "Love the print, but it's too stiff or too limp? Save it for a project it suits."],
+        ["Cutting a one-way print or napped fabric in two directions", "Mark the top of each pattern piece and check them all before you cut."],
+        ["Buying a tricky fabric for a first garment", "Start with a stable cotton or linen. Tricky fabrics get much easier with practice."]
+      ],
+      "practice": "Pick a garment you'd like to make someday. Write down two fabrics that would suit it and one that wouldn't, and why.",
+      "more": "The Fabric guide in the Library lists about 30 fabrics with their weight, drape, and what they're good for."
+    },
+    {
+      "id": "l3-design-print", "title": "Design eye: print, scale, and color on the body", "kind": "design", "minutes": 10,
+      "summary": "Prints and color tell the eye where to go. Learn to choose where.",
+      "learn": ["How print size changes a garment", "How stripes and contrast lead the eye", "How to check a print before you buy"],
+      "need": ["A few printed fabrics or printed clothes", "A mirror and your phone camera"],
+      "words": ["print scale", "pattern repeat", "silhouette"],
+      "steps": [
+        { "text": "[[print scale|Print scale]] is how big the motifs are. Small prints read as texture from across a room. Medium prints read as a pattern. Large prints read as separate shapes.", "dia": ["l3Print", { "kind": "scale" }] },
+        { "text": "Large prints get cut up by seams and darts, and a big motif can land somewhere you didn't plan, right on the chest or the seat. They look best on big, simple pieces like a full skirt or wide pants.", "dia": ["l3Swatches", { "list": ["print", "bigprint"] }] },
+        { "text": "The [[pattern repeat]] is how far along the fabric you go before the print starts over. The bolt or website often lists it. Big repeats take more fabric to match or to place motifs where you want them.", "dia": ["l3Repeat", { "r": 12 }] },
+        { "text": "Stripes lead the eye along them. Up-and-down stripes move the eye up and down, and stripes across move it side to side. Stripes cut on the bias make chevrons that point to where they meet.", "dia": ["l3Print", { "kind": "stripes" }], "why": "You may have heard that up-and-down stripes are slimming. Studies don't agree, and some find the opposite! What stripes surely do is lead the eye, so use them on purpose." },
+        { "text": "Contrast pulls the eye. A bright band at the waist draws attention there. A bright collar or yoke draws it up to your face. Bright and light colors come forward, and dark, muted colors step back.", "dia": ["l3Print", { "kind": "contrast" }] },
+        { "text": "Test before you buy: drape a length over yourself in a mirror and take a photo from across the room. Look at the photo small. Does the print read as texture or as shapes? Where does your eye go first?", "dia": ["l3Print", { "kind": "scale" }] }
+      ],
+      "looks": "You can predict how a print will read on a garment, and plan where the eye will go.",
+      "mistakes": [
+        ["A huge motif lands in an awkward spot", "Lay the pattern pieces on the fabric and check where the big motifs fall before cutting. Buy an extra repeat so you can move pieces around."],
+        ["A busy print hides the details", "Pleats, seams, and pockets disappear in busy prints. Show off details with solids or small prints."]
+      ],
+      "practice": "Take mirror photos holding up three prints: one small, one medium, and one large. Look at the photos small, and note what you notice first in each."
+    },
+    {
+      "id": "l3-buying", "title": "Buying the right amount", "kind": "fabric", "minutes": 12,
+      "summary": "Read the chart, check the width, and add a little extra.",
+      "learn": ["How to read a yardage chart", "Why fabric width changes how much you need", "How much extra to buy, and when"],
+      "need": ["A pattern envelope or a project's fabric list (any will do, online is fine)", "A calculator"],
+      "words": ["yardage", "bolt", "nap", "shrinkage", "pattern repeat"],
+      "steps": [
+        { "text": "Patterns list the [[yardage]] in a chart: sizes across the top, and fabric widths down the side. Find your size, then read down to the row for your fabric's width.", "dia": ["l3Chart", { "hi": { "col": 2 } }] },
+        { "text": "Say you're a size 10 and your fabric is 44 in (112 cm) wide. This chart says {{2 3/8 yd}}. On 60 in (150 cm) fabric, the same pattern needs only {{1 3/4 yd}}.", "dia": ["l3Chart", { "hi": { "row": 0, "col": 2 } }], "tip": "The width is on the end of the [[bolt]]. Check it every time." },
+        { "text": "Why the difference? Pattern pieces have to fit across the width. Two wide pieces that won't fit side by side on narrow fabric go one above the other, so you need more length.", "dia": ["layout", { "fw": 44, "len": 54, "pieces": [{ "name": "Front", "w": 24, "h": 26, "x": 1, "y": 1 }, { "name": "Back", "w": 24, "h": 26, "x": 1, "y": 27.5 }] }] },
+        { "text": "On wider fabric, the same two pieces fit side by side, in about half the length.", "dia": ["layout", { "fw": 60, "len": 28, "pieces": [{ "name": "Front", "w": 24, "h": 26, "x": 1, "y": 1 }, { "name": "Back", "w": 24, "h": 26, "x": 26.5, "y": 1 }] }], "why": "So you can't just scale yardage by width. For a rough guess, multiply the yards by the old width and divide by the new width, then add a little. Laying out the pieces is the real answer." },
+        { "text": "Napped fabrics and one-way prints need every piece pointing the same way, so they often take more. Look for a \"with nap\" line on the chart.", "dia": ["l3Chart", { "hi": { "row": 2, "col": 2 } }] },
+        { "text": "Then add extra: about 10% for [[shrinkage]] and straightening the ends (a bit more for linen and rayon), plus one full [[pattern repeat]] for each big piece if you need to match a print or plaid.", "dia": ["l3Repeat", { "r": 12 }], "why": "For {{2 3/8 yd}}, 10% is about {{1/4 yd}}, so you'd buy {{2 5/8 yd}}." },
+        { "text": "Shops cut by the yard or meter, often in steps of {{1/8 yd}} or 10 cm. Always round up, never down. Leftovers make great swatches.", "dia": ["l3Bolt", { "width": 60 }] }
+      ],
+      "looks": "You can read a yardage chart for your size and fabric width, and add the right extra.",
+      "mistakes": [
+        ["Reading the wrong width row", "Check the bolt for the width. 44 in (112 cm) and 60 in (150 cm) need very different amounts."],
+        ["Forgetting the extra for a print or nap", "Use the \"with nap\" amount, and add one repeat per big piece if you're matching."],
+        ["Buying exactly the chart amount of a fabric that shrinks", "Add about 10%, and a little more for linen and rayon."]
+      ],
+      "practice": "Find any pattern's yardage chart. Work out what you'd buy in one size on 44 in (112 cm) fabric and on 60 in (150 cm) fabric, with 10% extra.",
+      "more": "Pattern sizes aren't the same as store sizes. In level 4 you'll pick your size from your own measurements."
+    },
+    {
+      "id": "l3-interfacing", "title": "Interfacing basics", "minutes": 15,
+      "summary": "The hidden layer that makes collars crisp and bags stand up.",
+      "learn": ["What interfacing does and where it goes", "The types, and how to choose one", "How to fuse it without bubbles"],
+      "need": ["A small piece of light or medium fusible interfacing", "Two cotton scraps, about {{6 in}} square", "Iron, ironing board, and a pressing cloth", "Scissors"],
+      "words": ["interfacing", "fusible", "nonwoven", "pressing cloth"],
+      "steps": [
+        { "text": "[[interfacing|Interfacing]] is an extra layer stuck or sewn to the wrong side of fabric to make it firmer. It hides inside collars, cuffs, waistbands, button plackets, and facings, and it helps bags stand up.", "dia": ["shirt", { "hi": ["collar", "cuff", "placket"] }] },
+        { "text": "It comes in three builds. Woven has a grain, so cut it on the same grain as your piece. [[nonwoven|Nonwoven]] has no grain, so cut it any way. Knit is soft and has a little stretch.", "dia": ["l3Interfacing", { "kind": "types" }] },
+        { "text": "It's either [[fusible]] (it has glue on one side and irons on) or sew-in (you stitch it on). Fusible is quicker. Sew-in is for fabrics that can't take heat or glue, like velvet, sequins, and some synthetics.", "dia": ["l3Interfacing", { "kind": "glue" }] },
+        { "text": "Choose a weight the same as your fabric or lighter. Too heavy, and soft fabric turns to cardboard. Fold the fabric and interfacing together in the shop and feel them before you buy.", "dia": ["l3Weight", { "hi": "light" }] },
+        { "text": "Cut the interfacing the same shape as the piece, or a hair smaller so no glue touches your board. Lay the fabric wrong side up, then the interfacing on top, glue side down. The glue side is bumpy or a little shiny.", "dia": ["l3Interfacing", { "kind": "fuse", "step": 1 }] },
+        { "text": "Cover it with a damp [[pressing cloth]]. Set the iron to the heat the interfacing package says (often the wool setting).", "dia": ["l3Interfacing", { "kind": "fuse", "step": 2 }] },
+        { "text": "Press: set the iron down, hold it still for 10 to 15 seconds, lift it, and move to the next spot, overlapping a little. Don't slide it, or the interfacing will shift and wrinkle.", "dia": ["l3Interfacing", { "kind": "fuse", "step": 3 }], "why": "The glue needs heat, steam, and pressure for a few seconds to melt into the fabric. Sliding never stays in one place long enough." },
+        { "text": "Flip it over and press from the right side too. Then let it cool flat before you move it, since the glue sets as it cools.", "dia": ["l3Interfacing", { "kind": "fuse", "step": 4 }] }
+      ],
+      "looks": "A smooth piece with no bubbles or wrinkles, firmer than the fabric alone but still bendable, with edges that don't peel up.",
+      "mistakes": [
+        ["Glue on the iron or the board", "Check that the glue side faces the fabric, always use a pressing cloth, and cut the interfacing a hair smaller than the piece."],
+        ["Bubbles, at once or after washing", "Press longer, with more steam and pressure. If the package says to, pre-shrink the interfacing first."],
+        ["The piece is stiff as cardboard", "The interfacing is too heavy. Choose a lighter one."],
+        ["A ridge shows on the right side", "Trim the interfacing edge, or use a lighter weight."]
+      ],
+      "practice": "Fuse a light interfacing to one scrap, and a heavier one (or two layers) to the other. Compare how each one bends. Save them for your swatch book.",
+      "more": "Some sewists pre-shrink fusible interfacing by soaking it in warm water for a few minutes and letting it dry flat, never in the dryer. Check the package first, because some say not to. Sew-in interfacing can be prewashed like fabric."
+    },
+    {
+      "id": "l3-swatch-book", "title": "Project: a fabric swatch book", "kind": "project", "minutes": 120,
+      "summary": "Test and label your own fabric library: a reference you'll use for years.",
+      "finished": "A ring-bound book of {{6 in}} × {{4 in}} cards, one fabric on each",
+      "learn": ["Testing a fabric from start to finish", "Recording what you find", "A simple card-and-ring binding"],
+      "hero": ["l3Swatch", { "step": "book" }],
+      "fabric": ["At least 10 different fabrics, each about {{6 in}} × {{12 in}} or bigger (scraps, leftovers, or free samples from a shop)", "Try to include cotton, linen, wool, rayon, polyester, a blend, a twill like denim, a satin, a knit, and a nonwoven like felt"],
+      "need": ["Index cards {{6 in}} × {{4 in}} (or A6 cards), one per fabric, plus one for the cover", "Pinking shears, or regular scissors", "A glue stick or double-sided tape", "A hole punch and a binder ring about {{1 1/2 in}} across", "A pen", "The burn test setup: metal tweezers, a candle, a metal tray, and a bowl of water", "A drinking glass", "Optional: a small scale that shows 0.1 g"],
+      "cut": [
+        { "name": "Swatch (pinked edges)", "qty": 1, "w": 3, "h": 3 },
+        { "name": "Burn-test strip", "qty": 1, "w": 0.25, "h": 1.5 },
+        { "name": "Weighing square, 10 cm (optional)", "qty": 1, "w": 3.937, "h": 3.937 }
+      ],
+      "cutNote": "Cut these from each fabric. There's no seam allowance, because nothing gets sewn. Do the drape test on the whole piece before you cut it up.",
+      "words": ["swatch", "burn test", "fabric weight", "drape", "care label"],
+      "steps": [
+        { "text": "Gather at least 10 fabrics. Aim for variety: each fiber family, all three weaves, a knit, and a nonwoven. Shops will often give you small free [[swatch|swatches]] if you ask.", "dia": ["l3Swatches", { "list": ["cotton", "linen", "wool", "satin", "denim", "knit", "print", "sheer"] }] },
+        { "text": "Make a card for each fabric. Write a name at the top. Down the left side, write Fiber, Weave, Weight, Drape, Burn, Care, and Shrink, each with a line after it. The right side is for the swatch.", "dia": ["l3Swatch", { "step": "card" }] },
+        { "text": "Before cutting, do the drape test: center the fabric over a glass and write Stiff, Medium, or Fluid on the Drape line.", "dia": ["l3Drape", {}] },
+        { "text": "Cut a {{3 in}} square with pinking shears for the swatch, and a thin burn strip {{1/4 in}} × {{1 1/2 in}} (the narrow piece in the middle). If you have a scale, cut a 10 cm × 10 cm square too.", "dia": ["panel", { "w": 8.5, "h": 5, "side": "right", "pieces": [{ "x": 0.3, "y": 0.75, "w": 3, "h": 3, "side": "right2", "label": "Swatch" }, { "x": 3.7, "y": 0.75, "w": 0.25, "h": 1.5, "side": "right2" }, { "x": 4.3, "y": 0.28, "w": 3.937, "h": 3.937, "side": "right2", "label": "Weigh" }], "dims": [[0.3, 3.75, 3.3, 3.75, "{{3 in}}", 14]], "label": "Cutting one fabric" }] },
+        { "text": "Find the fiber. Copy it from the bolt label if you have one. If not, burn-test the strip with the full safety setup, and write the family: plant, animal, or synthetic.", "dia": ["l3Burn", { "kind": "setup" }], "warn": "Same safety as the burn test lesson: a tray or sink, water nearby, hair tied back, metal tweezers, and nothing that can catch fire close by." },
+        { "text": "Find the weave. Zoom in with your phone. Over-under is plain, diagonal lines are twill, a smooth shiny face is satin, loops are a knit, and no threads at all is a nonwoven.", "dia": ["l3Weave", { "type": "all" }] },
+        { "text": "Find the weight. Weigh the 10 cm square in grams and multiply by 100 for g/m². To get oz/yd², divide the g/m² by 34. No scale? Write light, medium, or heavy by feel.", "dia": ["l3Weigh", { "g": "1.5" }], "why": "A 10 cm × 10 cm square is one hundredth of a square meter. That's why multiplying by 100 works." },
+        { "text": "Write the care from the bolt (or what suits the fiber), and the shrink percent if you did a shrinkage test. Add hand words, like soft, crisp, or slippery, on the back of the card.", "dia": ["l3Care", { "show": ["wash2", "tumble1", "iron3"] }] },
+        { "text": "Glue only the top strip of the swatch, about {{1/4 in}}, to the card, so you can lift it and see the wrong side.", "dia": ["l3Swatch", { "step": "swatch" }] },
+        { "text": "Punch a hole in the top-left corner of every card, {{1/2 in}} in from both edges.", "dia": ["l3Swatch", { "step": "punch" }], "tip": "Stick a paper hole reinforcer on both sides so the hole doesn't tear." },
+        { "text": "Make a cover card with your name and the date. Then thread all the cards onto the binder ring. Add a new card whenever you test a new fabric.", "dia": ["l3Swatch", { "step": "book" }] }
+      ],
+      "looks": "A ring of labeled cards you can flip through, each with a swatch you can touch and lift, and every line filled in.",
+      "mistakes": [
+        ["Swatch edges fraying", "Cut with pinking shears, or zigzag around the edge of the swatch."],
+        ["Glued the whole swatch down flat", "Glue only the top strip, so you can feel the swatch and see its back."],
+        ["Guessing instead of testing", "Leave a line blank until you've tested it. A blank is better than a wrong answer."]
+      ],
+      "practice": "Level 3 complete! Check your skill list on the level page. Then keep adding a card for every new fabric you sew with: in a year, you'll have your own fabric library."
+    }
+  ]
+}

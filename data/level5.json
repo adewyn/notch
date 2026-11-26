@@ -1,0 +1,3362 @@
+{
+  "skill": "Garment maker",
+  "check": [
+    "Staystitch a neckline, and say why it matters",
+    "Put interfacing on the right garment pieces, and trim its corners",
+    "Sew a French seam with no raw edges showing",
+    "Press and sew an even double-fold hem, and a narrow hem on a curve",
+    "Sew a blind hem by machine or by hand",
+    "Attach a facing, then grade, clip, and understitch it",
+    "Cut, join, and fold bias strips, then bind a curved edge",
+    "Sew a dart that ends in a smooth point",
+    "Gather a long edge evenly onto a shorter one",
+    "Put in elastic that fits, lies flat, and doesn't twist",
+    "Put in a centered or lapped zipper",
+    "Sew a buttonhole that fits its button, and sew the button to match",
+    "Make a patch pocket and an in-seam pocket"
+  ],
+  "lessons": [
+    {
+      "id": "l5-read-garment",
+      "title": "Reading a garment: pieces, seams, and closures",
+      "kind": "design",
+      "minutes": 12,
+      "summary": "Before you sew clothes, learn to see how they're built: pieces, seams, shaping, edges, and openings.",
+      "learn": [
+        "How flat pieces become a garment",
+        "Where to look for seams, shaping, and closures",
+        "The usual order a garment is sewn in"
+      ],
+      "need": [
+        "Three garments you own: a shirt, a top or dress, and a skirt or pants",
+        "Paper and a pencil"
+      ],
+      "words": [
+        "bodice",
+        "side seam",
+        "yoke",
+        "dart",
+        "facing",
+        "center front"
+      ],
+      "steps": [
+        {
+          "text": "Every garment starts as flat pieces. A shirt might have a back, two fronts, a [[yoke]], two sleeves, a collar, and cuffs. Lay one of your shirts flat and name each part you can see.",
+          "dia": [
+            "shirt",
+            {
+              "hi": [
+                "collar",
+                "sleeve",
+                "cuff",
+                "placket",
+                "side",
+                "hem"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Now follow the seams. Each seam joins two pieces: the shoulder seam joins front to back, the [[side seam]] runs down from the underarm, and the armhole seam holds the sleeve.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "top",
+              "hi": [
+                "shoulder",
+                "arm",
+                "side"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Look for shaping. A flat piece can't hug a curve on its own, so clothes use [[dart|darts]], gathers, pleats, or curved seams. On a top, darts often point at the bust from the side seam.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "top",
+              "hi": [
+                "dart"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Look at every edge. Each one is finished somehow: a [[hem]], a [[facing]] hidden inside, a binding you can see, a band, or a cuff. On the [[bodice]] (the part from the shoulders to the waist), check the neckline and armholes.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "top",
+              "hi": [
+                "neck",
+                "arm",
+                "hem"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Find the opening: how does it get on and off? A pullover top needs a neckline big enough for your head. Others use a zipper, buttons down the [[center front]], or elastic.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "aline",
+              "hi": [
+                "zip",
+                "band"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Turn it inside out. Look at how the seams are finished, feel for stiffer [[interfacing]] in the collar or waistband, and peek under the facings.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "back",
+              "hi": [
+                "yoke",
+                "pleat",
+                "placket",
+                "cuff"
+              ]
+            }
+          ],
+          "cap": "Back of a shirt"
+        },
+        {
+          "text": "Guess the sewing order. Most garments go: small details first (darts and pockets), then the main seams, then the edges (neckline, sleeves, and waist), then closures, and the hem last.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "aline",
+              "hi": [
+                "dart",
+                "pocket",
+                "side",
+                "band",
+                "hem"
+              ]
+            }
+          ]
+        }
+      ],
+      "looks": "You can pick up any garment and point out its pieces, seams, shaping, edge finishes, and opening.",
+      "mistakes": [
+        [
+          "Missing a seam because it's hidden",
+          "Turn the garment inside out. Seams always show on the inside, even when they hide on the outside."
+        ],
+        [
+          "Thinking a fitted shape is one piece",
+          "Look for darts and curved seams. A fitted shape is almost always several pieces, or a piece with darts."
+        ]
+      ],
+      "practice": "Pick three garments. For each one, sketch it flat like a [[technical flat]], list its pieces, and write the order you think it was sewn in. Keep the sketches: you'll check them as you sew through this level."
+    },
+    {
+      "id": "l5-staystitch",
+      "title": "Staystitching: keep curves from stretching",
+      "minutes": 10,
+      "summary": "Curved and slanted edges stretch as you handle them. One line of stitching keeps them true.",
+      "learn": [
+        "What staystitching is and when to do it",
+        "Which way to sew it",
+        "How to check an edge didn't stretch"
+      ],
+      "need": [
+        "A cut garment piece with a curved neckline, or a scrap cut in a curve",
+        "The pattern piece, to check against"
+      ],
+      "words": [
+        "staystitch",
+        "bias",
+        "grain"
+      ],
+      "why": "Necklines, armholes, and waists are cut partly on the [[bias]], which stretches. Stretch one by even {{1/4 in}} and the facing or collar won't fit, and the neckline gapes.",
+      "steps": [
+        {
+          "text": "[[staystitch|Staystitching]] is a line of regular stitching through a single layer, just inside the seam allowance. Do it on curved edges right after cutting, before you handle the piece much.",
+          "dia": [
+            "l5Neck",
+            {
+              "show": "stay"
+            }
+          ]
+        },
+        {
+          "text": "Set a straight stitch 2.5 mm long, or 2 mm on loose or shifty fabric.",
+          "dia": [
+            "machine",
+            {
+              "hi": [
+                "length"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Sew {{1/2 in}} from the edge. That's inside the {{SA}} seam allowance, so it hides in the seam later.",
+          "dia": [
+            "panel",
+            {
+              "w": 6,
+              "h": 3,
+              "side": "right",
+              "wide": true,
+              "stitch": [
+                [
+                  0,
+                  0.5
+                ],
+                [
+                  6,
+                  0.5
+                ]
+              ],
+              "stitchHi": 0,
+              "folds": [
+                [
+                  0,
+                  0.625,
+                  6,
+                  0.625
+                ]
+              ],
+              "dims": [
+                [
+                  6,
+                  0,
+                  6,
+                  0.5,
+                  "{{1/2 in}}",
+                  -14
+                ]
+              ],
+              "labels": [
+                [
+                  3,
+                  2,
+                  "Dotted: the seam line, later"
+                ]
+              ],
+              "label": "Staystitching inside the seam allowance"
+            }
+          ],
+          "tip": "If your needle plate has no {{1/2 in}} line, stick a strip of masking tape at that distance."
+        },
+        {
+          "text": "Sew in two halves, each from the shoulder toward the center. Never sew all the way around in one pass.",
+          "dia": [
+            "l5Neck",
+            {
+              "show": "stay",
+              "halves": true
+            }
+          ],
+          "why": "Sewing from the wide end toward the narrow end follows the [[grain]], so the edge isn't pushed out of shape. One long pass would drag half of it the wrong way."
+        },
+        {
+          "text": "Do the same on waist edges, from each side toward the center, and on armholes if your pattern says to.",
+          "dia": [
+            "panel",
+            {
+              "w": 12,
+              "h": 5,
+              "side": "right",
+              "stitch": [
+                [
+                  [
+                    0.3,
+                    0.5
+                  ],
+                  [
+                    5.8,
+                    0.5
+                  ]
+                ],
+                [
+                  [
+                    11.7,
+                    0.5
+                  ],
+                  [
+                    6.2,
+                    0.5
+                  ]
+                ]
+              ],
+              "stitchHi": "all",
+              "arrows": [
+                [
+                  1,
+                  1.5,
+                  5,
+                  1.5
+                ],
+                [
+                  11,
+                  1.5,
+                  7,
+                  1.5
+                ]
+              ],
+              "labels": [
+                [
+                  6,
+                  3.6,
+                  "Skirt front, waist edge"
+                ]
+              ],
+              "label": "Staystitching a waist"
+            }
+          ]
+        },
+        {
+          "text": "Lay the piece on its pattern piece. If an edge has grown, pull the staystitching thread gently every few inches to ease it back to size.",
+          "dia": [
+            "l5Neck",
+            {
+              "show": "stay",
+              "check": true
+            }
+          ],
+          "cap": "Pulling a long stitch draws an edge in, the same way on any curve."
+        }
+      ],
+      "looks": "A line of even stitching {{1/2 in}} from every curved edge, and edges that still match the pattern piece.",
+      "mistakes": [
+        [
+          "Stitching wandered past {{SA}}",
+          "It would show on the outside. Unpick it and sew again at {{1/2 in}}."
+        ],
+        [
+          "The edge stretched anyway",
+          "Handle the piece less, staystitch sooner, and pull the thread gently to ease it back."
+        ],
+        [
+          "Sewed the whole neckline in one go",
+          "Unpick it and sew each half from the shoulder to the center."
+        ]
+      ],
+      "practice": "Cut a neckline curve in two scraps. Staystitch one and not the other, handle both for a minute, then lay them on a paper copy of the curve. See which one grew."
+    },
+    {
+      "id": "l5-press-tools",
+      "title": "Pressing garments: tools and fibers",
+      "kind": "fabric",
+      "minutes": 12,
+      "summary": "Garments are curved, so they need curved pressing tools. And each fiber wants its own heat.",
+      "learn": [
+        "The garment pressing tools and what each one does",
+        "How much heat and steam each fiber likes",
+        "Pressing with no shine or marks"
+      ],
+      "need": [
+        "Iron and ironing board",
+        "A pressing cloth",
+        "Optional: a pressing ham, a sleeve board, and a clapper. A rolled-up towel and a block of plain hardwood can stand in."
+      ],
+      "words": [
+        "press",
+        "pressing ham",
+        "clapper",
+        "point turner",
+        "pressing cloth"
+      ],
+      "why": "Pressing as you go is what makes homemade clothes look professional. A seam pressed flat before it's crossed by the next one lies flat forever.",
+      "steps": [
+        {
+          "text": "A [[pressing ham]] is a firm, rounded cushion. Press darts, curved seams, and sleeve tops over it so they keep their curve.",
+          "dia": [
+            "l5Tools",
+            {
+              "list": [
+                "ham"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "A sleeve board is a mini ironing board. Slide a sleeve or a narrow leg over it to press the seam without creasing the other side.",
+          "dia": [
+            "l5Tools",
+            {
+              "list": [
+                "sleeve"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "A [[clapper]] is a smooth block of hardwood. Press with steam, lift the iron, and hold the clapper down on the spot for a few seconds. It traps the heat and sets a crisp, flat edge.",
+          "dia": [
+            "l5Tools",
+            {
+              "list": [
+                "clapper"
+              ]
+            }
+          ],
+          "tip": "It's best on wool and linen, which love a sharp press."
+        },
+        {
+          "text": "A [[point turner]] pushes collar and cuff corners out gently, without poking through.",
+          "dia": [
+            "l5Tools",
+            {
+              "list": [
+                "turner"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Heat by fiber: cotton and linen take high heat and steam. Wool takes medium heat, lots of steam, and always a pressing cloth. Silk and rayon want low to medium heat, and polyester and nylon low heat.",
+          "dia": [
+            "press",
+            {}
+          ],
+          "warn": "Test on a scrap first. Too much heat melts synthetics and leaves shine on wool."
+        },
+        {
+          "text": "Use a [[pressing cloth]] whenever you press on the right side of dark fabric, wool, or anything that might go shiny.",
+          "dia": [
+            "l5Cloth",
+            {}
+          ],
+          "cap": "The cloth sits between the iron and the fabric."
+        },
+        {
+          "text": "[[press|Press]] each seam as soon as you sew it, before another seam crosses it.",
+          "dia": [
+            "xsec",
+            {
+              "kind": "open"
+            }
+          ]
+        }
+      ],
+      "looks": "Crisp seams, darts with a smooth curve, and no shine or marks on the right side.",
+      "mistakes": [
+        [
+          "Shiny patches on dark fabric",
+          "The iron was too hot, or there was no pressing cloth. Hold a steaming iron just above the spot to lift the shine."
+        ],
+        [
+          "The seam allowance outline shows on the right side",
+          "Slip strips of paper under the seam allowances before pressing."
+        ],
+        [
+          "A melted spot",
+          "The iron was too hot for that fiber. Always test on a scrap."
+        ]
+      ],
+      "practice": "Press a dart over a ham, a seam on a sleeve board or a rolled towel, and an edge with a clapper or a wood block. Note the heat that worked for each fabric."
+    },
+    {
+      "id": "l5-interfacing",
+      "title": "Interfacing on garments: where it goes",
+      "minutes": 12,
+      "summary": "You met interfacing in level 3. Here's which garment pieces get it, and how much.",
+      "learn": [
+        "Which parts of a garment get interfacing",
+        "Matching the weight to the garment",
+        "Trimming it so seams and corners stay flat"
+      ],
+      "need": [
+        "Light and medium fusible interfacing",
+        "Your pattern pieces, or scraps cut like a collar and a cuff",
+        "Pressing cloth and iron"
+      ],
+      "words": [
+        "interfacing",
+        "fusible",
+        "nonwoven",
+        "pressing cloth"
+      ],
+      "steps": [
+        {
+          "text": "A quick recap from level 3: [[fusible]] [[interfacing]] goes glue side down on the wrong side, under a [[pressing cloth]]. Press and hold 10 to 15 seconds, lift, move, and let it cool flat.",
+          "dia": [
+            "l5Interf",
+            {
+              "show": "fuse"
+            }
+          ]
+        },
+        {
+          "text": "Your pattern says which pieces to interface, with its own interfacing pattern pieces or a note printed on the piece.",
+          "dia": [
+            "l5Interf",
+            {
+              "show": "where"
+            }
+          ]
+        },
+        {
+          "text": "Collars and stands: interface one layer of each, usually the upper collar and the outer stand, the layers that show.",
+          "dia": [
+            "l5Collar",
+            {
+              "step": "sew"
+            }
+          ],
+          "cap": "The pale layer is the interfaced upper collar."
+        },
+        {
+          "text": "Cuffs: interface the outer half, or the whole cuff in a lighter weight, as your pattern says.",
+          "dia": [
+            "l5Cuff",
+            {
+              "step": "prep"
+            }
+          ]
+        },
+        {
+          "text": "Facings, button bands, and waistbands all get interfacing. They hold the garment's edges in shape.",
+          "dia": [
+            "l5Interf",
+            {
+              "show": "edges"
+            }
+          ]
+        },
+        {
+          "text": "Add small patches where stitching takes strain: under every buttonhole, behind a pocket's top corners, and as narrow strips along a zipper's seam allowances.",
+          "dia": [
+            "l5Interf",
+            {
+              "show": "patch"
+            }
+          ]
+        },
+        {
+          "text": "Pick the weight for the garment: light for shirting and lawn, light to medium for cotton twill and linen. Fuse a scrap of your real fabric and check it still bends the way the garment should.",
+          "dia": [
+            "l5Interf",
+            {
+              "show": "weight"
+            }
+          ]
+        },
+        {
+          "text": "Trim the corners off before fusing, just outside where the seam lines cross, so the corners turn out sharp. With medium or heavy interfacing, trim it out of the seam allowances too.",
+          "dia": [
+            "l5Interf",
+            {
+              "show": "trim"
+            }
+          ]
+        }
+      ],
+      "looks": "Interfaced pieces that feel firmer but still bend, with no bubbles, and corners that turn out sharp.",
+      "mistakes": [
+        [
+          "A ridge shows where the interfacing ends",
+          "Its edge should hide in a seam. Cut it to the piece's shape, or use a lighter weight."
+        ],
+        [
+          "Collar points come out thick and round",
+          "Trim the interfacing corners off before fusing."
+        ],
+        [
+          "Buttonholes stretch or wrinkle",
+          "Every buttonhole needs interfacing under it, even in a light shirt."
+        ]
+      ],
+      "practice": "Interface a scrap collar with light interfacing and another with medium. Sew, turn, and press both, then decide which feels right for a shirt.",
+      "more": "For lots of small pieces, some sewists fuse interfacing to a whole rectangle of fabric first, then cut the pieces from it. It's quicker, and nothing shifts."
+    },
+    {
+      "id": "l5-french-seam",
+      "title": "French seams",
+      "minutes": 15,
+      "summary": "A seam that hides its raw edges inside itself. Neat and strong, with no zigzag needed.",
+      "learn": [
+        "How to sew a French seam in two passes",
+        "Why the two widths add up to {{SA}}",
+        "Where French seams work best"
+      ],
+      "need": [
+        "Two strips of light or medium cotton, about {{4 in}} × {{10 in}}",
+        "Small sharp scissors",
+        "Iron"
+      ],
+      "words": [
+        "french seam",
+        "raw edge",
+        "seam allowance",
+        "trim"
+      ],
+      "steps": [
+        {
+          "text": "Pin the strips **wrong sides together**. Yes, that's backward from usual!",
+          "dia": [
+            "l5French",
+            {
+              "step": 1,
+              "pin": true
+            }
+          ]
+        },
+        {
+          "text": "Sew {{1/4 in}} from the edge.",
+          "dia": [
+            "l5French",
+            {
+              "step": 1
+            }
+          ]
+        },
+        {
+          "text": "[[trim|Trim]] the seam allowance to a scant {{1/8 in}}, and snip off any stray threads.",
+          "dia": [
+            "l5French",
+            {
+              "step": 2
+            }
+          ],
+          "why": "Any whiskers left here will poke through the finished seam."
+        },
+        {
+          "text": "Press the seam to one side. Then fold the strips right sides together along the stitching, and press so the seam sits exactly on the fold.",
+          "dia": [
+            "l5French",
+            {
+              "step": 3,
+              "fold": true
+            }
+          ]
+        },
+        {
+          "text": "Sew {{3/8 in}} from the fold. The raw edges are now sealed inside.",
+          "dia": [
+            "l5French",
+            {
+              "step": 3
+            }
+          ],
+          "why": "The two passes together use up the full {{SA}} seam allowance, so the garment comes out the size the pattern meant. (In metric, sew 5 mm, then 1 cm.)"
+        },
+        {
+          "text": "Open the pieces and press the seam to one side.",
+          "dia": [
+            "l5French",
+            {
+              "step": 4
+            }
+          ]
+        }
+      ],
+      "looks": "On the outside, a plain seam. On the inside, a neat narrow tube about {{3/8 in}} wide, with no raw edges or whiskers.",
+      "mistakes": [
+        [
+          "Threads poke out on the right side",
+          "Trim closer before the second pass, and pick out every stray thread."
+        ],
+        [
+          "The seam ended up on the outside",
+          "The first pass was sewn right sides together. Unpick it and start wrong sides together."
+        ],
+        [
+          "Lumpy on a curve",
+          "French seams suit straight or gently curved seams. Use another finish on tight curves like armholes."
+        ]
+      ],
+      "practice": "Sew a French seam on two straight strips. Then try one on a gentle curve and compare.",
+      "more": "French seams are great for side seams in light fabrics, shirts, pillowcases, and gathered skirts. Bulky fabrics are better with a seam pressed open and zigzagged edges."
+    },
+    {
+      "id": "l5-hems",
+      "title": "Double-fold and curved hems",
+      "minutes": 20,
+      "summary": "The bottom edge is the last thing you sew and the first thing people see.",
+      "learn": [
+        "How deep a hem should be",
+        "Pressing an even double-fold hem",
+        "Narrow hems for curves",
+        "Easing a hem on a flared skirt"
+      ],
+      "need": [
+        "Two scraps, one with a straight edge and one with a curved edge",
+        "Seam gauge",
+        "Iron",
+        "Pins"
+      ],
+      "words": [
+        "hem",
+        "hem allowance",
+        "double-fold hem",
+        "seam gauge",
+        "easing"
+      ],
+      "why": "A wavy or uneven hem is the most visible mistake on a garment. Careful pressing before you sew fixes most of it.",
+      "steps": [
+        {
+          "text": "The [[hem allowance]] is the extra fabric below the finished length. Your pattern gives it. Skirts often use {{1 1/2 in}} to {{2 in}}, tops about {{1 in}}, and shirts a narrow {{1/2 in}}.",
+          "dia": [
+            "l5Fold",
+            {
+              "step": 1
+            }
+          ]
+        },
+        {
+          "text": "For a [[double-fold hem]], fold the edge {{1/2 in}} to the wrong side and press. Check it with a [[seam gauge]] as you go.",
+          "dia": [
+            "l5Fold",
+            {
+              "step": 2,
+              "a": 0.5,
+              "b": 1
+            }
+          ]
+        },
+        {
+          "text": "Fold again by {{1 in}} and press. The raw edge is now hidden inside.",
+          "dia": [
+            "l5Fold",
+            {
+              "step": 3,
+              "a": 0.5,
+              "b": 1
+            }
+          ]
+        },
+        {
+          "text": "Pin, then stitch from the wrong side, close to the inner fold.",
+          "dia": [
+            "l5Fold",
+            {
+              "step": 4,
+              "a": 0.5,
+              "b": 1
+            }
+          ],
+          "tip": "Inside a garment, trim the seam allowances that sit inside the hem to half their width. Less bulk, flatter hem."
+        },
+        {
+          "text": "Curves fight a deep hem: once folded up, the edge is longer than the place it lands, so it ripples. The tighter the curve, the narrower the hem must be.",
+          "dia": [
+            "l5Hem",
+            {
+              "kind": "ease",
+              "ripple": true
+            }
+          ]
+        },
+        {
+          "text": "For a narrow hem on a curve, sew a long stitch (4 mm) {{1/4 in}} from the edge. Press the edge up right on that line: the stitching helps it turn smoothly.",
+          "dia": [
+            "l5Hem",
+            {
+              "kind": "curve"
+            }
+          ]
+        },
+        {
+          "text": "Fold up {{1/4 in}} again, press, and stitch close to the inner fold.",
+          "dia": [
+            "l5Fold",
+            {
+              "step": 4,
+              "a": 0.25,
+              "b": 0.25
+            }
+          ]
+        },
+        {
+          "text": "A gently flared hem, like an A-line skirt's, can stay deeper. Sew a long stitch {{1/4 in}} from the raw edge, fold the hem up, and pull the thread so the extra length [[easing|eases]] in. Steam out the ripples, then finish the edge and stitch.",
+          "dia": [
+            "l5Hem",
+            {
+              "kind": "ease"
+            }
+          ]
+        }
+      ],
+      "looks": "A hem of even depth all the way around, lying flat with no ripples or twists, and stitching that stays the same distance from the fold.",
+      "mistakes": [
+        [
+          "The hem is wavy",
+          "Press each fold all the way around before stitching, and don't pull the fabric as you sew."
+        ],
+        [
+          "Ripples on a curved hem",
+          "The hem is too deep for the curve. Make it narrower, or ease it in with a long stitch."
+        ],
+        [
+          "The stitching misses the inner fold",
+          "Pin more often, and sew wrong side up so you can see the fold."
+        ]
+      ],
+      "practice": "Hem a straight scrap with a {{1/2 in}} plus {{1 in}} double fold, and a curved scrap with a narrow {{1/4 in}} double fold."
+    },
+    {
+      "id": "l5-blind-hem",
+      "title": "Blind hems by machine and by hand",
+      "minutes": 15,
+      "summary": "A hem with stitches you can barely see from the outside.",
+      "learn": [
+        "The blind hem stitch on your machine",
+        "Folding the hem so the stitch only bites the fold",
+        "An invisible hem by hand"
+      ],
+      "need": [
+        "A scrap of medium-weight fabric",
+        "Blind hem foot, if your machine has one",
+        "Hand needle and thread that matches the fabric"
+      ],
+      "words": [
+        "blind hem",
+        "zigzag stitch",
+        "slip stitch",
+        "hem allowance"
+      ],
+      "steps": [
+        {
+          "text": "Finish the raw edge with a [[zigzag stitch]]. Fold up the hem allowance (say {{1 1/2 in}}) and press. No second fold for this hem.",
+          "dia": [
+            "finish",
+            {
+              "kind": "zigzag"
+            }
+          ]
+        },
+        {
+          "text": "Fold the garment back over the hem, toward the right side, so about {{1/4 in}} of the hem edge peeks out past the fold.",
+          "dia": [
+            "l5Hem",
+            {
+              "kind": "blindfold"
+            }
+          ]
+        },
+        {
+          "text": "Put on the blind hem foot and choose the [[blind hem]] stitch. It sews a few straight stitches, then one sideways bite.",
+          "dia": [
+            "l5Tools",
+            {
+              "list": [
+                "blindfoot"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Sew with the fold against the foot's guide. The straight stitches land on the hem edge, and each bite just catches the fold, one or two threads deep.",
+          "dia": [
+            "l5Hem",
+            {
+              "kind": "blindstitch"
+            }
+          ],
+          "tip": "Test on a scrap first, and change the stitch width until the bite is tiny."
+        },
+        {
+          "text": "Unfold and press. From the right side you should see only tiny dots.",
+          "dia": [
+            "press",
+            {}
+          ]
+        },
+        {
+          "text": "By hand: fold the hem edge back about {{1/4 in}}. Take a tiny stitch in the garment, catching one or two threads, then a small stitch in the hem edge a little farther along.",
+          "dia": [
+            "l5Hem",
+            {
+              "kind": "handblind"
+            }
+          ]
+        },
+        {
+          "text": "Keep zigzagging between the two, with the thread a little loose so nothing puckers. Knot every {{6 in}} or so, so one snag can't undo the whole hem.",
+          "dia": [
+            "l5Hem",
+            {
+              "kind": "handblind",
+              "knot": true
+            }
+          ]
+        }
+      ],
+      "looks": "From the right side, a smooth hem with only tiny, evenly spaced dots of thread.",
+      "mistakes": [
+        [
+          "Big stitches show on the right side",
+          "The bite is too wide. Narrow the stitch width, or move the fold a little away from the needle."
+        ],
+        [
+          "The hem isn't caught in places",
+          "The fold drifted away from the guide. Go slower and keep the fold snug against it."
+        ],
+        [
+          "Puckers on the outside",
+          "The thread is too tight. Leave it a little loose, by hand or by machine."
+        ]
+      ],
+      "practice": "Blind hem one {{10 in}} scrap by machine and another by hand. Which do you like better for skirts?",
+      "more": "The [[slip stitch]] from level 1 also makes a near-invisible hem along a folded edge."
+    },
+    {
+      "id": "l5-facing",
+      "title": "Facings: grade, clip, and understitch",
+      "minutes": 25,
+      "summary": "A facing finishes a neckline or armhole from the inside, leaving a clean edge on the outside.",
+      "learn": [
+        "How a facing is attached",
+        "Grading and clipping the seam",
+        "Understitching so the facing stays hidden"
+      ],
+      "need": [
+        "Practice: a neckline cut from a scrap and a matching facing about {{2 1/2 in}} wide (trace the curve)",
+        "Light fusible interfacing",
+        "Small sharp scissors"
+      ],
+      "words": [
+        "facing",
+        "interfacing",
+        "grade",
+        "clip",
+        "understitch",
+        "staystitch"
+      ],
+      "steps": [
+        {
+          "text": "A [[facing]] is a shaped piece that copies the edge it finishes. It's sewn on, then turned to the inside.",
+          "dia": [
+            "l5Neck",
+            {
+              "show": "done"
+            }
+          ]
+        },
+        {
+          "text": "Fuse [[interfacing]] to the facing pieces. Sew the front and back facings together at the shoulders, and press the seams open.",
+          "dia": [
+            "l5Interf",
+            {
+              "show": "where"
+            }
+          ]
+        },
+        {
+          "text": "Finish the facing's outer edge, the one that won't be sewn to the garment, with zigzag. Or fold it under {{1/4 in}} and stitch.",
+          "dia": [
+            "finish",
+            {
+              "kind": "zigzag"
+            }
+          ]
+        },
+        {
+          "text": "On the garment, [[staystitch]] the neckline and sew the shoulder seams. Pin the facing to the neckline, right sides together, matching the shoulder seams and center marks.",
+          "dia": [
+            "l5Neck",
+            {
+              "show": "facing"
+            }
+          ]
+        },
+        {
+          "text": "Sew around the neckline at {{SA}}.",
+          "dia": [
+            "l5Facing",
+            {
+              "step": "sew"
+            }
+          ]
+        },
+        {
+          "text": "[[grade|Grade]] the seam: trim the facing's seam allowance to {{1/4 in}} and the garment's to {{3/8 in}}.",
+          "dia": [
+            "l5Facing",
+            {
+              "step": "grade"
+            }
+          ],
+          "why": "Layers of different widths don't stack into one hard ridge, so the edge looks smooth from the outside. The garment layer stays wider because it's nearest the outside."
+        },
+        {
+          "text": "[[clip|Clip]] the curve every {{1/2 in}} or so, stopping just short of the stitching.",
+          "dia": [
+            "l5Neck",
+            {
+              "show": "clip"
+            }
+          ]
+        },
+        {
+          "text": "Press both seam allowances toward the facing. From the facing's right side, [[understitch]] {{1/8 in}} from the seam, through the facing and both seam allowances.",
+          "dia": [
+            "l5Facing",
+            {
+              "step": "under"
+            }
+          ],
+          "why": "Understitching holds the seam allowances to the facing, so the facing rolls inside and never peeks out."
+        },
+        {
+          "text": "Turn the facing to the inside and press, rolling the seam just slightly to the inside.",
+          "dia": [
+            "l5Facing",
+            {
+              "step": "turn"
+            }
+          ]
+        },
+        {
+          "text": "Tack the facing to the shoulder seam allowances with a few hand stitches, so it stays put.",
+          "dia": [
+            "l5Neck",
+            {
+              "show": "done"
+            }
+          ]
+        }
+      ],
+      "looks": "A smooth neckline with no facing showing from the outside, and a line of understitching on the inside close to the edge.",
+      "mistakes": [
+        [
+          "The facing rolls to the outside",
+          "Understitch it, and press with the seam rolled a little to the inside."
+        ],
+        [
+          "The neckline looks lumpy or pulled",
+          "Grade it, and clip more often on tight curves."
+        ],
+        [
+          "A hole at the neckline",
+          "A clip went through the stitching. Restitch that spot just inside the first line."
+        ]
+      ],
+      "practice": "Face a scrap neckline from start to finish. Then cut it across the middle and look at the layers.",
+      "more": "An all-in-one facing finishes the neckline and armholes together. Patterns explain their own turning trick, so follow yours step by step."
+    },
+    {
+      "id": "l5-bias-strips",
+      "title": "Making bias strips and tape",
+      "minutes": 20,
+      "summary": "Cut on the diagonal, strips bend smoothly around curves. Make your own in any fabric.",
+      "learn": [
+        "Finding the true bias",
+        "Working out the strip width",
+        "Joining strips so the joins hardly show",
+        "Folding single-fold and double-fold tape"
+      ],
+      "need": [
+        "{{1/2 yd}} of light or medium cotton",
+        "Clear ruler, chalk, and scissors, or a rotary cutter and mat",
+        "Iron",
+        "Optional: a bias tape maker"
+      ],
+      "words": [
+        "bias",
+        "bias strip",
+        "bias tape",
+        "selvedge"
+      ],
+      "steps": [
+        {
+          "text": "Square up the cut end of the fabric, then fold it so it lies along the [[selvedge]]. The fold is the true [[bias]], at 45°. Press it.",
+          "dia": [
+            "l5BiasTape",
+            {
+              "step": "fold"
+            }
+          ]
+        },
+        {
+          "text": "Work out the strip width. For double-fold [[bias tape]], cut strips **4 times** the finished width: {{2 in}} strips make {{1/2 in}} tape.",
+          "dia": [
+            "l5BiasTape",
+            {
+              "step": "tape",
+              "w": 0.5
+            }
+          ]
+        },
+        {
+          "text": "Cut along the pressed fold. Then cut [[bias strip|strips]] parallel to that edge, measuring from it with your ruler each time.",
+          "dia": [
+            "l5BiasTape",
+            {
+              "step": "cut",
+              "w": 0.5
+            }
+          ]
+        },
+        {
+          "text": "To know how much you need, measure the edge you'll bind and add {{2 in}}. Join strips to reach that length.",
+          "dia": [
+            "tools",
+            {
+              "list": [
+                "tape"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "To join, trim the ends square. Lay two strips right sides together at a right angle and sew corner to corner.",
+          "dia": [
+            "l5BiasTape",
+            {
+              "step": "join"
+            }
+          ],
+          "tip": "Before trimming, open it out to check the strip runs straight. If it makes a V, you sewed the other diagonal."
+        },
+        {
+          "text": "Trim to {{1/4 in}}, press the seam open, and snip off the little points.",
+          "dia": [
+            "l5BiasTape",
+            {
+              "step": "press"
+            }
+          ]
+        },
+        {
+          "text": "Fold the strip in half the long way, wrong sides together, and press. Open it, fold both long edges in to meet the crease, and press. That's single-fold tape.",
+          "dia": [
+            "l5BiasTape",
+            {
+              "step": "tape",
+              "w": 0.5,
+              "hi": "single"
+            }
+          ]
+        },
+        {
+          "text": "Fold it in half again and press. Now it's double-fold tape, {{1/2 in}} wide.",
+          "dia": [
+            "l5BiasTape",
+            {
+              "step": "tape",
+              "w": 0.5,
+              "hi": "double"
+            }
+          ],
+          "warn": "Don't pull the strip as you press. Bias gets narrower when it's stretched."
+        }
+      ],
+      "looks": "Long, even tape with straight folds, flat joins, and no twisting.",
+      "mistakes": [
+        [
+          "Joined strips make a V",
+          "You sewed the wrong diagonal. Unpick it and sew the other corner to corner."
+        ],
+        [
+          "The tape is narrower in places",
+          "It was stretched while pressing. Press gently and let the iron do the work."
+        ],
+        [
+          "The strips aren't really on the bias",
+          "Check that the first fold lies exactly along the selvedge."
+        ]
+      ],
+      "practice": "Make {{1 yd}} of {{1/2 in}} double-fold tape. You'll use it in the next lesson.",
+      "more": "A bias tape maker is a small metal funnel. Feed the strip in, pull it through, and press as it comes out folded. A {{1 in}} maker turns {{2 in}} strips into {{1 in}} single-fold tape, ready to fold once more."
+    },
+    {
+      "id": "l5-bias-bind",
+      "title": "Binding a neckline or armhole",
+      "minutes": 25,
+      "summary": "Wrap a raw edge in bias tape for a neat finish that shows on both sides.",
+      "learn": [
+        "Getting the edge ready",
+        "Sewing the tape in its crease",
+        "Wrapping and edgestitching",
+        "Joining the ends neatly"
+      ],
+      "need": [
+        "Your {{1/2 in}} double-fold bias tape",
+        "A practice neckline on a scrap, staystitched",
+        "Pins or clips",
+        "Iron"
+      ],
+      "words": [
+        "binding",
+        "bias tape",
+        "edgestitch",
+        "staystitch"
+      ],
+      "steps": [
+        {
+          "text": "Check your pattern. If it was made for a facing, trim the {{SA}} seam allowance off the neckline first. [[binding|Binding]] wraps around the cut edge, so the cut edge becomes the finished edge.",
+          "dia": [
+            "l5Neck",
+            {
+              "show": "bind"
+            }
+          ],
+          "why": "Leave the allowance on and the neckline ends up a seam allowance higher and tighter than the pattern meant."
+        },
+        {
+          "text": "Shape the tape with steam: press it into a gentle curve that matches the neckline.",
+          "dia": [
+            "l5BiasTape",
+            {
+              "step": "curve"
+            }
+          ]
+        },
+        {
+          "text": "Open out one fold. Starting at a shoulder seam, pin the tape's right side to the garment's **wrong side**, raw edges together. Fold the starting end under {{1/2 in}}.",
+          "dia": [
+            "l5Bind",
+            {
+              "step": 1,
+              "pin": true
+            }
+          ]
+        },
+        {
+          "text": "Sew in the first crease all the way around. Let the tape follow the curve, just slightly snug on an inward curve like a neckline. Don't stretch the garment.",
+          "dia": [
+            "l5Bind",
+            {
+              "step": 1
+            }
+          ]
+        },
+        {
+          "text": "At the end, lay the tape over the folded start by {{1/2 in}} and trim off the rest.",
+          "dia": [
+            "panel",
+            {
+              "w": 8,
+              "h": 1,
+              "side": "right2",
+              "pieces": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "w": 3.5,
+                  "h": 1,
+                  "side": "right2"
+                }
+              ],
+              "folds": [
+                [
+                  3,
+                  0,
+                  3,
+                  1
+                ]
+              ],
+              "dims": [
+                [
+                  3,
+                  0,
+                  3.5,
+                  0,
+                  "{{1/2 in}}",
+                  -14
+                ]
+              ],
+              "labels": [
+                [
+                  1.5,
+                  1.9,
+                  "End"
+                ],
+                [
+                  5.75,
+                  1.9,
+                  "Start, folded under"
+                ]
+              ],
+              "label": "Joining the ends"
+            }
+          ]
+        },
+        {
+          "text": "Press the tape up, away from the garment. Wrap it over the edge to the right side so the fold just covers the first stitching. Pin or clip.",
+          "dia": [
+            "l5Bind",
+            {
+              "step": 2
+            }
+          ]
+        },
+        {
+          "text": "[[edgestitch|Edgestitch]] the fold from the right side, all the way around.",
+          "dia": [
+            "l5Bind",
+            {
+              "step": 3
+            }
+          ]
+        },
+        {
+          "text": "Armholes are easiest bound flat, before the side seam is sewn. Then sew the side seam right through the ends of the binding.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "top",
+              "hi": [
+                "arm",
+                "side"
+              ]
+            }
+          ]
+        }
+      ],
+      "looks": "Binding of even width all the way around, lying flat with no ripples, and a neat overlap at the join.",
+      "mistakes": [
+        [
+          "The edge ripples or flips up",
+          "The tape was stretched too much. Unpick a section and sew it more relaxed."
+        ],
+        [
+          "The fold misses the stitching underneath",
+          "Wrap it a little farther so the fold covers the first line, and pin closely."
+        ],
+        [
+          "The neckline came out too small",
+          "The seam allowance wasn't trimmed off first. Check before you start."
+        ]
+      ],
+      "practice": "Bind a gentle curve on a scrap, then a tighter one. Then bind one armhole of a scrap shape flat and sew a side seam through it.",
+      "more": "For a binding that hides fully inside (a bias facing), sew the opened tape to the right side instead, trim, understitch, and turn it all to the inside before stitching it down."
+    },
+    {
+      "id": "l5-shaping",
+      "title": "How darts and gathers shape fabric",
+      "kind": "design",
+      "minutes": 10,
+      "summary": "Bodies are curved and fabric is flat. Here's how clothes bridge the gap.",
+      "learn": [
+        "Why a dart makes a curve",
+        "Where darts point",
+        "How gathers and pleats add room"
+      ],
+      "need": [
+        "A sheet of paper and some tape",
+        "A few of your clothes"
+      ],
+      "words": [
+        "dart",
+        "gathers",
+        "pleat",
+        "easing",
+        "bodice"
+      ],
+      "steps": [
+        {
+          "text": "Cut a wedge out of a paper circle and tape the cut edges together. Flat paper becomes a cone. A [[dart]] does the same to fabric.",
+          "dia": [
+            "l5Shape",
+            {
+              "show": "cone"
+            }
+          ]
+        },
+        {
+          "text": "A dart's point aims at a curve: the bust, the shoulder blade, or the curve below the waist. The point stops just short of the fullest spot.",
+          "dia": [
+            "l5Shape",
+            {
+              "show": "body"
+            }
+          ]
+        },
+        {
+          "text": "On a [[bodice]], bust darts come in from the side seams and waist darts rise from the waist. On a skirt, waist darts point down toward the hips.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "top",
+              "hi": [
+                "dart"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "[[gathers|Gathers]] work the other way: lots of extra fabric drawn into a short seam for soft fullness.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "gathered",
+              "hi": [
+                "gathers"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Darts fit closely, gathers add softness, and [[pleat|pleats]] give crisp, controlled folds.",
+          "dia": [
+            "l5Shape",
+            {
+              "show": "compare"
+            }
+          ]
+        },
+        {
+          "text": "[[easing|Easing]] is the quiet one: a little extra length worked into a shorter seam with no folds at all, like a sleeve top fitting into an armhole.",
+          "dia": [
+            "l5Sleeve",
+            {
+              "step": "flat"
+            }
+          ]
+        }
+      ],
+      "looks": "You can point to the darts, gathers, pleats, or curved seams on a garment, and say which curve each one shapes.",
+      "mistakes": [
+        [
+          "Confusing a dart with a seam",
+          "A dart ends in a point inside the piece. A seam runs from edge to edge."
+        ],
+        [
+          "Thinking more darts means a better fit",
+          "Darts fit only where they point. Level 6 shows how to place them for your body."
+        ]
+      ],
+      "practice": "Find a dart, some gathers, and a pleat in your own clothes or in a shop. Sketch each one in your notes."
+    },
+    {
+      "id": "l5-darts",
+      "title": "Darts",
+      "minutes": 20,
+      "summary": "A straight line that tapers to nothing, and a smooth curve with no bubble at the tip.",
+      "learn": [
+        "Marking a dart",
+        "Sewing to a smooth point",
+        "Tying off instead of backstitching",
+        "Pressing over a curve"
+      ],
+      "need": [
+        "A scrap with a dart marked: legs {{1 in}} apart at the edge, {{4 in}} long",
+        "Chalk or a marking pen, and a ruler",
+        "A pressing ham, or a rolled-up towel"
+      ],
+      "words": [
+        "dart",
+        "pressing ham",
+        "backstitch",
+        "wrong side"
+      ],
+      "steps": [
+        {
+          "text": "Mark the dart on the [[wrong side]] with chalk or [[tailor's tack|tailor's tacks]]: mark the two legs at the edge and the point, then draw straight lines joining them.",
+          "dia": [
+            "l5Dart",
+            {
+              "step": "mark"
+            }
+          ]
+        },
+        {
+          "text": "Fold right sides together along the center of the dart, so the two legs lie exactly on top of each other. Pin across the line.",
+          "dia": [
+            "l5Dart",
+            {
+              "step": "fold"
+            }
+          ],
+          "tip": "Push a pin straight down through the point to check it lands on the fold."
+        },
+        {
+          "text": "Start at the wide end with a [[backstitch]] and sew straight toward the point. For the last few stitches, run right along the fold, then sew off the edge.",
+          "dia": [
+            "l5Dart",
+            {
+              "step": "sew"
+            }
+          ],
+          "tip": "Lay a strip of masking tape along the line to steer by.",
+          "why": "Sewing off the fold, instead of stopping at it, is what makes the point smooth instead of bubbly."
+        },
+        {
+          "text": "Don't backstitch at the point: it makes a lump. Leave long tails and tie them in a double knot.",
+          "dia": [
+            "l5Dart",
+            {
+              "step": "tie"
+            }
+          ]
+        },
+        {
+          "text": "Press the dart flat as sewn, just up to the point. Then press it to one side over a [[pressing ham]] (a firm, rounded cushion) or a rolled towel.",
+          "dia": [
+            "l5Dart",
+            {
+              "step": "press"
+            }
+          ]
+        },
+        {
+          "text": "Which way: vertical darts press toward the center front or center back. Bust darts press downward.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "top",
+              "hi": [
+                "dart"
+              ]
+            }
+          ]
+        }
+      ],
+      "looks": "A straight line of stitching, a point that fades smoothly into the fabric, and a gentle curve with no pucker at the tip.",
+      "mistakes": [
+        [
+          "A bubble at the point",
+          "Sew the last stitches right beside the fold and then off the edge. Don't curve in early."
+        ],
+        [
+          "The two legs don't match",
+          "Pin the legs together first, then the point, before you sew."
+        ],
+        [
+          "A shiny mark on the right side",
+          "Use a pressing cloth, and slip paper under the dart when pressing."
+        ]
+      ],
+      "practice": "Sew three darts on scrap. Press them over a ham and look from the right side. Is each point smooth?"
+    },
+    {
+      "id": "l5-gathers",
+      "title": "Gathers",
+      "minutes": 20,
+      "summary": "Pull long stitches to fit a long edge onto a short one, with soft, even folds.",
+      "learn": [
+        "How much fabric gathers need",
+        "Sewing and pulling gathering threads",
+        "Spreading gathers evenly",
+        "Sewing over them with no tucks"
+      ],
+      "need": [
+        "A strip of light cotton {{30 in}} × {{6 in}}",
+        "A strip {{15 in}} × {{4 in}} for the band",
+        "Pins",
+        "Matching thread"
+      ],
+      "words": [
+        "gathers",
+        "baste",
+        "stitch length",
+        "tension"
+      ],
+      "why": "Gathers decide whether a skirt looks soft and even or lumpy. Even gathers come from even spreading, not luck.",
+      "steps": [
+        {
+          "text": "Decide the fullness. The gathered edge is 1.5 times the flat edge for light gathers, 2 times for classic gathers, and up to 3 times in thin fabric. This practice uses 2 times.",
+          "dia": [
+            "panel",
+            {
+              "w": 30,
+              "h": 4,
+              "side": "right",
+              "pieces": [
+                {
+                  "x": 7.5,
+                  "y": 6,
+                  "w": 15,
+                  "h": 3,
+                  "side": "right2"
+                }
+              ],
+              "labels": [
+                [
+                  15,
+                  2,
+                  "Gathered piece {{30 in}}"
+                ],
+                [
+                  15,
+                  7.5,
+                  "Band {{15 in}}"
+                ]
+              ],
+              "label": "Two times fullness"
+            }
+          ]
+        },
+        {
+          "text": "Set the [[stitch length]] to 4 or 5 mm and loosen the top [[tension]] by one number. These are basting stitches, made to be pulled.",
+          "dia": [
+            "machine",
+            {
+              "hi": [
+                "length",
+                "tension"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Sew two rows along the edge: one {{3/8 in}} and one {{1/2 in}} from it. Both stay inside the {{SA}} seam allowance. Leave long tails at both ends.",
+          "dia": [
+            "l5Gather",
+            {
+              "step": 1
+            }
+          ],
+          "tip": "On long edges, stop and start the rows at each seam or quarter mark. Shorter threads are less likely to snap."
+        },
+        {
+          "text": "Hold both bobbin threads together and pull gently, sliding the fabric along them. Work from both ends toward the middle.",
+          "dia": [
+            "l5Gather",
+            {
+              "step": 2
+            }
+          ]
+        },
+        {
+          "text": "Mark the center and quarters on both pieces. Pin the gathered piece to the band, right sides together, matching the marks. Wind the thread tails around a pin in a figure 8 to hold them.",
+          "dia": [
+            "l5Gather",
+            {
+              "step": 3
+            }
+          ]
+        },
+        {
+          "text": "Spread the gathers evenly between the pins with your fingers or a pin tip.",
+          "dia": [
+            "l5Gather",
+            {
+              "step": 3,
+              "spread": true
+            }
+          ]
+        },
+        {
+          "text": "Sew at {{SA}} with the gathered side up, just below the second row. Keep the little folds straight as they go under the foot.",
+          "dia": [
+            "l5Gather",
+            {
+              "step": 4
+            }
+          ],
+          "why": "With the gathers on top, you can see and steer them, so none get folded over into a tuck."
+        },
+        {
+          "text": "Press the seam allowances toward the band, using just the tip of the iron. Don't press the gathers flat. Zigzag the edges together.",
+          "dia": [
+            "xsec",
+            {
+              "kind": "side"
+            }
+          ]
+        }
+      ],
+      "looks": "Soft folds spread evenly along the seam, no pleats or tucks caught in the stitching, and no gathering rows showing on the right side.",
+      "mistakes": [
+        [
+          "The thread snapped while pulling",
+          "Pull more gently, from both ends, and break long edges into sections."
+        ],
+        [
+          "Tucks caught in the seam",
+          "Sew slower with the gathered side up, and smooth each fold before it reaches the needle."
+        ],
+        [
+          "A gathering row shows on the outside",
+          "It strayed below the seam line. Pull it out after sewing."
+        ]
+      ],
+      "practice": "Gather the {{30 in}} strip onto the {{15 in}} band. Then try 1.5 times fullness on another scrap and compare the look.",
+      "more": "For very long edges or heavy fabric, zigzag over a strong cord (dental floss works) inside the seam allowance, without stitching through it. Pull the cord instead of the threads: it won't snap."
+    },
+    {
+      "id": "l5-elastic",
+      "title": "Elastic: casings and stitched-on",
+      "minutes": 25,
+      "summary": "Elastic makes waists that fit without a zipper. The trick is the right length.",
+      "learn": [
+        "Choosing elastic",
+        "Finding the right length on your body",
+        "Making a casing and threading it",
+        "Stitching elastic straight onto an edge"
+      ],
+      "need": [
+        "{{1 yd}} of {{1 in}} wide elastic",
+        "A practice tube: two scraps sewn into a loop a little bigger around than your hips",
+        "A large safety pin",
+        "Tape measure"
+      ],
+      "words": [
+        "elastic",
+        "casing",
+        "stitch in the ditch",
+        "zigzag stitch"
+      ],
+      "steps": [
+        {
+          "text": "Braided [[elastic]] gets narrower when stretched, so it's best inside a [[casing]]. Knitted and non-roll elastic stay flat, so they're good stitched on or in waistbands.",
+          "dia": [
+            "l5Tools",
+            {
+              "list": [
+                "elastic"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Find your length on your body. Start with your waist measurement less {{2 in}}. Pin it into a loop with the safety pin and try it on.",
+          "dia": [
+            "body",
+            {
+              "m": "waist"
+            }
+          ]
+        },
+        {
+          "text": "It should feel snug but comfy, sit where you want it, and still stretch enough to pull over your hips. Adjust, then add {{1 in}} for the overlap and cut.",
+          "dia": [
+            "body",
+            {
+              "m": "hip"
+            }
+          ],
+          "warn": "Elastics vary a lot in stretch. Always test on your body: no rule alone can tell you the right length."
+        },
+        {
+          "text": "You made a casing on your pajama pants in level 4. Here it is sized for {{1 in}} elastic: fold the top edge {{1/2 in}} to the wrong side and press. Fold again by {{1 1/4 in}} and press. For other elastic, make the second fold the elastic's width plus {{1/4 in}}.",
+          "dia": [
+            "l5Fold",
+            {
+              "step": 3,
+              "a": 0.5,
+              "b": 1.25,
+              "edge": "Top edge"
+            }
+          ]
+        },
+        {
+          "text": "Stitch {{1/8 in}} from the inner fold, leaving a {{2 in}} gap near a side seam.",
+          "dia": [
+            "l5Fold",
+            {
+              "step": 4,
+              "a": 0.5,
+              "b": 1.25,
+              "edge": "Top edge"
+            }
+          ]
+        },
+        {
+          "text": "Pin the safety pin to one end of the elastic and work it through the casing. Pin the other end to the fabric so it can't slip in.",
+          "dia": [
+            "l5Elastic",
+            {
+              "step": "thread"
+            }
+          ]
+        },
+        {
+          "text": "Check the elastic isn't twisted. Overlap the ends {{1 in}} and zigzag a box through both.",
+          "dia": [
+            "l5Elastic",
+            {
+              "step": "join"
+            }
+          ]
+        },
+        {
+          "text": "Stretch the casing so the elastic slides inside, and stitch the gap closed. Spread the gathers evenly, then [[stitch in the ditch]] of each side seam, through the elastic, so it can't twist.",
+          "dia": [
+            "l5Elastic",
+            {
+              "step": "close"
+            }
+          ]
+        },
+        {
+          "text": "Stitched-on elastic: quarter-mark the elastic loop and the garment edge, and pin them together at the marks.",
+          "dia": [
+            "l5Elastic",
+            {
+              "step": "stitched"
+            }
+          ]
+        },
+        {
+          "text": "Zigzag along the edge, stretching only the elastic to fit the fabric between the pins.",
+          "dia": [
+            "l5Elastic",
+            {
+              "step": "stitched",
+              "sew": true
+            }
+          ],
+          "tip": "Hold the elastic behind and in front of the foot, and stretch both sides evenly."
+        }
+      ],
+      "looks": "An even, untwisted waist with the gathers spread all the way around, that fits snug and comfy and slips over your hips.",
+      "mistakes": [
+        [
+          "The elastic twisted inside the casing",
+          "Pull it straight, then stitch in the ditch at the side seams to hold it."
+        ],
+        [
+          "The waist is too loose or too tight",
+          "Unpick the overlap, change the length, and try it on again before stitching."
+        ],
+        [
+          "The elastic won't go through",
+          "The casing is too narrow. It needs about {{1/4 in}} more than the elastic's width."
+        ]
+      ],
+      "practice": "Put a casing and elastic in your practice tube. Wear it around the house for a few minutes. Too tight or too loose? Note how much to change."
+    },
+    {
+      "id": "l5-skirt-gathered",
+      "title": "Project: gathered skirt with an elastic waist",
+      "kind": "project",
+      "minutes": 180,
+      "summary": "Two rectangles, your own measurements, and an elastic waist. No pattern needed.",
+      "finished": "Your own length and fit, with a {{1 in}} elastic waist",
+      "hero": [
+        "l5Flat",
+        {
+          "g": "gathered"
+        }
+      ],
+      "heroCap": "Two rectangles, gathered by the elastic.",
+      "learn": [
+        "Working out pieces from your own measurements",
+        "Sewing a whole garment from start to finish",
+        "French seams, an elastic casing, and a double-fold hem"
+      ],
+      "fabric": [
+        "About {{1 3/4 yd}} of light to medium woven cotton, 44 in (112 cm) wide, prewashed. Step 5 works out your exact amount.",
+        "Good choices: cotton lawn, poplin, voile, chambray, or soft linen"
+      ],
+      "need": [
+        "{{1 yd}} of {{1 in}} wide elastic",
+        "Matching thread",
+        "A large safety pin",
+        "Tape measure, ruler, and chalk",
+        "Pins and iron"
+      ],
+      "words": [
+        "french seam",
+        "casing",
+        "elastic",
+        "double-fold hem",
+        "selvedge"
+      ],
+      "steps": [
+        {
+          "text": "Measure around the fullest part of your hips, and around your waist where the skirt will sit. Then measure from that waist spot down to where you want the hem: that's your finished length.",
+          "dia": [
+            "body",
+            {
+              "m": "hip"
+            }
+          ],
+          "tip": "Write all three in your notes. The example uses hips {{40 in}}, waist {{30 in}}, and a finished length of {{26 in}}."
+        },
+        {
+          "text": "Panel width: multiply your hips by a fullness of 1.5 (crisp fabric) to 2 (soft fabric). Halve that for each of the two panels, then add {{SA}} on each side. Example: {{40 in}} × 1.75 = {{70 in}}. Half is {{35 in}}, plus two seam allowances makes {{36 1/4 in}}.",
+          "dia": [
+            "panel",
+            {
+              "w": 36.25,
+              "h": 29.25,
+              "side": "right",
+              "wide": true,
+              "dims": [
+                [
+                  0,
+                  0,
+                  36.25,
+                  0,
+                  "{{36 1/4 in}}",
+                  -14
+                ]
+              ],
+              "folds": [
+                [
+                  0.625,
+                  0,
+                  0.625,
+                  29.25
+                ],
+                [
+                  35.625,
+                  0,
+                  35.625,
+                  29.25
+                ]
+              ],
+              "labels": [
+                [
+                  18.125,
+                  10,
+                  "Half of hips × fullness"
+                ],
+                [
+                  18.125,
+                  14.5,
+                  "{{35 in}} in the example"
+                ],
+                [
+                  18.125,
+                  21,
+                  "plus {{SA}} each side"
+                ]
+              ],
+              "label": "Skirt panel width"
+            }
+          ]
+        },
+        {
+          "text": "Check that it fits: each panel must fit across your fabric once the selvedges are trimmed off, about {{42 in}} on 44 in (112 cm) fabric. Too wide? Cut three panels instead (divide by 3, then add the seam allowances), or use 60 in (150 cm) fabric.",
+          "dia": [
+            "layout",
+            {
+              "fw": 44,
+              "len": 62.5,
+              "pieces": [
+                {
+                  "name": "Front",
+                  "w": 36.25,
+                  "h": 29.25,
+                  "x": 3.875,
+                  "y": 1
+                },
+                {
+                  "name": "Back",
+                  "w": 36.25,
+                  "h": 29.25,
+                  "x": 3.875,
+                  "y": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Cut length: finished length + {{1 1/2 in}} for the hem + {{1 3/4 in}} for the casing. There are no seams across the top or bottom, so nothing else to add. Example: {{26 in}} + {{1 1/2 in}} + {{1 3/4 in}} = {{29 1/4 in}}.",
+          "dia": [
+            "panel",
+            {
+              "w": 36.25,
+              "h": 29.25,
+              "side": "right",
+              "wide": true,
+              "dims": [
+                [
+                  36.25,
+                  0,
+                  36.25,
+                  29.25,
+                  "{{29 1/4 in}}",
+                  -14
+                ]
+              ],
+              "folds": [
+                [
+                  0,
+                  1.75,
+                  36.25,
+                  1.75
+                ],
+                [
+                  0,
+                  27.75,
+                  36.25,
+                  27.75
+                ]
+              ],
+              "labels": [
+                [
+                  18.125,
+                  0.9,
+                  "Casing {{1 3/4 in}}"
+                ],
+                [
+                  18.125,
+                  14,
+                  "Finished length {{26 in}}"
+                ],
+                [
+                  18.125,
+                  28.5,
+                  "Hem {{1 1/2 in}}"
+                ]
+              ],
+              "label": "Skirt panel length"
+            }
+          ]
+        },
+        {
+          "text": "Fabric to buy: two cut lengths plus {{4 in}} for straightening and shrinking. Example: {{29 1/4 in}} × 2 + {{4 in}} = {{62 1/2 in}}, so buy {{1 3/4 yd}}.",
+          "dia": [
+            "layout",
+            {
+              "fw": 44,
+              "len": 62.5,
+              "pieces": [
+                {
+                  "name": "Front",
+                  "w": 36.25,
+                  "h": 29.25,
+                  "x": 3.875,
+                  "y": 1
+                },
+                {
+                  "name": "Back",
+                  "w": 36.25,
+                  "h": 29.25,
+                  "x": 3.875,
+                  "y": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Prewash and press the fabric, square up the end, and trim off the [[selvedge|selvedges]]. Cut two rectangles: your panel width across the fabric, and your cut length along it.",
+          "dia": [
+            "square",
+            {
+              "step": 3
+            }
+          ],
+          "why": "This runs the lengthwise grain down your body, so the skirt hangs straight."
+        },
+        {
+          "text": "Sew both side seams as [[french seam|French seams]]: wrong sides together at {{1/4 in}}, trim to {{1/8 in}}, then right sides together at {{3/8 in}}. Press them toward the back. Now it's a tube.",
+          "dia": [
+            "l5French",
+            {
+              "step": 3
+            }
+          ],
+          "tip": "Or sew plain {{SA}} seams, zigzag the edges, and press them open."
+        },
+        {
+          "text": "Fold the top edge {{1/2 in}} to the wrong side and press. Fold again by {{1 1/4 in}}, press, and pin.",
+          "dia": [
+            "l5Fold",
+            {
+              "step": 3,
+              "a": 0.5,
+              "b": 1.25,
+              "edge": "Top edge"
+            }
+          ]
+        },
+        {
+          "text": "Stitch {{1/8 in}} from the inner fold all the way around, leaving a {{2 in}} gap at one side seam.",
+          "dia": [
+            "l5Fold",
+            {
+              "step": 4,
+              "a": 0.5,
+              "b": 1.25,
+              "edge": "Top edge"
+            }
+          ]
+        },
+        {
+          "text": "Cut the elastic. Start at your waist less {{2 in}} ({{28 in}} in the example), try it on as a loop, and adjust until it's snug, comfy, and stretches over your hips. Add {{1 in}} for the overlap and cut ({{29 in}} in the example).",
+          "dia": [
+            "body",
+            {
+              "m": "waist"
+            }
+          ]
+        },
+        {
+          "text": "Thread the elastic through the casing with the safety pin. Pin the tail end down so it can't slip in.",
+          "dia": [
+            "l5Elastic",
+            {
+              "step": "thread"
+            }
+          ]
+        },
+        {
+          "text": "Check for twists, overlap the ends {{1 in}}, and zigzag a box.",
+          "dia": [
+            "l5Elastic",
+            {
+              "step": "join"
+            }
+          ]
+        },
+        {
+          "text": "Stitch the gap closed, spread the gathers evenly, and stitch in the ditch at both side seams.",
+          "dia": [
+            "l5Elastic",
+            {
+              "step": "close"
+            }
+          ]
+        },
+        {
+          "text": "Try it on in front of a mirror. Check that the hem is level, and mark any changes with pins.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "gathered",
+              "hi": [
+                "hem"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Hem: fold {{1/2 in}} to the wrong side and press, then {{1 in}} and press. Stitch close to the inner fold.",
+          "dia": [
+            "l5Fold",
+            {
+              "step": 4,
+              "a": 0.5,
+              "b": 1
+            }
+          ]
+        },
+        {
+          "text": "Give it a final press, skipping the gathered waist. Put it on!",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "gathered",
+              "hi": "all"
+            }
+          ]
+        }
+      ],
+      "looks": "Even gathers all the way around, side seams with no raw edges, an untwisted elastic waist that fits, and a level hem of even depth.",
+      "mistakes": [
+        [
+          "The skirt won't pull over the hips",
+          "The elastic is too short. Lengthen it first. If that's not enough, use more fullness next time."
+        ],
+        [
+          "The hem dips at the sides",
+          "Mark the hem while wearing the skirt, with a friend's help, and trim it level before hemming."
+        ],
+        [
+          "Gathers bunch in one spot",
+          "Before closing the gap, slide the fabric along the elastic until it's even."
+        ]
+      ],
+      "practice": "Write your measurements, fullness, and elastic length in your notes, so your next skirt is even quicker.",
+      "more": "Add in-seam pockets (later in this level) for a skirt you'll wear every day, or a gathered tier at the hem using the gathers lesson."
+    },
+    {
+      "id": "l5-top",
+      "title": "Project: a simple woven top",
+      "kind": "project",
+      "minutes": 240,
+      "summary": "Your first garment from a store-bought pattern: darts, a finished neckline, and armholes.",
+      "finished": "Set by your pattern and size",
+      "hero": [
+        "l5Flat",
+        {
+          "g": "top",
+          "hi": "all"
+        }
+      ],
+      "heroCap": "A sleeveless top. Yours may have cut-on sleeves.",
+      "learn": [
+        "Choosing a beginner-friendly pattern",
+        "Sewing a top in the usual order",
+        "Using this level's skills together"
+      ],
+      "fabric": [
+        "The yardage on your pattern's envelope for your size and fabric width",
+        "Light to medium woven cotton or linen, prewashed: lawn, poplin, chambray, or a linen blend"
+      ],
+      "need": [
+        "A sleeveless or cut-on-sleeve top pattern (see step 1)",
+        "Light fusible interfacing, if your pattern has facings",
+        "Bias tape or extra fabric, if your pattern uses binding",
+        "Thread, pins, chalk, and an iron"
+      ],
+      "words": [
+        "bodice",
+        "dart",
+        "facing",
+        "binding",
+        "staystitch",
+        "hem"
+      ],
+      "steps": [
+        {
+          "text": "Choose the pattern. Look for a woven top with no sleeves or cut-on sleeves (sleeves cut as part of the [[bodice]]), a few darts at most, a neckline finished with a facing or binding, and no zipper. Skip knits, set-in sleeves, and bias-cut styles for now.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "top",
+              "hi": "all"
+            }
+          ]
+        },
+        {
+          "text": "Pick your size from your bust measurement, as in level 4, and compare the finished measurements printed on the pattern. A pullover neckline is drafted to pass over your head, so don't make it smaller.",
+          "dia": [
+            "body",
+            {
+              "m": "bust"
+            }
+          ]
+        },
+        {
+          "text": "Cut and mark everything: darts, [[notch|notches]], and center marks. Fuse interfacing to any facings.",
+          "dia": [
+            "l5Interf",
+            {
+              "show": "where"
+            }
+          ],
+          "tip": "Use your pattern's seam allowance for every seam. Many use {{SA}}, but check, as in level 4."
+        },
+        {
+          "text": "[[staystitch|Staystitch]] the neckline and armholes on the front and back, {{1/2 in}} from the edge.",
+          "dia": [
+            "l5Neck",
+            {
+              "show": "stay"
+            }
+          ]
+        },
+        {
+          "text": "Sew the bust darts, and press them downward.",
+          "dia": [
+            "l5Dart",
+            {
+              "step": "sew"
+            }
+          ]
+        },
+        {
+          "text": "Sew the shoulder seams right sides together at the pattern's seam allowance. Finish the edges and press the seams open.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "top",
+              "hi": [
+                "shoulder"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Finish the neckline the way your pattern says: with a [[facing]] (graded, clipped, and understitched) or with bias [[binding]].",
+          "dia": [
+            "l5Neck",
+            {
+              "show": "facing"
+            }
+          ],
+          "tip": "Go back to the facings lesson or the binding lesson and follow it side by side with your pattern."
+        },
+        {
+          "text": "Armholes: if they're bound, bind them flat now, before the side seams. If they have facings, most patterns sew the side seams first. Follow your pattern's order here.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "top",
+              "hi": [
+                "arm"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Sew the side seams from the armhole down to the hem. Finish and press.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "top",
+              "hi": [
+                "side"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Try it on. Check the length, and that the darts point toward the bust.",
+          "dia": [
+            "l5Shape",
+            {
+              "show": "body"
+            }
+          ]
+        },
+        {
+          "text": "Hem it with a double-fold [[hem]], or a narrow hem if the hem curves. Use your pattern's hem allowance.",
+          "dia": [
+            "l5Fold",
+            {
+              "step": 4,
+              "a": 0.5,
+              "b": 1
+            }
+          ]
+        },
+        {
+          "text": "Tack the facings at the seams, give the whole top a final press, and wear it!",
+          "dia": [
+            "press",
+            {}
+          ]
+        }
+      ],
+      "looks": "A top with smooth darts, a neckline that lies flat with nothing peeking out, even armholes, and a level hem.",
+      "mistakes": [
+        [
+          "The neckline gapes",
+          "It stretched before it was staystitched. Next time, staystitch as soon as you cut."
+        ],
+        [
+          "The facing flips out",
+          "Understitch it, and tack it at the shoulders."
+        ],
+        [
+          "The armholes feel tight",
+          "Check you sewed at your pattern's seam allowance. If so, level 6 shows how to change the pattern itself."
+        ]
+      ],
+      "practice": "Write down your pattern, size, and anything you'd change. Your second one will fit even better."
+    },
+    {
+      "id": "l5-zip-centered",
+      "title": "Centered zipper",
+      "minutes": 25,
+      "summary": "Two folds meet over the zipper, with a line of stitching on each side. The classic zipper.",
+      "learn": [
+        "The parts of a zipper, and picking the length",
+        "Basting the opening closed",
+        "Stitching it from the right side"
+      ],
+      "need": [
+        "A {{7 in}} zipper (any kind except invisible)",
+        "Two scraps about {{6 in}} × {{10 in}}",
+        "Zipper foot",
+        "Seam ripper"
+      ],
+      "words": [
+        "zipper foot",
+        "centered zipper",
+        "baste",
+        "seam ripper"
+      ],
+      "steps": [
+        {
+          "text": "Meet the zipper: the tape, the teeth or coil, the pull, the top stops, and the bottom stop. A zipper's length runs from the top stops to the bottom stop.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "parts"
+            }
+          ]
+        },
+        {
+          "text": "The opening runs from the seam line at the top ({{SA}} below the raw edge) down to the end mark. Use a zipper the same length as the opening.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "measure"
+            }
+          ]
+        },
+        {
+          "text": "Finish both seam allowances with zigzag now. It's hard to reach them once the zipper is in.",
+          "dia": [
+            "finish",
+            {
+              "kind": "zigzag"
+            }
+          ]
+        },
+        {
+          "text": "Sew the seam right sides together at {{SA}}: regular stitches from the bottom up to the end mark, a backstitch, then [[baste]] (5 mm stitches) the rest. Press the seam open.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "centered",
+              "step": 1
+            }
+          ]
+        },
+        {
+          "text": "Lay the zipper face down on the seam allowances, teeth right over the seam, top stop just below the top seam line. Pin or hand-baste both sides of the tape.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "centered",
+              "step": 2
+            }
+          ]
+        },
+        {
+          "text": "Put on the [[zipper foot]]. From the right side, stitch {{1/4 in}} from the seam: down one side, across below the bottom stop, and up the other side.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "centered",
+              "step": 3
+            }
+          ],
+          "tip": "Center a strip of {{1/2 in}} wide tape over the seam and sew along its edges. When the pull gets in the way, stop with the needle down, lift the foot, and slide the pull behind it."
+        },
+        {
+          "text": "Unpick the basting with a [[seam ripper]]. The two folds meet over the teeth.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "xs"
+            }
+          ]
+        }
+      ],
+      "looks": "Two straight lines of stitching the same distance from the seam, a square bottom, and folds that meet over the teeth with none showing.",
+      "mistakes": [
+        [
+          "The stitching wobbles",
+          "Use the tape guide, go slowly, and keep the foot's edge against the tape."
+        ],
+        [
+          "Teeth show in a gap",
+          "The zipper was off center. Re-pin it with the teeth exactly under the seam."
+        ],
+        [
+          "The pull is stuck beside the foot",
+          "Needle down, lift the foot, and slide the pull past it."
+        ]
+      ],
+      "practice": "Put a centered zipper in two scraps. Then do it again: the second one is always neater.",
+      "more": "Zipper too long? A coil zipper can run past the top of the opening and be cut off after the waistband or facing is sewn across it. Or shorten it from the bottom: whipstitch over the coil by hand for a new stop, and cut {{1/2 in}} below. Never cut a metal zipper without new stops."
+    },
+    {
+      "id": "l5-zip-lapped",
+      "title": "Lapped zipper (and invisible)",
+      "minutes": 25,
+      "summary": "A flap hides the zipper completely, with one line of stitching showing.",
+      "learn": [
+        "Sewing the underlap close to the teeth",
+        "Stitching the overlapping flap",
+        "What an invisible zipper is"
+      ],
+      "need": [
+        "A {{7 in}} zipper",
+        "Two scraps about {{6 in}} × {{10 in}}",
+        "Zipper foot"
+      ],
+      "words": [
+        "lapped zipper",
+        "zipper foot",
+        "invisible zipper",
+        "edgestitch"
+      ],
+      "steps": [
+        {
+          "text": "Prepare the seam just like a centered zipper: finish the edges, sew up to the end mark, baste above it, and press open.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "centered",
+              "step": 1
+            }
+          ]
+        },
+        {
+          "text": "Decide which side laps over. Your pattern says. On a skirt's side seam, the front usually laps over the back. The other side is the underlap.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "xs",
+              "style": "lapped"
+            }
+          ]
+        },
+        {
+          "text": "Open the zipper. Lay it face down on the underlap's seam allowance only, teeth on the seam line, and baste the tape to that seam allowance.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "centered",
+              "step": 2
+            }
+          ],
+          "cap": "Same start as a centered zipper, but stitch to one seam allowance only."
+        },
+        {
+          "text": "Close the zipper and turn it face up. The seam allowance folds beside the teeth. [[edgestitch|Edgestitch]] along this fold, through the fold and the tape only.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "lapped",
+              "step": 2
+            }
+          ]
+        },
+        {
+          "text": "Spread the garment flat, right side up: the zipper lies under the other side, the overlap. Stitch across the bottom and up, {{1/2 in}} from the seam, through every layer.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "lapped",
+              "step": 3
+            }
+          ],
+          "tip": "Stick a strip of {{1/2 in}} tape beside the seam and sew along its outer edge."
+        },
+        {
+          "text": "Unpick the basting. The flap covers the zipper.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "xs",
+              "style": "lapped"
+            }
+          ]
+        }
+      ],
+      "looks": "One straight line of stitching about {{1/2 in}} from the seam, a flap that covers the teeth, and a flat underlap.",
+      "mistakes": [
+        [
+          "Teeth peek out",
+          "The underlap fold wasn't close enough to the teeth, or the flap's stitching is too near the seam."
+        ],
+        [
+          "The stitching misses the tape",
+          "Feel for the tape edge under the flap, and keep the stitching {{1/2 in}} out."
+        ]
+      ],
+      "practice": "Sew a lapped zipper in scraps. Compare it with your centered one.",
+      "more": "An [[invisible zipper]] hides inside the seam. You sew it **before** the seam, with an invisible zipper foot that rolls the coil open, then sew the seam below it. Try one once a centered zipper feels easy, following the steps on the zipper's package."
+    },
+    {
+      "id": "l5-pocket-inseam",
+      "title": "In-seam side pockets",
+      "minutes": 25,
+      "summary": "Pockets hidden in the side seams. They make skirts and dresses so much better.",
+      "learn": [
+        "Attaching pocket bags",
+        "Sewing around the bag in one pass",
+        "Clipping so the seam presses flat"
+      ],
+      "need": [
+        "Two side pieces cut from scraps, about {{10 in}} × {{14 in}}",
+        "Two pocket bags, from a pattern or traced around your hand with {{SA}} added",
+        "Thread, pins, and scissors"
+      ],
+      "words": [
+        "in-seam pocket",
+        "pocket bag",
+        "clip",
+        "understitch"
+      ],
+      "steps": [
+        {
+          "text": "Mark the pocket opening with dots on the side edges of the front and back. Openings are usually about {{6 in}} long, starting a few inches below the waist.",
+          "dia": [
+            "l5InPocket",
+            {
+              "step": "mark"
+            }
+          ]
+        },
+        {
+          "text": "Pin a [[pocket bag]] to the front's side edge, right sides together, raw edges even. Sew at {{SA}}. Do the same on the back.",
+          "dia": [
+            "l5InPocket",
+            {
+              "step": "attach"
+            }
+          ]
+        },
+        {
+          "text": "Press the bags away from the garment, with the seam allowances toward the bag. [[understitch|Understitching]] the front bag helps it stay hidden.",
+          "dia": [
+            "l5InPocket",
+            {
+              "step": "press"
+            }
+          ]
+        },
+        {
+          "text": "Pin the front to the back, right sides together, matching the bags. Sew down the side to the top dot, pivot, sew around the bag, pivot at the bottom dot, and carry on down the side seam.",
+          "dia": [
+            "l5InPocket",
+            {
+              "step": "sew"
+            }
+          ],
+          "tip": "Backstitch at each dot. They take the strain every time you use the pocket."
+        },
+        {
+          "text": "[[clip|Clip]] the back seam allowance at each dot, just to the stitching.",
+          "dia": [
+            "l5InPocket",
+            {
+              "step": "clip"
+            }
+          ],
+          "why": "The clips let the side seam press open above and below while the pocket turns toward the front."
+        },
+        {
+          "text": "Zigzag the raw edges, around the bag too. Press the side seam open above and below, and the pocket toward the front.",
+          "dia": [
+            "l5InPocket",
+            {
+              "step": "open"
+            }
+          ]
+        }
+      ],
+      "looks": "A pocket opening that lies flat in the side seam, with the bag hidden toward the front and nothing peeking out.",
+      "mistakes": [
+        [
+          "The pocket bag shows at the opening",
+          "Understitch the front bag, or roll the seam a little toward the back as you press."
+        ],
+        [
+          "A hole at the top or bottom of the opening",
+          "Backstitch at the dots, and stitch exactly to them."
+        ],
+        [
+          "The side seam won't press open",
+          "Clip the back seam allowance at the dots."
+        ]
+      ],
+      "practice": "Make one in-seam pocket on scraps and put your hand in it.",
+      "more": "Some patterns sew the bags on with a narrower seam so the join rolls out of sight. Follow your pattern if it's different."
+    },
+    {
+      "id": "l5-skirt-aline",
+      "title": "Project: A-line skirt with a zipper",
+      "kind": "project",
+      "minutes": 300,
+      "summary": "A fitted skirt: darts, a zipper, a finished waist, and maybe pockets.",
+      "finished": "Set by your pattern and size",
+      "hero": [
+        "l5Flat",
+        {
+          "g": "aline",
+          "hi": "all"
+        }
+      ],
+      "heroCap": "An A-line skirt with darts, a zipper, and pockets.",
+      "learn": [
+        "Choosing a beginner A-line skirt pattern",
+        "Sewing in the right order around a zipper",
+        "Finishing a waist with a facing or a waistband"
+      ],
+      "fabric": [
+        "The yardage on your pattern for your size and fabric width",
+        "Medium-weight woven, prewashed: cotton twill, chambray, light denim, or linen. Skip corduroy and plaids for now."
+      ],
+      "need": [
+        "An A-line skirt pattern with a zipper (see step 1)",
+        "The zipper length your pattern lists",
+        "Fusible interfacing for the facing or waistband",
+        "A hook and eye, or a button",
+        "Thread, pins, chalk, a zipper foot, and an iron"
+      ],
+      "words": [
+        "dart",
+        "centered zipper",
+        "lapped zipper",
+        "facing",
+        "hook and eye",
+        "in-seam pocket"
+      ],
+      "steps": [
+        {
+          "text": "Choose the pattern: an A-line skirt with front and back pieces, waist darts, a zipper at the center back or side, and a waistband or waist facing. [[in-seam pocket|In-seam pockets]] are a bonus. Skip linings and yokes for your first one.",
+          "dia": [
+            "l5Flat",
+            {
+              "g": "aline",
+              "hi": "all"
+            }
+          ]
+        },
+        {
+          "text": "Pick your size by your hip, as in level 4. If your waist is a different size, blend to it at the waist.",
+          "dia": [
+            "body",
+            {
+              "m": "waist"
+            }
+          ]
+        },
+        {
+          "text": "Cut and mark the darts, the zipper end mark, and any pocket dots. Fuse interfacing to the waistband or facing. A narrow strip of interfacing on each zipper seam allowance helps too.",
+          "dia": [
+            "l5Interf",
+            {
+              "show": "where"
+            }
+          ],
+          "tip": "Use your pattern's seam allowance for every seam. Many use {{SA}}, but check."
+        },
+        {
+          "text": "Staystitch the waist edges, from each side toward the center.",
+          "dia": [
+            "panel",
+            {
+              "w": 12,
+              "h": 5,
+              "side": "right",
+              "stitch": [
+                [
+                  [
+                    0.3,
+                    0.5
+                  ],
+                  [
+                    5.8,
+                    0.5
+                  ]
+                ],
+                [
+                  [
+                    11.7,
+                    0.5
+                  ],
+                  [
+                    6.2,
+                    0.5
+                  ]
+                ]
+              ],
+              "stitchHi": "all",
+              "arrows": [
+                [
+                  1,
+                  1.5,
+                  5,
+                  1.5
+                ],
+                [
+                  11,
+                  1.5,
+                  7,
+                  1.5
+                ]
+              ],
+              "labels": [
+                [
+                  6,
+                  3.6,
+                  "Skirt front, waist edge"
+                ]
+              ],
+              "label": "Staystitching a waist"
+            }
+          ]
+        },
+        {
+          "text": "Sew the [[dart|darts]] and press them toward the center.",
+          "dia": [
+            "l5Dart",
+            {
+              "step": "press"
+            }
+          ]
+        },
+        {
+          "text": "Pockets, if you have them: sew the bags to the front and back side edges and press them out.",
+          "dia": [
+            "l5InPocket",
+            {
+              "step": "press"
+            }
+          ]
+        },
+        {
+          "text": "Zipper seam: finish its edges, sew up to the end mark, baste above it, and press open.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "centered",
+              "step": 1
+            }
+          ]
+        },
+        {
+          "text": "Put in the zipper, [[centered zipper|centered]] or [[lapped zipper|lapped]], as your pattern shows.",
+          "dia": [
+            "l5Zip",
+            {
+              "kind": "xs"
+            }
+          ]
+        },
+        {
+          "text": "Sew the side seams, around the pockets if any. Clip, finish, and press.",
+          "dia": [
+            "l5InPocket",
+            {
+              "step": "sew"
+            }
+          ]
+        },
+        {
+          "text": "Waist [[facing]]: sew its side seams, finish its lower edge, and sew it to the waist. Grade, clip, understitch, and fold its ends under beside the zipper. A waistband instead is sewn on, folded over, and stitched in the ditch: follow your pattern.",
+          "dia": [
+            "l5Facing",
+            {
+              "step": "under"
+            }
+          ]
+        },
+        {
+          "text": "Sew a [[hook and eye]] at the top of the zipper, or a buttonhole and button on a waistband.",
+          "dia": [
+            "l5Tools",
+            {
+              "list": [
+                "hook"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Try it on and mark the hem. Ease the flare in as you fold the hem up, then finish it with a blind hem or a topstitched hem.",
+          "dia": [
+            "l5Hem",
+            {
+              "kind": "ease"
+            }
+          ]
+        },
+        {
+          "text": "Give it a final press, and wear it!",
+          "dia": [
+            "press",
+            {}
+          ]
+        }
+      ],
+      "looks": "Darts that point smoothly toward the hips, a zipper that lies flat, a waist that doesn't roll, and a level hem.",
+      "mistakes": [
+        [
+          "The zipper ripples",
+          "The fabric stretched while sewing. Interfacing strips on the seam allowances prevent it next time."
+        ],
+        [
+          "The waist facing rolls out",
+          "Understitch it and tack it at the side seams and darts."
+        ],
+        [
+          "The hem twists or ripples",
+          "Ease the flare in with a long stitch, and steam before sewing."
+        ]
+      ],
+      "practice": "Note your size, any fit problems, and how long each part took. Level 6 will help you fix the fit."
+    },
+    {
+      "id": "l5-buttonholes",
+      "title": "Buttonholes and buttons",
+      "minutes": 25,
+      "summary": "Buttonholes look scary, but your machine does most of the work. Test first, then it's easy.",
+      "learn": [
+        "Where buttonholes go",
+        "Working out the length",
+        "Sewing a one-step or four-step buttonhole",
+        "Cutting it open and placing the buttons"
+      ],
+      "need": [
+        "Buttons",
+        "Scraps with interfacing fused between two layers",
+        "Buttonhole foot (it came with your machine)",
+        "Seam ripper, a pin, and chalk"
+      ],
+      "words": [
+        "buttonhole",
+        "bar tack",
+        "center front",
+        "interfacing",
+        "seam sealant",
+        "shank"
+      ],
+      "steps": [
+        {
+          "text": "A [[buttonhole]] has two narrow zigzag sides and a [[bar tack]] at each end. You cut it open between the sides.",
+          "dia": [
+            "l5Buttonhole",
+            {
+              "show": "parts"
+            }
+          ]
+        },
+        {
+          "text": "Buttonholes go on the overlapping side. Vertical ones sit on the [[center front]] line. Ones across a band start {{1/8 in}} past the center line, toward the edge.",
+          "dia": [
+            "l5Buttonhole",
+            {
+              "show": "place"
+            }
+          ],
+          "why": "When it's buttoned, the button settles at the end of the hole, so it sits right on the center line."
+        },
+        {
+          "text": "Always sew through [[interfacing]]. Without it, buttonholes stretch and wrinkle.",
+          "dia": [
+            "l5Interf",
+            {
+              "show": "patch"
+            }
+          ]
+        },
+        {
+          "text": "Length: the button's width across plus its thickness. A {{3/4 in}} button that's {{1/8 in}} thick needs a {{7/8 in}} buttonhole.",
+          "dia": [
+            "l5Buttonhole",
+            {
+              "show": "length",
+              "d": 0.75,
+              "t": 0.125
+            }
+          ],
+          "tip": "For a domed or chunky button, wrap a strip of paper around its widest part, pinch it, and use half the strip's length."
+        },
+        {
+          "text": "Mark the line and both ends with chalk. Sew a test on a scrap with the same layers, and check the button goes through.",
+          "dia": [
+            "l5Buttonhole",
+            {
+              "show": "chalk"
+            }
+          ]
+        },
+        {
+          "text": "One-step: put the button in the back of the buttonhole foot, pull down the buttonhole lever, and sew. The machine stitches all four parts and stops.",
+          "dia": [
+            "l5Tools",
+            {
+              "list": [
+                "bhfoot"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Four-step: turn the dial to each step in order: a bar tack, one side, the other bar tack, and the other side. Your manual shows your machine's order.",
+          "dia": [
+            "l5Buttonhole",
+            {
+              "show": "four"
+            }
+          ]
+        },
+        {
+          "text": "Put a drop of [[seam sealant]] on the cutting space if you have some, and let it dry. Push a pin across one end, then cut from the other end toward it with a seam ripper.",
+          "dia": [
+            "l5Buttonhole",
+            {
+              "show": "cut"
+            }
+          ],
+          "warn": "Go slowly. One slip can cut through a bar tack."
+        },
+        {
+          "text": "Lay the buttonhole side over the button side, center lines matched. Push a pin through each buttonhole and mark the spot: the middle of a vertical hole, or {{1/8 in}} in from the outer end of one that runs across.",
+          "dia": [
+            "l5Buttonhole",
+            {
+              "show": "mark"
+            }
+          ]
+        },
+        {
+          "text": "Sew each button on its mark, with a thread [[shank]] for thick fabric, as in level 1.",
+          "dia": [
+            "button",
+            {
+              "step": 3
+            }
+          ]
+        }
+      ],
+      "looks": "Buttonholes of even length with solid bar tacks, clean cuts with no fraying, and buttons that line up so the edges meet flat.",
+      "mistakes": [
+        [
+          "The stitches bunch up",
+          "Use interfacing, and put tear-away paper underneath if the fabric is thin."
+        ],
+        [
+          "The button won't go through",
+          "Too short. Always test first, and add {{1/16 in}} if it's tight."
+        ],
+        [
+          "Cut through a bar tack",
+          "Pin across the far end every time before cutting."
+        ]
+      ],
+      "practice": "Sew five buttonholes on an interfaced scrap. Cut them open and sew a button for each. Button them up!"
+    },
+    {
+      "id": "l5-pocket-patch",
+      "title": "Patch pockets",
+      "minutes": 20,
+      "summary": "A pocket sewn on top of a garment. Neat corners and even edges make it look store-bought.",
+      "learn": [
+        "Hemming the pocket top",
+        "Pressing curves over a template",
+        "Sewing it on so the corners stay strong"
+      ],
+      "need": [
+        "A scrap {{6 3/4 in}} × {{8 3/8 in}} for the pocket, which finishes {{5 1/2 in}} × {{6 1/2 in}}",
+        "A bigger scrap to sew it onto",
+        "Thin card for a template",
+        "Iron and pins"
+      ],
+      "words": [
+        "patch pocket",
+        "edgestitch",
+        "notch a curve",
+        "bar tack"
+      ],
+      "steps": [
+        {
+          "text": "Round off the two bottom corners (trace around a cup). The cut size includes {{SA}} on the sides and bottom, and {{1 1/4 in}} at the top for the hem.",
+          "dia": [
+            "l5Pocket",
+            {
+              "step": "hem",
+              "cut": true
+            }
+          ]
+        },
+        {
+          "text": "Fold the top edge {{1/4 in}} to the wrong side and stitch it down.",
+          "dia": [
+            "l5Pocket",
+            {
+              "step": "hem"
+            }
+          ]
+        },
+        {
+          "text": "Fold the top {{1 in}} over to the **right** side, along the fold line. Sew each end of this fold at {{SA}}.",
+          "dia": [
+            "l5Pocket",
+            {
+              "step": "fold"
+            }
+          ]
+        },
+        {
+          "text": "Trim the corners of the fold, turn it right side out, and press. The top hem is done, with clean corners.",
+          "dia": [
+            "l5Pocket",
+            {
+              "step": "fold",
+              "turn": true
+            }
+          ]
+        },
+        {
+          "text": "Sew a long stitch {{1/2 in}} from the edge, around the sides and bottom.",
+          "dia": [
+            "l5Pocket",
+            {
+              "step": "baste"
+            }
+          ]
+        },
+        {
+          "text": "Cut a card template the finished size. Lay it on the wrong side, pull the long stitch to ease the curves over it, and press the edges in.",
+          "dia": [
+            "l5Pocket",
+            {
+              "step": "baste",
+              "card": true
+            }
+          ],
+          "tip": "If a curve still bunches, [[notch a curve|notch]] it, keeping the notches short of the pressed edge."
+        },
+        {
+          "text": "Pin the pocket in place, checking it's straight with a ruler. [[edgestitch|Edgestitch]] around the sides and bottom.",
+          "dia": [
+            "l5Pocket",
+            {
+              "step": "sew"
+            }
+          ]
+        },
+        {
+          "text": "Make the top corners strong: stitch a small triangle at each one, or a short [[bar tack]].",
+          "dia": [
+            "l5Pocket",
+            {
+              "step": "sew",
+              "corner": true
+            }
+          ]
+        }
+      ],
+      "looks": "A pocket with smooth curves, square top corners, and an even line of stitching close to the edge.",
+      "mistakes": [
+        [
+          "The curves are lumpy",
+          "Pull the easing thread more evenly, and press over the card."
+        ],
+        [
+          "The top corners tear away",
+          "Add the triangles or bar tacks, and backstitch."
+        ],
+        [
+          "The pocket sits crooked",
+          "Measure from the center front or the hem at both sides before you pin."
+        ]
+      ],
+      "practice": "Sew a patch pocket onto a scrap. Then try one with square corners.",
+      "more": "For square bottom corners, press the sides and bottom under, open them out, and fold each corner in at an angle (a mitered corner) before refolding. It takes out the bulk."
+    },
+    {
+      "id": "l5-shirt",
+      "title": "Project: a button-up shirt",
+      "kind": "project",
+      "minutes": 600,
+      "summary": "The level's big finish: collar, stand, yoke, plackets, cuffs, and buttonholes, one stage at a time.",
+      "finished": "Set by your pattern and size",
+      "hero": [
+        "shirt",
+        {
+          "hi": [
+            "collar",
+            "stand",
+            "placket",
+            "cuff",
+            "pocket"
+          ]
+        }
+      ],
+      "heroCap": "Every part you'll make, from collar to cuffs.",
+      "learn": [
+        "Choosing a shirt pattern you can succeed with",
+        "The standard order of a button-up shirt",
+        "Collar, stand, yoke, sleeve plackets, and cuffs"
+      ],
+      "fabric": [
+        "The yardage on your pattern for your size and fabric width",
+        "Cotton shirting, prewashed: poplin, oxford cloth, chambray, or lawn. Solids or small prints: no plaids or stripes yet."
+      ],
+      "need": [
+        "A classic button-up shirt pattern (see step 1)",
+        "Light fusible interfacing for shirts",
+        "Buttons in the size and number your pattern lists",
+        "Thread, pins, chalk, and a point turner",
+        "Buttonhole foot and seam ripper"
+      ],
+      "words": [
+        "collar",
+        "collar stand",
+        "yoke",
+        "placket",
+        "cuff",
+        "flat-felled seam"
+      ],
+      "steps": [
+        {
+          "text": "**Before you start: the pattern.** Choose a classic shirt with a [[collar]] on a [[collar stand]], a back [[yoke]], sleeve plackets, and cuffs. Look for an easy rating and clear drawings. Make a test version first if you can: level 6 shows how.",
+          "dia": [
+            "shirt",
+            {
+              "hi": [
+                "collar",
+                "stand",
+                "placket",
+                "cuff"
+              ]
+            }
+          ]
+        },
+        {
+          "text": "**Stage 1, prep.** Pick your size from your chest or bust, then cut and mark carefully. Fuse interfacing to the collar, stand, cuffs, and button bands as your pattern says. Staystitch the neckline.",
+          "dia": [
+            "l5Interf",
+            {
+              "show": "where"
+            }
+          ],
+          "tip": "Shirt patterns often use narrower seam allowances on the collar and cuffs. Use your pattern's numbers everywhere in this project."
+        },
+        {
+          "text": "**Stage 2, fronts.** Fold and stitch the button bands, or [[placket|plackets]], on both fronts. Add a patch pocket now if your pattern has one.",
+          "dia": [
+            "l5Pocket",
+            {
+              "step": "sew"
+            }
+          ]
+        },
+        {
+          "text": "**Stage 3, back and yoke.** Pleat or gather the back if your pattern says to. Sandwich the back between the outer and inner yoke, right sides facing the back, and sew.",
+          "dia": [
+            "l5Yoke",
+            {
+              "step": "back"
+            }
+          ]
+        },
+        {
+          "text": "Sew the front shoulders to the outer yoke. Press the inner yoke's shoulder edges under by the seam allowance and edgestitch them over the seams. Many patterns roll the shirt up inside the yoke instead (the burrito method): follow yours.",
+          "dia": [
+            "l5Yoke",
+            {
+              "step": "fronts"
+            }
+          ]
+        },
+        {
+          "text": "**Stage 4, collar.** Sew the two collar pieces right sides together along the ends and outer edge. Trim the corners and turn.",
+          "dia": [
+            "l5Collar",
+            {
+              "step": "sew"
+            }
+          ]
+        },
+        {
+          "text": "Push out the points gently with a point turner, press, and topstitch.",
+          "dia": [
+            "l5Collar",
+            {
+              "step": "turn"
+            }
+          ]
+        },
+        {
+          "text": "Sandwich the collar between the two stand pieces and sew the curved ends and top edge. Trim, clip the curves, and turn.",
+          "dia": [
+            "l5Collar",
+            {
+              "step": "stand"
+            }
+          ]
+        },
+        {
+          "text": "**Stage 5, attach the stand.** Sew one stand layer to the staystitched neckline, clipping the neckline curve. Press the other layer's lower edge under by the seam allowance, fold it over the seam, and edgestitch all around the stand.",
+          "dia": [
+            "shirt",
+            {
+              "hi": [
+                "stand",
+                "collar"
+              ]
+            }
+          ],
+          "tip": "Mark the stand's ends and match them exactly to the front edges. That's what makes the collar look sharp."
+        },
+        {
+          "text": "**Stage 6, sleeve plackets.** Cut the slit to the mark and sew on the placket pieces the way your pattern shows. Simple bound plackets and tower plackets are both common.",
+          "dia": [
+            "l5Placket",
+            {
+              "step": "bind"
+            }
+          ]
+        },
+        {
+          "text": "Fold the placket to the inside and stitch. Finish the top with the small slanted or boxed stitching your pattern shows.",
+          "dia": [
+            "l5Placket",
+            {
+              "step": "done"
+            }
+          ]
+        },
+        {
+          "text": "**Stage 7, sleeves.** With the shirt opened flat, match the top of each sleeve cap to the shoulder seam and pin. Sew with the sleeve underneath so the feed dogs ease it in.",
+          "dia": [
+            "l5Sleeve",
+            {
+              "step": "flat"
+            }
+          ]
+        },
+        {
+          "text": "**Stage 8, side seams.** Sew from the cuff edge, under the arm, and down to the hem in one line. French seams or [[flat-felled seam|flat-felled seams]] keep the inside neat.",
+          "dia": [
+            "l5Sleeve",
+            {
+              "step": "side"
+            }
+          ]
+        },
+        {
+          "text": "**Stage 9, cuffs.** Fuse the interfacing and press one long edge under. Fold each cuff right sides together, sew the ends, trim, and turn.",
+          "dia": [
+            "l5Cuff",
+            {
+              "step": "ends"
+            }
+          ]
+        },
+        {
+          "text": "Fold the sleeve pleats, sew the cuff to the sleeve, fold it over the seam, and edgestitch all around.",
+          "dia": [
+            "l5Cuff",
+            {
+              "step": "attach"
+            }
+          ]
+        },
+        {
+          "text": "**Stage 10, hem.** Most shirts have a curved hem. Use a narrow {{1/4 in}} double-fold hem.",
+          "dia": [
+            "l5Hem",
+            {
+              "kind": "curve"
+            }
+          ]
+        },
+        {
+          "text": "**Stage 11, buttonholes.** Vertical on the front band, across on the collar stand and cuffs. Test on scraps with the same layers first, then mark and sew the buttons.",
+          "dia": [
+            "l5Buttonhole",
+            {
+              "show": "place"
+            }
+          ]
+        },
+        {
+          "text": "**Final press.** Collar, cuffs, and plackets first, then the sleeves, then the body. You made a shirt!",
+          "dia": [
+            "shirt",
+            {
+              "hi": [
+                "collar",
+                "cuff",
+                "pocket",
+                "hem"
+              ]
+            }
+          ]
+        }
+      ],
+      "looks": "A collar with matching points, a stand that sits smooth, sleeves set in with no puckers, cuffs and plackets that close neatly, and buttonholes that fit their buttons.",
+      "mistakes": [
+        [
+          "The collar points don't match",
+          "Draw the stitching line on the interfacing and sew exactly on it. Trim and turn both points the same way."
+        ],
+        [
+          "Puckers where the sleeve meets the shirt",
+          "Pin more at the cap, sew with the sleeve underneath, and ease gently."
+        ],
+        [
+          "The stand's ends don't line up with the front edges",
+          "Mark the ends and match them to the front edges before sewing."
+        ]
+      ],
+      "practice": "Level 5 complete! Tick off your skill list, and write in your notes which stage was hardest and what you'd change next time.",
+      "more": "A [[flat-felled seam]] is sewn, then one seam allowance is trimmed narrow and the other is folded over it and stitched flat. Two rows of stitching show. Patterns that use it explain each step."
+    }
+  ]
+}

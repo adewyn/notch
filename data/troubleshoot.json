@@ -1,0 +1,117 @@
+{
+  "note": "Fix it: each problem lists checks in order, easiest and most likely first. 'lesson' links a lesson id; 'dia' is a diagram.",
+  "groups": [
+    { "id": "machine", "title": "Stitches and thread" },
+    { "id": "fabric", "title": "Seams and fabric" },
+    { "id": "pressing", "title": "Pressing" }
+  ],
+  "problems": [
+    { "id": "nest", "group": "machine", "title": "A tangle of thread under the fabric",
+      "about": "A big loopy nest on the underside almost always means the **top** thread isn't in the tension discs, even though it looks like a bobbin problem.",
+      "steps": [
+        { "check": "Was the presser foot down when you threaded the top thread?", "fix": "Raise the presser foot (this opens the tension discs) and rethread the whole top thread from the spool. Then lower the foot and test.", "dia": ["machine", { "hi": ["lever", "tension"] }], "lesson": "l1-thread" },
+        { "check": "Did the thread skip the take-up lever?", "fix": "Turn the handwheel toward you until the lever is at its highest point, then rethread so the thread goes through its eye.", "dia": ["machine", { "hi": ["takeup"] }], "lesson": "l1-thread" },
+        { "check": "Did you hold the thread tails for the first few stitches?", "fix": "Hold both tails toward the back for the first 2 or 3 stitches, and start with the needle down in the fabric." },
+        { "check": "Is the bobbin in the right way round?", "fix": "Take it out and drop it back in so the thread unwinds the way your manual shows, then pull it through the little slot until it clicks.", "dia": ["bobbin", { "step": 2 }], "lesson": "l1-bobbin" }
+      ] },
+    { "id": "top-breaks", "group": "machine", "title": "The top thread keeps breaking",
+      "steps": [
+        { "check": "Is the thread caught on the spool?", "fix": "Look for a little notch on the spool's end. Turn the spool so the thread comes off without catching, and add a spool cap if your machine has one." },
+        { "check": "Is the needle old, bent, or the wrong size?", "fix": "Put in a fresh needle that suits the fabric (80/12 for most cottons, 90/14 or 100/16 for heavy fabric).", "lesson": "l1-needles" },
+        { "check": "Is the top tension very high?", "fix": "Set the tension dial back to the middle (often 4) and test on a scrap.", "dia": ["machine", { "hi": ["tension"] }] },
+        { "check": "Is the thread old or cheap?", "fix": "Old thread gets brittle. Tug a length: if it snaps easily, use a new spool of good all-purpose polyester." },
+        { "check": "Is it threaded right?", "fix": "Rethread from the start with the presser foot up.", "lesson": "l1-thread" }
+      ] },
+    { "id": "needle-breaks", "group": "machine", "title": "The needle broke",
+      "about": "Turn the machine off and find every piece of the broken needle before you go on.",
+      "steps": [
+        { "check": "Did the needle hit a pin?", "fix": "Pull pins out just before the needle reaches them. Never sew over them." },
+        { "check": "Were you pulling or pushing the fabric?", "fix": "Let the feed dogs move the fabric. Your hands only guide it. Pulling bends the needle into the plate." },
+        { "check": "Is the needle too thin for the fabric?", "fix": "Use a thicker needle for heavy fabric or many layers: a denim 100/16 for canvas and denim.", "lesson": "l1-needles" },
+        { "check": "Is the needle pushed all the way up?", "fix": "Loosen the clamp, push the new needle up as far as it goes with the flat side to the back, and tighten.", "dia": ["needleUp", { "step": 2 }] },
+        { "check": "Is the presser foot on firmly?", "fix": "A loose foot can knock the needle. Click it back on, and check it's the right foot for the stitch (a straight stitch foot can't zigzag)." }
+      ] },
+    { "id": "skipped", "group": "machine", "title": "Skipped stitches",
+      "steps": [
+        { "check": "Is the needle dull, bent, or in backwards?", "fix": "Put in a fresh needle, pushed all the way up with the flat side to the back.", "dia": ["needleUp", { "step": 2 }], "lesson": "l1-needles" },
+        { "check": "Is it the right kind of needle?", "fix": "Knits need a ballpoint or stretch needle; thick fabric needs a bigger needle; fine silky fabric needs a Microtex needle." },
+        { "check": "Is the machine threaded right?", "fix": "Rethread the top with the presser foot up, and check the bobbin.", "lesson": "l1-thread" },
+        { "check": "Is the fabric flagging (bouncing up and down with the needle)?", "fix": "Hold the fabric flat on both sides of the foot, or sew with a strip of tissue paper underneath and tear it away after." }
+      ] },
+    { "id": "bobbin-shows", "group": "machine", "title": "Bobbin thread shows on top",
+      "about": "If you see little dots of bobbin thread on top, the top thread is pulling too hard.",
+      "steps": [
+        { "check": "Is the top tension too high?", "fix": "Turn the tension dial to a lower number a little at a time, testing on a scrap after each change.", "dia": ["stitchLook", { "kind": "top" }] },
+        { "check": "Is the bobbin threaded through its tension spring?", "fix": "Take the bobbin out and drop it in again, pulling the thread into the slot until it clicks.", "lesson": "l1-bobbin" },
+        { "check": "Are the top and bobbin threads very different?", "fix": "Use the same thread on top and in the bobbin." }
+      ] },
+    { "id": "loops-under", "group": "machine", "title": "Loops on the underside",
+      "about": "Loops underneath mean the top thread is too loose. Small loops are a tension issue; a big nest is usually a threading issue.",
+      "steps": [
+        { "check": "Is the top thread in the tension discs?", "fix": "Rethread with the presser foot UP, then lower it before sewing.", "lesson": "l1-thread", "dia": ["stitchLook", { "kind": "bottom" }] },
+        { "check": "Is the top tension too low?", "fix": "Turn the tension dial up a little at a time, testing on a scrap." },
+        { "check": "Still loopy?", "fix": "See \"A tangle of thread under the fabric\": the same fixes apply." }
+      ] },
+    { "id": "no-feed", "group": "machine", "title": "The fabric doesn't move",
+      "steps": [
+        { "check": "Is the presser foot down?", "fix": "Lower it. Without it, the feed dogs can't grip the fabric.", "dia": ["machine", { "hi": ["foot", "lever"] }] },
+        { "check": "Is the stitch length set to 0?", "fix": "Set it to 2.5. At 0 the machine sews in place.", "dia": ["machine", { "hi": ["length"] }] },
+        { "check": "Are the feed dogs dropped?", "fix": "Some machines have a switch (often at the back or under the free arm) that lowers them for darning. Raise them again." },
+        { "check": "Is the fabric very thick at the start?", "fix": "Put a folded scrap of the same thickness behind the foot so it sits level, or start sewing just past the thick part." }
+      ] },
+    { "id": "jammed", "group": "machine", "title": "The machine jams or the handwheel won't turn",
+      "steps": [
+        { "check": "Is thread caught in the bobbin area?", "fix": "Turn off the machine. Remove the needle plate (often a screw or two) and the bobbin, and clear out any thread and lint with a small brush.", "dia": ["machine", { "hi": ["plate", "bobbin"] }] },
+        { "check": "Is the bobbin winder still switched on?", "fix": "On many machines the needle won't move while the winder is pushed over. Push it back." },
+        { "check": "Did fabric get pulled down into the needle hole?", "fix": "Cut the threads, lift the fabric free, and start again holding the thread tails. A straight-stitch plate or a scrap 'leader' helps with thin fabric." }
+      ] },
+    { "id": "unthreads", "group": "machine", "title": "The needle comes unthreaded as I start",
+      "steps": [
+        { "check": "Did you stop with the needle at its highest point?", "fix": "Always stop with the take-up lever at the top (turn the handwheel toward you). Then the first stitch can't pull the thread out.", "dia": ["machine", { "hi": ["takeup", "wheel"] }] },
+        { "check": "Is the thread tail long enough?", "fix": "Leave about {{4 in}} of thread behind the needle, and hold it for the first stitches." }
+      ] },
+    { "id": "pucker", "group": "fabric", "title": "Seams pucker",
+      "steps": [
+        { "check": "Is the stitch too long or too short for the fabric?", "fix": "Try 2.5 mm, or 2 mm for thin fabric. Test on a scrap.", "dia": ["stitchLook", { "kind": "length" }] },
+        { "check": "Is the top tension too tight?", "fix": "Lower the tension a little and test." },
+        { "check": "Is the needle dull or too thick?", "fix": "Put in a fresh needle, one size thinner for light fabric." },
+        { "check": "Are you pulling the fabric?", "fix": "Let it feed by itself. Your hands just guide." },
+        { "check": "Did you press the seam?", "fix": "Press the stitching flat first (to 'set' it), then press the seam open or to one side. Many small puckers vanish.", "lesson": "l2-pressing" }
+      ] },
+    { "id": "wavy", "group": "fabric", "title": "Seams come out wavy or stretched",
+      "steps": [
+        { "check": "Is it a curved or bias edge?", "fix": "Staystitch curves {{1/2 in}} from the edge right after cutting, and handle bias pieces gently.", "lesson": "l2-curves" },
+        { "check": "Is the top layer creeping ahead of the bottom one?", "fix": "Pin more often, sew slower, or use a walking foot. Lift the foot now and then (needle down) to let the layers relax." },
+        { "check": "Is it a knit?", "fix": "Use a ballpoint needle and a narrow zigzag, and don't stretch the fabric as you sew. Knits get their own level later." }
+      ] },
+    { "id": "wander", "group": "fabric", "title": "My seam wanders off the line",
+      "steps": [
+        { "check": "Are you watching the needle?", "fix": "Watch the fabric edge at the {{SA}} guide line instead. The needle takes care of itself.", "dia": ["sew", { "guide": true, "sewn": 60 }], "lesson": "l2-seam-allowance" },
+        { "check": "Is it hard to see the guide line?", "fix": "Stick a strip of masking tape on the needle plate along the {{SA}} line, or use a magnetic seam guide (not on computerized machines)." },
+        { "check": "Are you sewing fast?", "fix": "Slow down. Steady and slow beats fast and wobbly." }
+      ] },
+    { "id": "fray", "group": "fabric", "title": "Edges are fraying away",
+      "steps": [
+        { "check": "Are the seams finished?", "fix": "Zigzag, pink, or serge the raw edges right after sewing each seam.", "dia": ["finish", { "kind": "zigzag" }], "lesson": "l2-finishing" },
+        { "check": "Is the fabric loosely woven (like linen or gauze)?", "fix": "Finish edges before you even start sewing, handle the pieces as little as you can, and consider French seams." },
+        { "check": "Did you clip too close?", "fix": "Clips and notches stop just short of the stitching. If a clip went through, sew a short second row of stitches just inside the first." }
+      ] },
+    { "id": "corner-blunt", "group": "fabric", "title": "Corners won't turn out sharp",
+      "steps": [
+        { "check": "Did you trim the corner?", "fix": "Snip the seam allowance off diagonally across the corner, close to (not through) the stitching.", "dia": ["clip", { "kind": "corner" }], "lesson": "l2-pivot" },
+        { "check": "Did you push it out gently?", "fix": "Use a chopstick or point turner, from the inside. Don't poke through." },
+        { "check": "Still bulky?", "fix": "On thick fabric, take one small stitch straight across the point before pivoting. It gives the fabric room to turn." }
+      ] },
+    { "id": "shine", "group": "pressing", "title": "Shiny marks from the iron",
+      "steps": [
+        { "check": "Is the iron too hot for the fiber?", "fix": "Turn it down to the right setting for the fabric (see the Fabric guide), and test on a scrap.", "lesson": "l1-iron" },
+        { "check": "Did you press on the right side?", "fix": "Press from the wrong side, or use a pressing cloth (a piece of plain cotton or silk organza) between the iron and fabric." },
+        { "check": "Can it be rescued?", "fix": "On wool, steam held just above the mark (iron not touching) and a light brush can lift some shine. Synthetic shine is usually permanent." }
+      ] },
+    { "id": "ridges", "group": "pressing", "title": "Seam ridges show through on the front",
+      "steps": [
+        { "check": "Are the seam allowances pressing a print onto the front?", "fix": "Slip strips of paper (or envelope card) under the seam allowances while pressing.", "dia": ["xsec", { "kind": "open" }] },
+        { "check": "Are you sliding the iron?", "fix": "Press: lift, set down, hold, lift. Sliding pushes ridges into the fabric.", "dia": ["press", { "mode": "press" }] }
+      ] }
+  ]
+}
