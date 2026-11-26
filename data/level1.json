@@ -1,0 +1,370 @@
+{
+  "skill": "Ready to sew",
+  "check": [
+    "Name the main parts of my machine and what each one does",
+    "Wind a bobbin and thread the machine without looking at the manual",
+    "Load the bobbin and bring up the bobbin thread",
+    "Change a needle and pick the right size for cotton",
+    "Sew a running stitch, a backstitch, and a slip stitch by hand",
+    "Sew on a button with a thread shank",
+    "Tell the right side of a fabric from the wrong side"
+  ],
+  "lessons": [
+    {
+      "id": "l1-welcome", "title": "How Notch works", "minutes": 4,
+      "summary": "A quick tour, so the rest of the course feels easy to follow.",
+      "learn": ["How the course is laid out", "How to read the diagrams", "The one seam allowance Notch uses everywhere"],
+      "need": ["Just this phone"],
+      "steps": [
+        { "text": "You'll **sew first**, then use store patterns, then learn fit, then draft and design your own. Drafting makes much more sense once you know how clothes go together.", "dia": ["tools", { "list": ["machine", "fabric", "thread"] }] },
+        { "text": "In diagrams, the [[right side]] of fabric is colored with dots, and the [[wrong side]] is striped. Red dashes are stitches.", "dia": ["panel", { "w": 8, "h": 5, "side": "right", "pieces": [{ "x": 9, "y": 0, "w": 8, "h": 5, "side": "wrong" }], "stitch": [[0.625, 0], [0.625, 5]], "labels": [[4, 2.8, "Right side"], [13, 2.8, "Wrong side"]] }] },
+        { "text": "Notch always uses a {{SA}} [[seam allowance]]: the space between the cut edge and the stitching. It's the same as most store-bought patterns, so everything matches.", "dia": ["sew", { "guide": true, "sewn": 70 }], "why": "One number everywhere means your projects, store patterns, and your own drafted patterns all fit together without math." },
+        { "text": "Underlined words open a short meaning. Tap one now: [[presser foot]]. Learning the real words lets you read patterns and books with ease.", "dia": ["machine", { "hi": ["foot"] }] },
+        { "text": "Every lesson stays open, so go in any order. Each one ends with what it should look like, common mistakes, and a practice task. Tap **Mark as done** when you're happy.", "dia": ["paper", { "kind": "straight" }] }
+      ],
+      "looks": "You know where the path is, how to read a diagram, and that Notch's seam allowance is {{SA}}.",
+      "mistakes": [["Skipping ahead to drafting", "You can, but sewing a few projects first makes drafting click much faster."]],
+      "practice": "Open the More tab and look at the diagram key. Then pick inches or centimeters."
+    },
+    {
+      "id": "l1-machine", "title": "Meet your machine", "minutes": 10,
+      "summary": "Nearly every home machine has the same parts in about the same places.",
+      "learn": ["The name and job of each main part", "Which way to turn the handwheel"],
+      "need": ["Your sewing machine", "Its manual (or the PDF from the maker's website)"],
+      "words": ["spool pin", "bobbin", "take-up lever", "tension", "presser foot", "feed dogs", "needle plate", "handwheel"],
+      "steps": [
+        { "text": "On top: the [[spool pin]] holds your thread. The [[bobbin]] winder and its guide fill bobbins with thread.", "dia": ["machine", { "hi": ["spool", "wguide", "winder"] }] },
+        { "text": "The thread travels through a guide, between [[tension]] discs (set by the dial), and up to the [[take-up lever]], which pulls each stitch snug.", "dia": ["machine", { "hi": ["guide", "tension", "takeup"] }] },
+        { "text": "The needle goes up and down. The [[presser foot]] holds fabric flat while you sew. The lever behind the needle lifts and lowers the foot.", "dia": ["machine", { "hi": ["needle", "foot", "lever"] }] },
+        { "text": "Under the foot, the [[feed dogs|feed dogs]] (little metal teeth) move the fabric away from you. The [[needle plate]] has lines that help you keep your seam allowance even.", "dia": ["machine", { "hi": ["plate", "feed"] }], "why": "The feed dogs do the pulling, so you only guide. Pushing or pulling the fabric yourself makes uneven stitches and can bend the needle." },
+        { "text": "On the front: pick a stitch, set its length and width, and use the reverse button to sew backward for a few stitches.", "dia": ["machine", { "hi": ["selector", "length", "width", "reverse"] }] },
+        { "text": "The pedal sets the speed: press gently. The [[handwheel]] moves the needle by hand. Always turn the top of the wheel **toward you**.", "dia": ["machine", { "hi": ["wheel", "pedal"], "wheel": true }] },
+        { "text": "The bobbin lives under a cover in front of the needle. The top thread and bobbin thread lock together to make each stitch.", "dia": ["machine", { "hi": ["bobbin"] }] }
+      ],
+      "looks": "You can point to each part on your own machine and say what it does.",
+      "mistakes": [
+        ["Turning the handwheel away from you", "Turn the top of the wheel toward you. Turning it backward can tangle the thread under the plate."],
+        ["Sewing with the presser foot up", "Lower the foot before every seam. With it up, the top thread has no tension and makes a nest underneath."],
+        ["Pulling the fabric through", "Let the feed dogs move it. Your hands only steer."]
+      ],
+      "practice": "Find each part on your own machine and say its name out loud. Then find it in your manual's picture, since your machine may put a few parts in slightly different places."
+    },
+    {
+      "id": "l1-needles", "title": "Needles and thread", "minutes": 7,
+      "summary": "The right needle and good thread prevent most sewing headaches.",
+      "learn": ["The parts of a machine needle", "Which size to use", "How to change a needle", "What thread to buy"],
+      "need": ["A pack of universal needles, size 80/12", "All-purpose polyester thread", "A small screwdriver if your machine came with one"],
+      "words": ["universal needle", "needle size", "all-purpose thread"],
+      "steps": [
+        { "text": "A machine needle has a **flat side** on its top (the shank), a groove the thread lies in, an eye, and a point.", "dia": ["needleParts", {}] },
+        { "text": "Bigger number, thicker needle. A [[universal needle]] in 80/12 suits most cotton. Use 70/10 for thin fabric, 90/14 for heavier, and 100/16 for canvas.", "dia": ["needleParts", { "sizes": true }], "why": "The two numbers are the same size in two systems (European/US). A thicker needle makes a bigger hole, so match it to the fabric." },
+        { "text": "To change it: turn the machine off, raise the needle all the way with the handwheel, and loosen the clamp screw. The old needle drops out.", "dia": ["machine", { "hi": ["needle", "wheel"] }], "warn": "Always switch off first. A bumped pedal while your fingers are by the needle hurts." },
+        { "text": "Slide the new needle up as far as it goes with the **flat side to the back** (true for most home machines; check your manual). Tighten the screw.", "dia": ["needleParts", {}] },
+        { "text": "Use good [[all-purpose thread]] (polyester), the same thread top and bobbin. Match the fabric color, or go a shade darker.", "dia": ["tools", { "list": ["thread", "bobbins", "mneedle"] }], "tip": "Cheap thread is fuzzy and breaks. It's worth spending a little more here." }
+      ],
+      "looks": "A straight, snug needle with its flat side to the back, and quality thread on the spool pin.",
+      "mistakes": [
+        ["Skipped stitches or a clicking sound", "The needle is dull, bent, or in backward. Put in a fresh one, flat side to the back, pushed all the way up."],
+        ["Thread keeps breaking", "Try a fresh needle, rethread with the foot up, and use better thread."],
+        ["Needle hit a pin and now sounds rough", "Replace it. Even a tiny burr snags fabric."]
+      ],
+      "practice": "Change your machine's needle for a fresh 80/12. Replace needles after each big project or about every 8 hours of sewing.",
+      "more": "Special needles exist for knits (ballpoint or stretch), denim, and leather. You'll meet them in later levels."
+    },
+    {
+      "id": "l1-wind", "title": "Wind a bobbin", "minutes": 8,
+      "summary": "The bobbin is the lower thread. Your machine fills it for you.",
+      "learn": ["How to fill a bobbin evenly", "Why the right bobbin type matters"],
+      "need": ["An empty bobbin made for your machine", "Thread"],
+      "words": ["bobbin"],
+      "steps": [
+        { "text": "Put the thread on the [[spool pin]], with the spool cap if your machine has one.", "dia": ["machine", { "hi": ["spool"] }] },
+        { "text": "Bring the thread to the bobbin winding guide and wrap it around the little disc the way your manual shows.", "dia": ["machine", { "hi": ["wguide"], "wind": true }], "why": "The disc adds a little drag, so the thread winds on tight and even." },
+        { "text": "Push the thread end through the small hole in the bobbin from the inside out. Put the bobbin on the winder and push it to the right until it clicks.", "dia": ["machine", { "hi": ["winder"], "wind": true }] },
+        { "text": "Hold the thread tail and press the pedal for a few turns. Stop, snip the tail close, then keep going until it's full (many machines stop by themselves).", "dia": ["machine", { "hi": ["winder", "pedal"], "wind": true }] },
+        { "text": "Push the winder back to the left, cut the thread, and take the bobbin off. Wind two or three at a time so you're never stuck mid-seam.", "dia": ["tools", { "list": ["bobbins", "snips"] }] }
+      ],
+      "looks": "A firm, even bobbin that feels hard when you squeeze it, with no loose loops.",
+      "mistakes": [
+        ["Bobbin is spongy or lumpy", "The thread missed the winding guide. Unwind it and start again."],
+        ["Needle moves while winding", "Some machines need the handwheel's inner knob loosened to stop the needle. Check your manual."],
+        ["Bobbin doesn't fit or rattles", "Bobbins look alike but differ. Only use the type made for your machine."]
+      ],
+      "practice": "Wind three bobbins. Each one should be firm and even."
+    },
+    {
+      "id": "l1-thread", "title": "Thread your machine", "minutes": 10,
+      "summary": "The top thread takes the same path on almost every machine.",
+      "learn": ["The threading path, step by step", "Why the presser foot must be up"],
+      "need": ["Your machine", "Thread", "Snips"],
+      "words": ["take-up lever", "tension"],
+      "steps": [
+        { "text": "First, **raise the presser foot**. Turn the handwheel toward you until the needle is at its highest point.", "dia": ["machine", { "hi": ["lever", "wheel"], "wheel": true }], "why": "With the foot up, the tension discs open so the thread can slip between them. Thread with the foot down and the thread sits on top, which makes a big tangle underneath." },
+        { "text": "Put the thread on the spool pin.", "dia": ["machine", { "thread": 1, "hi": ["spool"] }] },
+        { "text": "Pull the thread across to the thread guide on top.", "dia": ["machine", { "thread": 2, "hi": ["guide"] }] },
+        { "text": "Bring it down the right channel, around the bottom of the U, and back up the left channel.", "dia": ["machine", { "thread": 3, "hi": ["channel"] }] },
+        { "text": "Hook it through the [[take-up lever]] from right to left. If you can't see the lever, turn the handwheel toward you.", "dia": ["machine", { "thread": 4, "hi": ["takeup"] }], "tip": "Missing the take-up lever is the most common threading mistake." },
+        { "text": "Bring the thread back down the left channel and slip it behind the little guide just above the needle.", "dia": ["machine", { "thread": 5 }] },
+        { "text": "Thread the needle from front to back (some machines go side to side; check). Pull out about {{5 in}} of tail.", "dia": ["machine", { "thread": 6, "hi": ["needle"] }], "tip": "Snip the thread end at an angle so it slides through the eye. A built-in needle threader also works." }
+      ],
+      "looks": "Thread runs from the spool, through every guide, up through the take-up lever, and down through the needle eye, with a tail hanging free.",
+      "mistakes": [
+        ["A nest of thread under the fabric", "Almost always the top thread. Raise the foot and rethread from the start."],
+        ["Thread pulls out of the needle on the first stitch", "Start with the take-up lever at its highest point and hold both tails for the first few stitches."],
+        ["Missed the take-up lever", "Rethread. The machine can't form stitches without it."]
+      ],
+      "practice": "Unthread and rethread three times. The third time, try it without looking at the app."
+    },
+    {
+      "id": "l1-bobbin", "title": "Load the bobbin and bring it up", "minutes": 8,
+      "summary": "Put the bobbin in, then pull its thread up through the needle plate.",
+      "learn": ["Which way the bobbin goes", "How to bring up the bobbin thread"],
+      "need": ["A full bobbin", "Your threaded machine"],
+      "steps": [
+        { "text": "Take off the bobbin cover. Drop the bobbin in so the thread unwinds **counterclockwise** (true for most drop-in bobbins; check your manual).", "dia": ["bobbin", { "step": 1 }] },
+        { "text": "Pull the thread through the slot and along the guide path marked on the plate.", "dia": ["bobbin", { "step": 2 }] },
+        { "text": "Leave a tail of about {{4 in}} and snap the cover back on.", "dia": ["bobbin", { "step": 3 }] },
+        { "text": "Hold the top thread tail lightly with your left hand.", "dia": ["needleUp", { "step": 1 }] },
+        { "text": "Turn the handwheel toward you one full turn. The needle dips down and comes back up with a loop of bobbin thread.", "dia": ["needleUp", { "step": 2 }] },
+        { "text": "Pull the loop out to free the bobbin tail. Lay both tails under the foot, toward the back.", "dia": ["needleUp", { "step": 3 }], "why": "Tails to the back keep them out of the way, so they don't get pulled down into the machine on your first stitch." }
+      ],
+      "looks": "Two thread tails, top and bobbin, both lying under the presser foot toward the back of the machine.",
+      "mistakes": [
+        ["No loop comes up", "Make sure you're holding the top thread and turning a full turn. Check the bobbin is in the right way."],
+        ["Bobbin spins wildly or thread breaks", "It's in backward or skipped the slot. Take it out and reload."]
+      ],
+      "practice": "Load the bobbin and bring up its thread three times.",
+      "more": "Some newer machines don't need you to bring the bobbin thread up at all: you just start sewing. Front-loading machines use a removable bobbin case that works a little differently. Your manual will say."
+    },
+    {
+      "id": "l1-cutting", "title": "Cutting tools", "minutes": 6,
+      "summary": "Sharp tools cut straight, and straight cutting makes everything after it easier.",
+      "learn": ["Which tool does what", "How to keep your shears sharp", "Rotary cutter safety"],
+      "need": ["Fabric shears", "Thread snips", "Paper scissors"],
+      "words": ["rotary cutter", "pinking shears"],
+      "steps": [
+        { "text": "**Fabric shears** are long and sharp. Use them only for fabric: paper dulls them fast. Tie a ribbon on them so nobody borrows them for paper.", "dia": ["tools", { "list": ["shears"] }] },
+        { "text": "**Thread snips** trim threads close at the machine. Keep them right by your needle.", "dia": ["tools", { "list": ["snips"] }] },
+        { "text": "A [[rotary cutter]] is a round blade you roll along a ruler, on a cutting mat. It's fast and very accurate for straight lines.", "dia": ["tools", { "list": ["rotary", "mat", "ruler"] }], "warn": "Always cut away from yourself and close the blade guard every single time you put it down." },
+        { "text": "[[Pinking shears]] cut a zigzag edge that frays less. Handy, but they're for finishing edges, not for cutting out pieces.", "dia": ["tools", { "list": ["pinking"] }] },
+        { "text": "Keep a cheap pair of **paper scissors** for cutting patterns.", "dia": ["tools", { "list": ["shears", "fabric"] }], "tip": "When cutting with shears, keep the fabric flat on the table and take long, smooth cuts." }
+      ],
+      "looks": "Three cutting tools, each with its own job, and fabric shears that have never touched paper.",
+      "mistakes": [
+        ["Chewed, jagged edges", "Your shears are dull or you're lifting the fabric. Keep it flat and use long cuts. Get shears sharpened."],
+        ["Rotary cuts wander", "Press the ruler down firmly with your other hand, fingers away from the edge."]
+      ],
+      "practice": "Cut a scrap of cotton into a straight strip with shears. Look at the edge: is it smooth?"
+    },
+    {
+      "id": "l1-marking", "title": "Pins, clips, and marking", "minutes": 7,
+      "summary": "Holding layers together and marking where to sew.",
+      "learn": ["How to pin so you can sew safely", "When to use clips", "Marking tools and the seam ripper"],
+      "need": ["Glass-head pins", "A pincushion", "A marking tool (chalk or a washable pen)", "A seam ripper"],
+      "words": ["seam ripper", "tailor's chalk"],
+      "steps": [
+        { "text": "Pin **across** the edge you'll sew, heads sticking out past the edge, about every {{3 in}}.", "dia": ["panel", { "w": 8, "h": 5, "side": "wrong", "under": "right", "pins": [[7.1, 1, 180], [7.1, 2.5, 180], [7.1, 4, 180]], "labels": [[4, 2.8, "Sew along this side →"]] }], "why": "Pins at right angles hold better, and the heads are easy to grab as the fabric reaches the foot." },
+        { "text": "Pull each pin out just before it reaches the needle. **Never sew over pins**: the needle can hit one, break, and fly.", "dia": ["tools", { "list": ["pins"] }] },
+        { "text": "Clips are great for thick layers like canvas, and for fabrics where pins leave holes.", "dia": ["tools", { "list": ["clips"] }] },
+        { "text": "Mark on the wrong side with [[tailor's chalk]] or a washable pen. Test on a scrap first to be sure it comes out.", "dia": ["tools", { "list": ["chalk", "pen"] }], "warn": "Heat-erase pens can come back in the cold, and ironing can set some marks. Always test." },
+        { "text": "Everyone uses a [[seam ripper]]. Slide the point under a stitch and cut every third stitch on one side, then pull the thread on the other side.", "dia": ["tools", { "list": ["ripper"] }], "tip": "Unpicking is part of sewing, not a failure. Even pros do it." }
+      ],
+      "looks": "Pins straight across the edge with heads out, and marks you can see but that wash out.",
+      "mistakes": [
+        ["Layers shift while sewing", "Pin closer, every 2 to 3 in, and match the ends first, then the middle."],
+        ["Ripper cut through the fabric", "Point it at the threads, not the fabric, and cut one stitch at a time."]
+      ],
+      "practice": "Pin two scraps together along one edge the right way, then unpick a row of practice stitches with the seam ripper."
+    },
+    {
+      "id": "l1-measuring", "title": "Measuring tools", "minutes": 5,
+      "summary": "Accurate measuring is the quiet secret of good sewing.",
+      "learn": ["Which tool to use for bodies, fabric, and hems"],
+      "need": ["A soft tape measure", "A clear ruler (2 × 18 in is a great size)", "A seam gauge (later is fine)"],
+      "words": ["seam gauge"],
+      "steps": [
+        { "text": "A soft **tape measure** bends around bodies and curves. Use it for your own measurements.", "dia": ["tools", { "list": ["tape"] }], "tip": "Old tapes stretch. Check yours against a ruler now and then." },
+        { "text": "A **clear ruler** has a grid printed on it, so you can see the fabric underneath and line up straight edges and grain.", "dia": ["tools", { "list": ["ruler"] }] },
+        { "text": "A [[seam gauge]] is a little ruler with a slider. Set it once and check a hem or fold all the way along.", "dia": ["tools", { "list": ["gauge"] }] }
+      ],
+      "looks": "Three tools: a soft tape for bodies, a clear ruler for fabric, and a gauge for small repeats.",
+      "mistakes": [["Measuring with a stretched or twisted tape", "Lay it flat and snug, never tight."]],
+      "practice": "Measure the width of a table with both the tape and the ruler. Do they agree?"
+    },
+    {
+      "id": "l1-iron", "title": "The iron is a sewing tool", "minutes": 6,
+      "summary": "Sewists press as they go. It's the difference between homemade and handmade.",
+      "learn": ["Pressing vs. ironing", "Setting a seam", "Heat settings and a pressing cloth"],
+      "need": ["An iron with steam", "An ironing board", "A cotton scrap to use as a pressing cloth"],
+      "words": ["press", "pressing cloth"],
+      "steps": [
+        { "text": "**Ironing** slides back and forth. **Pressing** lifts the iron, sets it down, holds, and lifts again. Sewists [[press]].", "dia": ["press", { "mode": "press" }], "why": "Sliding can stretch and warp fabric, especially along curves. Pressing flattens without pulling." },
+        { "text": "Sliding is fine for wrinkly fabric before you cut, but not for seams.", "dia": ["press", { "mode": "iron" }] },
+        { "text": "Press every seam right after you sew it, first flat as sewn. This sinks the stitches into the fabric.", "dia": ["xsec", { "kind": "set" }] },
+        { "text": "Match the heat to the fiber: cotton and linen hot, wool medium, synthetics cool. Use a [[pressing cloth]] on dark or delicate fabric to avoid shiny marks.", "dia": ["tools", { "list": ["iron", "board", "ham"] }] }
+      ],
+      "looks": "A seam that lies flat and crisp, with no shine and no stretched edges.",
+      "mistakes": [
+        ["Shiny patches on dark fabric", "Use a pressing cloth and a little less heat."],
+        ["Wavy seams after pressing", "You slid the iron. Lift and press instead."]
+      ],
+      "practice": "Fold a scrap in half and press the fold with a lift-and-press motion. Feel how crisp it gets."
+    },
+    {
+      "id": "l1-hand-start", "title": "Thread a hand needle and knot it", "minutes": 5,
+      "summary": "Every hand stitch starts here.",
+      "learn": ["How long to cut your thread", "Single vs. double thread", "A simple knot"],
+      "need": ["Hand sewing needles", "Thread", "Snips"],
+      "steps": [
+        { "text": "Cut thread about as long as your arm (18 to 24 in). Longer thread tangles. Snip the end at an angle and push it through the eye.", "dia": ["handNeedle", { "step": 1 }] },
+        { "text": "Pull it through so one end is short. Sewing with one strand is called single thread; most hand stitches use it.", "dia": ["handNeedle", { "step": 2 }], "tip": "For buttons, bring the ends together for double thread. It's twice as strong." },
+        { "text": "Knot the long end: wrap it once around your fingertip, roll it off with your thumb, and pull the twist down into a knot.", "dia": ["handNeedle", { "step": 3 }] }
+      ],
+      "looks": "A threaded needle with a short tail and a small, firm knot at the long end.",
+      "mistakes": [
+        ["Thread keeps twisting and knotting", "Use shorter thread and let the needle dangle now and then to untwist."],
+        ["Knot pulls through the fabric", "Make it bigger by wrapping twice, or take a tiny backstitch first."]
+      ],
+      "practice": "Thread a needle and tie three knots until it feels quick."
+    },
+    {
+      "id": "l1-hand-stitches", "title": "Running stitch and backstitch", "minutes": 10,
+      "summary": "The two oldest stitches there are.",
+      "learn": ["A running stitch for gathering and basting", "A strong backstitch for seams"],
+      "need": ["Two cotton scraps", "Threaded, knotted hand needle", "Chalk to draw a line"],
+      "words": ["running stitch", "backstitch", "baste"],
+      "steps": [
+        { "text": "**Running stitch**: weave the needle in and out along a line, keeping stitches and gaps even. Take a few at a time, then pull through.", "dia": ["hand", { "type": "running", "step": 2 }] },
+        { "text": "Keep going to the end. Running stitch is quick but not very strong. It's used for gathering and [[baste|basting]] (temporary stitches).", "dia": ["hand", { "type": "running", "step": 3 }] },
+        { "text": "**Backstitch**: come up one stitch length ahead, then go back down into the end of the last stitch.", "dia": ["hand", { "type": "back", "step": 2 }], "why": "Each stitch overlaps the last, so there are no gaps. That's why it's strong enough for real seams." },
+        { "text": "Repeat. The front looks like a solid line, like machine stitching.", "dia": ["hand", { "type": "back", "step": 3 }] },
+        { "text": "To finish, take a tiny stitch on the back, pass the needle through the loop before it closes, and pull to knot. Do it twice.", "dia": ["hand", { "type": "back", "step": 3 }] }
+      ],
+      "looks": "A running stitch with even dashes, and a backstitch that looks like one unbroken line.",
+      "mistakes": [
+        ["Fabric puckers", "You're pulling too tight. Pull just until the thread lies flat."],
+        ["Uneven stitches", "Draw a chalk line and aim for about {{1/8 in}} stitches. It gets even with practice."]
+      ],
+      "practice": "Sew a {{4 in}} line of each stitch on a scrap."
+    },
+    {
+      "id": "l1-slip", "title": "Slip stitch and ladder stitch", "minutes": 10,
+      "summary": "Nearly invisible stitches for hems and for closing openings.",
+      "learn": ["A slip stitch for hems", "A ladder stitch to close a gap"],
+      "need": ["A scrap with one edge folded up {{1 in}} and pressed", "Threaded, knotted hand needle"],
+      "words": ["slip stitch", "ladder stitch", "hem"],
+      "steps": [
+        { "text": "**Slip stitch**: hide the knot inside the fold. Pick up just one or two threads of the main fabric next to the fold.", "dia": ["hand", { "type": "slip", "step": 1 }] },
+        { "text": "Slide the needle inside the fold for about {{1/4 in}}, come out, and take another tiny catch in the main fabric.", "dia": ["hand", { "type": "slip", "step": 2 }], "why": "The thread travels inside the fold, so only tiny dots show on the outside." },
+        { "text": "Keep going. From the right side you should barely see it.", "dia": ["hand", { "type": "slip", "step": 3 }] },
+        { "text": "**Ladder stitch** closes a gap between two folded edges. Take a small stitch inside one fold, then straight across into the other.", "dia": ["hand", { "type": "ladder", "step": 2 }] },
+        { "text": "After a few stitches, pull the thread: the gap closes and the stitches disappear.", "dia": ["hand", { "type": "ladder", "step": 3 }] }
+      ],
+      "looks": "A hem held up by stitches you can barely see, and a closed gap that looks like a seam.",
+      "mistakes": [
+        ["Stitches show on the right side", "Take a smaller bite of the main fabric: just one or two threads."],
+        ["Ladder stitch won't close", "Go straight across between the folds each time, not at an angle."]
+      ],
+      "practice": "Slip stitch {{4 in}} of hem on a scrap. Then fold two scrap edges and ladder stitch them closed."
+    },
+    {
+      "id": "l1-button", "title": "Sew on a button", "minutes": 10,
+      "summary": "A life skill, and your first bit of real garment work.",
+      "learn": ["How to sew on a button that won't pop off", "What a shank is and why it matters"],
+      "need": ["A button with two or four holes", "A scrap of fabric", "Needle with double thread", "A toothpick"],
+      "words": ["shank"],
+      "steps": [
+        { "text": "Mark where the button goes with a small X.", "dia": ["button", { "step": 1 }] },
+        { "text": "Knot double thread. Come up from the back at the X and through one hole of the button.", "dia": ["button", { "step": 2 }] },
+        { "text": "Lay a toothpick on top of the button. Sew over it through the holes 4 to 6 times for each pair of holes.", "dia": ["button", { "step": 3 }], "why": "The toothpick leaves slack, which becomes the shank." },
+        { "text": "Take out the toothpick. Bring the needle up between the button and the fabric, and wrap the thread around the stitches 4 or 5 times. That's the [[shank]].", "dia": ["button", { "step": 4 }], "why": "The shank lifts the button so the other layer of fabric has room to sit under it when buttoned. Without it, the button pulls and pops off." },
+        { "text": "Push the needle to the back and knot it there twice. Snip the thread.", "dia": ["button", { "step": 5 }] }
+      ],
+      "looks": "A button that sits a little above the fabric on a short wrapped stem, with a neat knot on the back.",
+      "mistakes": [
+        ["Button is too tight to button", "Add a shank: use the toothpick trick."],
+        ["Thread shows messy on the back", "Keep all stitches inside the X area and knot close to the fabric."]
+      ],
+      "practice": "Sew one two-hole and one four-hole button onto a scrap.",
+      "more": "Some buttons come with their own shank (a loop on the back). Those sew straight on with no thread shank."
+    },
+    {
+      "id": "l1-fabric-101", "title": "Fabric 101: woven and knit", "kind": "fabric", "minutes": 6,
+      "summary": "Almost every fabric is either woven or knit, and they behave very differently.",
+      "learn": ["The difference between woven and knit", "How to tell the right side from the wrong side", "Why beginners start with cotton"],
+      "need": ["A few fabric scraps", "A t-shirt and a button-up shirt to compare"],
+      "words": ["woven", "knit", "right side", "wrong side", "quilting cotton"],
+      "steps": [
+        { "text": "A [[woven]] fabric is threads crossing over and under, like a basket. It barely stretches, except on the diagonal. A [[knit]] is rows of loops, like a sweater. It stretches.", "dia": ["weave", { "type": "both" }] },
+        { "text": "Stretch the t-shirt: that's a knit. Stretch the button-up shirt: that's a woven. Wovens are easier to start with because they hold still.", "dia": ["shirt", { "hi": [] }] },
+        { "text": "The [[right side]] is the side meant to show: brighter print, smoother, or neater. The [[wrong side]] is the back. Some fabrics look the same on both sides; just pick one and stay consistent.", "dia": ["panel", { "w": 8, "h": 5, "side": "right", "pieces": [{ "x": 9, "y": 0, "w": 8, "h": 5, "side": "wrong" }], "labels": [[4, 2.8, "Right side"], [13, 2.8, "Wrong side"]] }] },
+        { "text": "Start with medium-weight [[quilting cotton]] or cotton poplin: stable, easy to press, cheap, and forgiving.", "dia": ["tools", { "list": ["fabric", "iron"] }] }
+      ],
+      "looks": "You can sort scraps into woven and knit, and find the right side of each.",
+      "mistakes": [["Starting with slippery or stretchy fabric", "Save silk, satin, and knits for later levels. Cotton first."]],
+      "practice": "Sort your scraps (and your closet) into woven and knit. Mark the wrong side of three scraps with chalk."
+    },
+    {
+      "id": "l1-garment-words", "title": "Garment words: a shirt", "kind": "design", "minutes": 6,
+      "summary": "The names of the parts, and why each seam sits where it does.",
+      "learn": ["Names for the parts of a classic shirt", "Why seams fall where they do"],
+      "need": ["A button-up shirt to look at"],
+      "words": ["collar", "yoke", "placket", "cuff", "side seam", "hem"],
+      "steps": [
+        { "text": "The [[collar]] folds over a band called the collar stand, which hugs the neck.", "dia": ["shirt", { "hi": ["collar", "stand"] }] },
+        { "text": "The shoulder seam sits on top of the shoulder. The armhole seam joins the sleeve to the body.", "dia": ["shirt", { "hi": ["shoulder", "armhole"] }], "why": "Flat fabric can't curve around a body by itself. Seams go where the body changes direction, so the pieces can turn the corner." },
+        { "text": "The sleeve ends in a [[cuff]]. Many shirts also have a [[yoke]] across the upper back: an extra piece that adds strength and shape.", "dia": ["shirt", { "hi": ["sleeve", "cuff"] }] },
+        { "text": "The [[placket]] is the doubled strip that holds the buttons and buttonholes. The pocket is sewn on top.", "dia": ["shirt", { "hi": ["placket", "pocket"] }] },
+        { "text": "The [[side seam]] runs down each side, and the [[hem]] finishes the bottom edge, here with a curved shirttail.", "dia": ["shirt", { "hi": ["side", "hem"] }] }
+      ],
+      "looks": "You can point to each part on a real shirt and name it.",
+      "mistakes": [["Mixing up the collar and the collar stand", "The stand is the upright band; the collar is the part that folds over it."]],
+      "practice": "Find each part on a shirt in your closet. Count how many pieces it took to make it."
+    },
+    {
+      "id": "l1-shopping", "title": "Starter shopping list", "minutes": 5,
+      "summary": "What you need now, and what can wait.",
+      "learn": ["The must-haves to start", "Nice-to-haves for later"],
+      "need": ["A budget and a notepad"],
+      "steps": [
+        { "text": "**Must have: a machine.** A basic mechanical one with straight and zigzag stitches and adjustable stitch length is plenty. A serviced secondhand or borrowed machine is great.", "dia": ["tools", { "list": ["machine", "mneedle", "bobbins"] }], "tip": "Buy extra bobbins made for your exact model." },
+        { "text": "**Must have for cutting and marking:** fabric shears, thread snips, pins and a pincushion, a seam ripper, and chalk or a washable pen.", "dia": ["tools", { "list": ["shears", "snips", "pins", "ripper", "chalk", "pen"] }] },
+        { "text": "**Must have for measuring and pressing:** a tape measure, a clear ruler, an iron, and an ironing board.", "dia": ["tools", { "list": ["tape", "ruler", "iron"] }] },
+        { "text": "**Must have for sewing:** universal machine needles (80/12 and 90/14), hand needles, a safety pin, and all-purpose polyester thread in a few colors.", "dia": ["tools", { "list": ["needles", "thread", "bodkin"] }] },
+        { "text": "**Later:** a rotary cutter and mat, pinking shears, a seam gauge, clips, a pressing ham, and much later a serger and a dress form.", "dia": ["tools", { "list": ["rotary", "pinking", "gauge", "clips", "ham", "mat"] }] }
+      ],
+      "looks": "A small kit that covers every lesson in levels 1 and 2.",
+      "mistakes": [["Buying a fancy machine first", "Start simple. You'll know what features you want after a few projects."]],
+      "practice": "Check what you already have, and write a shopping list of what's missing."
+    },
+    {
+      "id": "l1-pincushion", "title": "Project: hand-sewn pincushion", "kind": "project", "minutes": 60,
+      "summary": "Use every hand stitch you've learned to make something you'll use every day.",
+      "finished": "about {{3 3/4 in}} square, plump",
+      "learn": ["Backstitching a real seam", "Trimming corners and turning right side out", "Closing an opening with a ladder stitch"],
+      "fabric": ["Cotton scraps, at least {{5 in}} square (two pieces, can be different prints)"],
+      "need": ["Hand needle and thread", "Pins and chalk", "Polyester stuffing (a big handful)", "A chopstick for poking out corners", "Optional: two buttons and a long needle"],
+      "cut": [{ "name": "Square", "qty": 2, "w": 5, "h": 5 }],
+      "cutNote": "Cut along the grain: keep the edges parallel to the threads of the fabric.",
+      "steps": [
+        { "text": "Cut two {{5 in}} squares.", "dia": ["panel", { "w": 5, "h": 5, "side": "right", "pieces": [{ "x": 6, "y": 0, "w": 5, "h": 5, "side": "right2" }], "dims": [[0, 5, 5, 5, "{{5 in}}", 16]] }] },
+        { "text": "On the wrong side of one square, draw a line {{SA}} in from every edge. Mark a {{2 in}} opening on one side.", "dia": ["panel", { "w": 5, "h": 5, "side": "wrong", "folds": [[0.625, 0.625, 4.375, 0.625], [4.375, 0.625, 4.375, 4.375], [4.375, 4.375, 0.625, 4.375], [0.625, 4.375, 0.625, 0.625]], "gap": [[1.5, 4.375, 3.5, 4.375]], "dims": [[0, 0, 0.625, 0, "{{SA}}", -14]], "labels": [[2.5, 4.9, "Opening"]] }] },
+        { "text": "Put the squares **right sides together** and pin.", "dia": ["panel", { "w": 5, "h": 5, "side": "wrong", "under": "right2", "pins": [[2.5, 0.4, 90], [4.6, 2.5, 180], [0.4, 2.5, 0]] }] },
+        { "text": "Backstitch along the line: start at one end of the opening, go around all four corners, and stop at the other end of the opening. Keep stitches small, about {{1/8 in}}.", "dia": ["panel", { "w": 5, "h": 5, "side": "wrong", "under": "right2", "stitch": [[1.5, 4.375], [0.625, 4.375], [0.625, 0.625], [4.375, 0.625], [4.375, 4.375], [3.5, 4.375]], "gap": [[1.5, 4.375, 3.5, 4.375]] }], "tip": "Knot firmly at both ends. At each corner, put one stitch exactly on the corner point." },
+        { "text": "Trim the four corners off at an angle, close to the stitching but not through it.", "dia": ["panel", { "w": 5, "h": 5, "side": "wrong", "under": "right2", "stitch": [[1.5, 4.375], [0.625, 4.375], [0.625, 0.625], [4.375, 0.625], [4.375, 4.375], [3.5, 4.375]], "trim": ["tl", "tr", "bl", "br"] }], "why": "Less fabric in the corners lets them turn out sharp instead of lumpy." },
+        { "text": "Turn it right side out through the opening. Gently poke the corners out with a chopstick, never with scissors.", "dia": ["panel", { "w": 3.75, "h": 3.75, "side": "right", "arrows": [[1.9, 1.9, 0.3, 0.3], [1.9, 1.9, 3.45, 0.3]], "gap": [[0.9, 3.75, 2.9, 3.75]] }] },
+        { "text": "Press it flat, folding the edges of the opening in by {{SA}} so they line up with the seam.", "dia": ["xsec", { "kind": "set" }] },
+        { "text": "Stuff it firmly, a little at a time, into the corners first. Firmer than you think!", "dia": ["tools", { "list": ["stuffing"] }], "why": "A firm cushion grips pins and keeps its shape." },
+        { "text": "Close the opening with a ladder stitch and knot it. Bury the tail by pushing the needle into the cushion and out the other side, then snip.", "dia": ["hand", { "type": "ladder", "step": 3 }] },
+        { "text": "Optional: sew a button on each side through the middle, pulling tight to dimple it. Knot under a button.", "dia": ["tools", { "list": ["buttons", "needles"] }] }
+      ],
+      "looks": "A plump square with sharp corners, even seams, and an opening you can barely find.",
+      "mistakes": [
+        ["Rounded, lumpy corners", "Trim corners closer and push them out from inside with a chopstick."],
+        ["Stuffing pokes through the seam", "Your stitches were too long. Add a second row of backstitch inside."],
+        ["Lumpy stuffing", "Pull it apart into small fluffy bits and add a little at a time."]
+      ],
+      "practice": "Before level 2: thread the machine from memory, wind a bobbin, and sew a row on scrap fabric just to feel the machine run."
+    }
+  ]
+}

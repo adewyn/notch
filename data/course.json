@@ -1,0 +1,32 @@
+{
+  "seamAllowance": "5/8 in (1.5 cm)",
+  "levels": [
+    { "n": 1, "title": "Setup and tools", "file": "data/level1.json",
+      "blurb": "Meet your machine, thread it, wind a bobbin, and learn the hand stitches every maker uses. Ends with a hand-sewn pincushion.",
+      "topics": [] },
+    { "n": 2, "title": "First seams", "file": "data/level2.json",
+      "blurb": "Straight seams, corners, curves, pressing, and clean edges. Ends with a drawstring bag, a pillowcase, and a lined tote.",
+      "topics": [] },
+    { "n": 3, "title": "Fabric school",
+      "blurb": "Fibers, weaves and knits, grain, and how to choose the right fabric for a project.",
+      "topics": ["Fibers: cotton, linen, wool, silk, and synthetics", "How weaves (plain, twill, satin) change a fabric", "Weight, drape, and hand", "Burn tests and care labels", "Choosing fabric for a project, and buying the right amount", "Project: a fabric swatch book you'll use for years"] },
+    { "n": 4, "title": "Reading a pattern",
+      "blurb": "Store-bought patterns, step by step: the envelope, picking your size from your measurements, and cutting with care.",
+      "topics": ["The pattern envelope and what every line means", "Picking a size from your body measurements, not store sizes", "Grainlines, notches, dots, and other markings", "Layouts, pinning, cutting, and marking", "Project: elastic-waist pajama pants"] },
+    { "n": 5, "title": "Garment skills",
+      "blurb": "The techniques real clothes need: hems, facings, darts, gathers, zippers, buttonholes, and pockets.",
+      "topics": ["Hems and facings", "Bias binding", "Gathers and darts", "Elastic casings", "Zippers and buttonholes", "Pockets", "Projects: a simple woven top, an A-line skirt with a zipper, and a button-up shirt"] },
+    { "n": 6, "title": "Fit",
+      "blurb": "Make clothes fit your body: muslins, reading wrinkles, and moving the changes onto paper.",
+      "topics": ["Measuring yourself accurately (and with a friend)", "Making a muslin (a test garment)", "Reading wrinkles: what they point to", "Length, waist, hip, shoulder, bust, sway back, and seat changes", "Moving changes onto the paper pattern"] },
+    { "n": 7, "title": "Drafting from scratch",
+      "blurb": "Draft your own basic blocks (slopers) from your measurements, then fit them until they're your perfect base.",
+      "topics": ["What a block (sloper) is and why designers use them", "Skirt block", "Bodice block", "Sleeve block", "Pants block", "Muslin and fit each one"] },
+    { "n": 8, "title": "Designing your own",
+      "blurb": "Turn your blocks into new styles and invent your own silhouettes, from sketch to pattern to finished piece.",
+      "topics": ["Moving darts and princess seams", "Slash and spread for fullness", "Necklines, collars, cuffs, waistbands, and pockets", "Silhouettes: A-line, column, trapeze, cocoon, hourglass, oversized, and more", "Volume, pleats, tucks, drape, and structure", "Proportion and balance", "Flat sketches and turning a sketch into pattern pieces", "Project: your own silhouette, start to finish"] },
+    { "n": 9, "title": "Knits",
+      "blurb": "Stretchy fabrics on a regular machine: stretch stitches, the twin needle, and neckbands.",
+      "topics": ["How knits stretch and recover", "Stretch stitches on a regular machine", "Twin needle hems", "Neckbands that lie flat", "Serger basics (optional)", "Projects: a t-shirt and leggings"] }
+  ]
+}

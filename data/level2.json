@@ -1,0 +1,363 @@
+{
+  "skill": "Seam maker",
+  "check": [
+    "Sew a straight {{10 in}} seam at {{SA}} that stays on the line",
+    "Lock my stitches at the start and end of a seam",
+    "Pivot a sharp corner exactly {{SA}} from both edges",
+    "Sew a smooth curve, then clip or notch it",
+    "Press a seam open and press a seam to one side",
+    "Finish raw edges with a zigzag stitch",
+    "Find the grain and cut a rectangle on grain"
+  ],
+  "lessons": [
+    {
+      "id": "l2-paper-straight", "title": "Paper practice: straight lines", "minutes": 15,
+      "summary": "Learn to steer and control speed with no thread to tangle.",
+      "learn": ["How to guide the fabric, not push it", "Where to look while you sew", "Steady speed on the pedal"],
+      "need": ["The straight-lines practice sheet (print it from this lesson or the More tab)", "Your machine, unthreaded", "An old needle (paper dulls needles)"],
+      "sheet": "straight",
+      "steps": [
+        { "text": "Print the straight-lines sheet. Check the test square measures exactly {{1 in}} (or 5 cm on A4).", "dia": ["paper", { "kind": "straight" }] },
+        { "text": "Unthread the machine and put in an old needle. Set the stitch length to about 3 mm.", "dia": ["machine", { "hi": ["needle", "length"] }], "why": "No thread means nothing can jam, so you can focus only on steering." },
+        { "text": "Put the paper under the foot with the needle right on the start dot. Lower the foot.", "dia": ["machine", { "hi": ["foot", "lever"] }] },
+        { "text": "Press the pedal gently and steadily. Rest your hands lightly on the paper: they steer, the feed dogs pull. Watch the line just in front of the foot, not the needle.", "dia": ["paper", { "kind": "straight", "holes": true }], "tip": "If you speed up by accident, lift your foot. Slow and steady wins." },
+        { "text": "At the end, stop, raise the foot, and slide the paper out to the back. Hold it up to the light and check your holes.", "dia": ["paper", { "kind": "straight", "holes": true }] }
+      ],
+      "looks": "A row of holes that stays right on each line from start to finish.",
+      "mistakes": [
+        ["Holes wander off the line", "Look ahead of the needle at the line, and make tiny steering moves rather than big ones."],
+        ["Speed jumps around", "Press the pedal with the ball of your foot, heel on the floor."]
+      ],
+      "practice": "Stitch every line on the sheet. Do it again a day later and compare."
+    },
+    {
+      "id": "l2-paper-shapes", "title": "Paper practice: corners and curves", "minutes": 20,
+      "summary": "Turn corners and follow curves smoothly.",
+      "learn": ["How to pivot at a corner", "How to steer around a curve"],
+      "need": ["The corners and curves practice sheets", "Unthreaded machine with an old needle"],
+      "sheet": "corners",
+      "words": ["pivot"],
+      "steps": [
+        { "text": "Stitch the zigzag lines on the corners sheet. Slow down as you come to each corner.", "dia": ["paper", { "kind": "corners" }] },
+        { "text": "Stop with the needle **down** right on the corner. Turn the handwheel toward you for the last stitch if needed.", "dia": ["sew", { "mode": "corner", "pivot": "before", "sa": 0, "feed": false, "sewn": 70 }] },
+        { "text": "Lift the foot, turn the paper on the needle like a hinge, lower the foot, and keep going. That's a [[pivot]].", "dia": ["sew", { "mode": "corner", "pivot": "after", "sa": 0, "feed": false, "sewn": 70 }] },
+        { "text": "On the curves sheet, go slowly and turn the paper a little at a time with your left hand. Big curves first.", "dia": ["paper", { "kind": "curves" }], "tip": "On tight curves, stop with the needle down, lift the foot, nudge the paper, and carry on." }
+      ],
+      "looks": "Sharp corners exactly on the turn, and smooth curves without flat spots.",
+      "mistakes": [
+        ["Corners are rounded", "You turned with the needle up. Always stop with the needle down before you lift the foot."],
+        ["Curves look like little straight lines", "Turn the paper gently and continuously as you go, not in jerks."]
+      ],
+      "practice": "Stitch the corners sheet and the curves sheet. Then try the mixed sheet from the More tab.",
+      "more": "Some machines have a needle up/down button. Set it to down and the needle will always stop in the fabric."
+    },
+    {
+      "id": "l2-first-stitches", "title": "First stitches on fabric", "minutes": 15,
+      "summary": "Thread up and sew real stitches on a scrap.",
+      "learn": ["How to start and stop a line of stitching", "The right stitch length", "How to check tension"],
+      "need": ["Threaded machine with a fresh 80/12 needle", "Two layers of cotton scrap, about {{8 in}} square"],
+      "words": ["stitch length", "tension"],
+      "steps": [
+        { "text": "Set a straight stitch with a [[stitch length]] of 2.5 mm. That's the everyday length for seams.", "dia": ["stitchLook", { "kind": "length" }] },
+        { "text": "Raise the needle to its highest point. Slide the fabric under the foot with both thread tails to the back. Lower the foot.", "dia": ["machine", { "hi": ["foot", "wheel"], "wheel": true }] },
+        { "text": "Hold the thread tails lightly for the first few stitches, then let go and sew to the end.", "dia": ["sew", { "sewn": 40, "layers": 2 }], "why": "Holding the tails stops them being pulled down into the bobbin area, which is how most tangles start." },
+        { "text": "Stop with the needle at its highest point. Raise the foot, slide the fabric to the back, and snip the threads, leaving {{3 in}} tails.", "dia": ["machine", { "hi": ["lever", "wheel"] }] },
+        { "text": "Look at both sides. Good [[tension]] means the threads lock inside the fabric, and the stitches look the same top and bottom.", "dia": ["stitchLook", { "kind": "good" }] },
+        { "text": "Loops on the underside mean the top thread is too loose, usually from threading with the foot down. Rethread before touching the dial.", "dia": ["stitchLook", { "kind": "top" }] },
+        { "text": "Bobbin thread showing as dots on top means the top is too tight. Turn the tension dial down one number and test again.", "dia": ["stitchLook", { "kind": "bottom" }] }
+      ],
+      "looks": "Even, flat stitches about 2.5 mm long that look the same on both sides.",
+      "mistakes": [
+        ["Thread jams at the very start", "Hold the tails for the first few stitches and start with the needle at its highest point."],
+        ["Fabric won't move", "Make sure the foot is down, and the feed dogs aren't lowered (some machines have a switch)."],
+        ["Stitches look wrong", "Rethread both threads first. It fixes most tension problems before you ever touch the dial."]
+      ],
+      "practice": "Sew five rows on a scrap. Try 1.5 mm, 2.5 mm, and 4 mm lengths so you can see the difference."
+    },
+    {
+      "id": "l2-seam-allowance", "title": "Seam allowance and straight seams", "minutes": 15,
+      "summary": "Sew an even {{SA}} seam, the most important habit in sewing.",
+      "learn": ["How to use the guide lines on the needle plate", "Where to look while sewing a seam"],
+      "need": ["Two cotton strips about {{4 in}} × {{12 in}}", "Pins", "Optional: masking tape"],
+      "words": ["seam", "seam allowance", "right sides together", "raw edge"],
+      "steps": [
+        { "text": "A [[seam]] joins two pieces. The [[seam allowance]] is the distance from the [[raw edge]] to the stitching. In Notch it's always {{SA}}.", "dia": ["xsec", { "kind": "stitched" }] },
+        { "text": "Find the {{SA}} line on your needle plate. Some plates show it as 5/8 or as 15 mm.", "dia": ["sew", { "guide": true, "sewn": 0, "feed": false }] },
+        { "text": "Pin the strips [[right sides together]]. Line the raw edges up with the {{SA}} line, and lower the foot.", "dia": ["sew", { "guide": true, "sewn": 0, "layers": 2, "side": "wrong" }] },
+        { "text": "Sew. Keep your eyes on the fabric edge at the guide line, **not on the needle**. Let the fabric feed itself.", "dia": ["sew", { "guide": true, "sewn": 90, "layers": 2, "side": "wrong" }], "tip": "Stick a strip of masking tape along the guide line, in front of the foot. A longer edge is easier to follow." }
+      ],
+      "looks": "A straight seam exactly {{SA}} from the edge all the way along.",
+      "mistakes": [
+        ["Seam drifts wider or narrower", "Watch the edge at the guide line, not the needle. Use a tape guide."],
+        ["Edges don't stay together", "Pin every {{3 in}} and match the ends first."]
+      ],
+      "practice": "Sew three seams on strips. Measure each one with a ruler in five places.",
+      "why": "Patterns are made with the seam allowance built in. If your seams are off by even {{1/8 in}}, a garment with 8 seams can end up {{1 in}} too big or too small."
+    },
+    {
+      "id": "l2-backstitch", "title": "Lock your stitches", "minutes": 8,
+      "summary": "Machine stitches unravel from the ends unless you lock them.",
+      "learn": ["How to backstitch at the start and end of a seam"],
+      "need": ["Two cotton strips", "Threaded machine"],
+      "words": ["backstitch"],
+      "steps": [
+        { "text": "Start at the edge. Sew forward 3 or 4 stitches.", "dia": ["sew", { "guide": true, "sewn": 20, "layers": 2, "side": "wrong" }] },
+        { "text": "Hold the reverse button and sew back 3 or 4 stitches, then let go and sew forward. That's a machine [[backstitch]].", "dia": ["sew", { "guide": true, "sewn": 34, "layers": 2, "back": true, "side": "wrong" }], "why": "Sewing over the same spot ties the threads together, so the seam won't pull open at the end." },
+        { "text": "At the end of the seam, do the same: reverse 3 or 4 stitches, then forward to the edge.", "dia": ["machine", { "hi": ["reverse"] }] }
+      ],
+      "looks": "A short, slightly thicker spot of stitching at each end of the seam.",
+      "mistakes": [
+        ["Thread nest when reversing", "Start a few stitches in, not right at the very edge, or hold the tails as you start."],
+        ["Backstitching wanders off the line", "Keep the fabric straight while reversing; don't steer."]
+      ],
+      "practice": "Sew a seam with backstitching at both ends, then try to pull it open. It should hold.",
+      "more": "Some machines have a tie-off or lock-stitch button. Where backstitching would show (like topstitching), you can instead pull both threads to the back and tie them by hand."
+    },
+    {
+      "id": "l2-pivot", "title": "Pivoting corners", "minutes": 12,
+      "summary": "Turn a sharp corner while keeping your seam allowance perfect.",
+      "learn": ["How to stop exactly {{SA}} from the edge", "How to pivot without a gap"],
+      "need": ["Two cotton squares about {{6 in}}", "Chalk"],
+      "words": ["pivot"],
+      "steps": [
+        { "text": "Mark a dot {{SA}} in from both edges at the corner, until you can judge it by eye.", "dia": ["panel", { "w": 6, "h": 6, "side": "wrong", "under": "right", "marks": [[5.375, 5.375, "Pivot point"]], "folds": [[5.375, 0, 5.375, 6], [0, 5.375, 6, 5.375]] }] },
+        { "text": "Sew down the side. Slow down near the corner and stop with the needle **down** right on the dot.", "dia": ["sew", { "mode": "corner", "pivot": "before", "guide": true, "layers": 2, "side": "wrong", "sewn": 80 }] },
+        { "text": "Lift the foot. Turn the fabric on the needle until the next edge lines up with the {{SA}} guide. Lower the foot and sew on.", "dia": ["sew", { "mode": "corner", "pivot": "after", "guide": true, "layers": 2, "side": "wrong", "sewn": 80 }] }
+      ],
+      "looks": "A crisp corner where both lines of stitching meet exactly {{SA}} from each edge.",
+      "mistakes": [
+        ["A gap or curve at the corner", "Stop with the needle down before lifting the foot."],
+        ["Corner is too far from the edge", "Use the handwheel for the last stitch or two to land on the dot."]
+      ],
+      "practice": "Sew around all four corners of two squares (leave a gap), then turn them right side out and press. You've made a little potholder shape!"
+    },
+    {
+      "id": "l2-curves", "title": "Sewing curves, then clip and notch", "minutes": 15,
+      "summary": "Curves are just slow, gentle steering. Clipping lets them lie flat.",
+      "learn": ["How to sew a smooth curve", "When to clip, notch, or trim"],
+      "need": ["Two scraps with a curve drawn on (trace a plate)", "Small sharp scissors"],
+      "words": ["clip", "notch a curve", "trim"],
+      "steps": [
+        { "text": "Sew slowly. Keep the raw edge on the {{SA}} line and turn the fabric gently with your left hand as you go.", "dia": ["sew", { "mode": "curve", "guide": true, "sewn": 80 }], "tip": "On a tight curve, stop with the needle down, lift the foot, turn a little, and carry on." },
+        { "text": "Outward curves (like the outside of a circle) bunch up when turned. Cut little V-shaped [[notch a curve|notches]] in the seam allowance.", "dia": ["clip", { "kind": "outer" }] },
+        { "text": "Inward curves (like a neckline) pull tight when turned. Snip straight [[clip|clips]] into the seam allowance so it can spread.", "dia": ["clip", { "kind": "inner" }], "warn": "Stop about {{1/16 in}} short of the stitches. Cut through them and you'll have a hole." },
+        { "text": "For corners, [[trim]] the point off at an angle close to the stitches.", "dia": ["clip", { "kind": "corner" }], "why": "All three remove extra fabric, so the shape turns out smooth and flat instead of lumpy." }
+      ],
+      "looks": "A smooth curve that lies flat when turned, with no puckers or points.",
+      "mistakes": [
+        ["Curve looks lumpy after turning", "Clip or notch more often, about every {{1/2 in}} on tight curves."],
+        ["Flat spots in the curve", "Turn the fabric more gently and more often."]
+      ],
+      "practice": "Sew a curve on two scraps, notch it, turn it right side out, and press."
+    },
+    {
+      "id": "l2-pressing", "title": "Pressing seams", "minutes": 10,
+      "summary": "A pressed seam looks professional. An unpressed seam looks homemade.",
+      "learn": ["Setting a seam", "Pressing open vs. pressing to one side"],
+      "need": ["A sewn seam on scrap", "Iron and board"],
+      "words": ["press", "press open"],
+      "steps": [
+        { "text": "First, press the seam flat just as it was sewn. This sets the stitches into the fabric.", "dia": ["xsec", { "kind": "set" }] },
+        { "text": "To [[press open]], open the pieces wrong side up, spread the seam allowances apart with your fingertip, and press along the seam.", "dia": ["xsec", { "kind": "open" }], "why": "Open seams are flat and even on both sides: good for most garment seams." },
+        { "text": "To press to one side, push both seam allowances the same way and press. Then flip it over and press from the right side.", "dia": ["xsec", { "kind": "side" }], "why": "One-sided seams are good when you finish the edges together, or when you'll topstitch next to the seam." }
+      ],
+      "looks": "A seam with no little pleat or fold at the stitching line, flat on both sides.",
+      "mistakes": [
+        ["A tuck along the seam on the right side", "Press from the right side too, pulling the pieces gently apart."],
+        ["Edge lines show through on the front", "Slip a strip of paper under each seam allowance before pressing."]
+      ],
+      "practice": "Sew two seams on scrap. Press one open and one to the side."
+    },
+    {
+      "id": "l2-finishing", "title": "Finishing raw edges", "minutes": 12,
+      "summary": "Woven fabric frays. A finished edge keeps your seams strong wash after wash.",
+      "learn": ["Zigzag finishing", "Pinking", "Which finish to use when"],
+      "need": ["Seams on scrap", "Machine with zigzag", "Optional: pinking shears"],
+      "words": ["fray", "zigzag stitch", "pinking shears", "serger"],
+      "steps": [
+        { "text": "Set a [[zigzag stitch]], about 4 mm wide and 2 mm long.", "dia": ["machine", { "hi": ["selector", "length", "width"] }] },
+        { "text": "Sew along the raw edge so the needle swings into the fabric on the left and just off the edge on the right.", "dia": ["finish", { "kind": "zigzag" }], "why": "The stitches wrap the edge, so the threads can't [[fray]] out." },
+        { "text": "For a pressed-open seam, finish each seam allowance on its own. For a pressed-to-one-side seam, finish both together.", "dia": ["xsec", { "kind": "open" }] },
+        { "text": "Or cut the edge with [[pinking shears]]. It's quick and flat, but best for fabrics that fray only a little.", "dia": ["finish", { "kind": "pinked" }] }
+      ],
+      "looks": "Edges wrapped in zigzag or cut in a neat pinked line, with no loose threads.",
+      "mistakes": [
+        ["Edge rolls into a tunnel", "Narrow or shorten the zigzag, or sew a little in from the edge and trim close afterward."],
+        ["Zigzag falls off the edge", "Guide the edge along the center of the foot."]
+      ],
+      "practice": "Finish three seams on scrap: one zigzagged open, one zigzagged together, and one pinked. Wash them and see which held up best.",
+      "more": "A [[serger]] trims and wraps the edge in one step. French seams and bound seams enclose the edges completely. You'll learn French seams in level 5."
+    },
+    {
+      "id": "l2-grain", "title": "Grain, selvedge, and bias", "kind": "fabric", "minutes": 10,
+      "summary": "Fabric has a direction. Cutting with it is why clothes hang straight.",
+      "learn": ["What the selvedge is", "Lengthwise and crosswise grain", "Bias, and why it stretches"],
+      "need": ["A piece of woven cotton with a selvedge"],
+      "words": ["selvedge", "grain", "lengthwise grain", "crosswise grain", "bias", "grainline"],
+      "steps": [
+        { "text": "The [[selvedge]] is the tightly woven edge that doesn't fray. It runs down both long sides of fabric off the bolt.", "dia": ["grain", { "show": "selvedge" }] },
+        { "text": "The [[lengthwise grain]] runs parallel to the selvedge. It's the strongest direction and barely stretches. Most pattern pieces line up with it.", "dia": ["grain", { "show": "length" }] },
+        { "text": "The [[crosswise grain]] runs from selvedge to selvedge. It has a tiny bit more give.", "dia": ["grain", { "show": "cross" }] },
+        { "text": "The [[bias]] is the 45° diagonal. Pull fabric on the bias and it stretches a lot. That's why bias-cut skirts drape and bias binding curves.", "dia": ["grain", { "show": "bias" }], "why": "On the diagonal, the threads can shift into little diamonds, so the fabric gives. Along the grain, the threads are pulled straight and hold firm." },
+        { "text": "On a pattern piece, the [[grainline]] arrow must run parallel to the selvedge. Cut off-grain and a garment twists or hangs crooked.", "dia": ["grain", { "show": "all" }] }
+      ],
+      "looks": "You can find the selvedge, both grains, and the bias on any woven fabric.",
+      "mistakes": [
+        ["Pieces cut at a slight angle", "Measure from the grainline arrow to the selvedge at both ends; they should match."],
+        ["Including the selvedge in a piece", "Cut it off: it's stiffer and can shrink differently."]
+      ],
+      "practice": "On a scrap, gently pull along each grain and then on the bias. Feel the difference."
+    },
+    {
+      "id": "l2-prewash", "title": "Prewashing and choosing fabric", "kind": "fabric", "minutes": 8,
+      "summary": "Wash fabric before you cut, and start with fabrics that behave.",
+      "learn": ["Why and how to prewash", "Beginner-friendly fabrics", "How much fabric to buy"],
+      "need": ["Your project fabric", "Washer and dryer, or a sink and a drying rack"],
+      "words": ["prewash", "quilting cotton", "canvas", "yardage"],
+      "steps": [
+        { "text": "Zigzag the cut ends so they don't fray into a tangle in the wash.", "dia": ["finish", { "kind": "zigzag" }] },
+        { "text": "[[prewash|Prewash]] the fabric the way you'll wash the finished item, and dry it the same way too.", "dia": ["tools", { "list": ["washer", "fabric"] }], "why": "Cotton and linen often shrink a few percent the first time, and dyes can run. Better before you cut than after you sew." },
+        { "text": "Press out the wrinkles before cutting.", "dia": ["press", { "mode": "iron" }] },
+        { "text": "Easy fabrics: [[quilting cotton]], cotton poplin, chambray, cotton-linen blends, and cotton [[canvas]] for bags. Stable, easy to press, and forgiving.", "dia": ["weave", { "type": "woven" }] },
+        { "text": "Save for later: slippery fabrics (satin, chiffon), stretchy knits, velvet, very thick fabrics, and plaids that need matching.", "dia": ["weave", { "type": "knit" }] },
+        { "text": "Each project lists the [[yardage]] you need. Fabric is usually 44 in (112 cm) or 60 in (150 cm) wide. Buy a little extra (about 10%) for shrinkage and straightening.", "dia": ["layout", { "fw": 44, "len": 18, "pieces": [{ "name": "Piece", "w": 11.25, "h": 14.125, "x": 1, "y": 1.5 }, { "name": "Piece", "w": 11.25, "h": 14.125, "x": 13, "y": 1.5 }] }] }
+      ],
+      "looks": "Washed, dried, and pressed fabric, ready to cut, with a little to spare.",
+      "mistakes": [
+        ["A finished project shrank in the wash", "Always prewash, the same way you'll wash the finished item."],
+        ["Bought too little", "Check the fabric width the project assumes. Narrower fabric needs more length."]
+      ],
+      "practice": "Prewash the fabric for your first project now."
+    },
+    {
+      "id": "l2-square", "title": "Cutting on grain: squaring up", "minutes": 12,
+      "summary": "Get a truly straight edge, then measure every piece from it.",
+      "learn": ["How to straighten the cut end of fabric", "How to cut accurate rectangles"],
+      "need": ["Prewashed fabric", "Clear ruler and chalk, or a rotary cutter and mat", "Fabric shears"],
+      "steps": [
+        { "text": "Fold the fabric in half with the selvedges together. Shift until it hangs flat without twisting. The cut end usually looks crooked: that's normal.", "dia": ["square", { "step": 1 }] },
+        { "text": "Line a ruler up square to the fold (use the grid lines). Mark or cut along it. Now you have a straight edge on grain.", "dia": ["square", { "step": 2 }], "tip": "On loosely woven cotton, you can also snip the edge and pull one crosswise thread. It leaves a line to cut along." },
+        { "text": "Measure each rectangle from that straight edge, keeping the sides parallel to the selvedge. Mark with chalk, then cut.", "dia": ["square", { "step": 3 }] }
+      ],
+      "looks": "Rectangles with square corners whose edges follow the threads of the fabric.",
+      "mistakes": [
+        ["Pieces turn out lopsided", "Measure from the straightened edge, not the store's cut, and check corners with the ruler's grid."],
+        ["Fabric shifts as you cut", "Keep it flat on the table and use long, smooth cuts."]
+      ],
+      "practice": "Square up a piece of fabric and cut one {{10 in}} square. Check the corners with your ruler."
+    },
+    {
+      "id": "l2-read-bag", "title": "Reading an item: how a bag is built", "kind": "design", "minutes": 6,
+      "summary": "Learn to see the pieces and seams inside anything sewn.",
+      "learn": ["How flat pieces become a 3D object", "Where raw edges hide"],
+      "need": ["A tote bag or pouch you own"],
+      "words": ["lining", "boxed corner"],
+      "steps": [
+        { "text": "Most totes are just rectangles: a front, a back, and two straps.", "dia": ["panel", { "w": 14, "h": 15, "side": "right", "straps": [[3.5, 0, 1, 7, "up"], [9.5, 0, 1, 7, "up"]], "stitch": [[0, 0.25], [14, 0.25]] }] },
+        { "text": "Turn a bag inside out to see its seams. The seam allowances and raw edges are all on the inside.", "dia": ["panel", { "w": 14, "h": 15, "side": "wrong", "under": "right", "stitch": [[0.625, 0], [0.625, 14.375], [13.375, 14.375], [13.375, 0]] }] },
+        { "text": "A [[lining]] is a second bag inside the first, joined at the top. It hides every raw edge.", "dia": ["panel", { "w": 14, "h": 15, "side": "right", "pieces": [{ "x": 16, "y": 0, "w": 14, "h": 15, "side": "lining", "label": "Lining" }], "labels": [[7, 7.5, "Outer"]] }] },
+        { "text": "A [[boxed corner]] gives a bag a flat bottom: the corner is flattened into a triangle and stitched straight across.", "dia": ["panel", { "w": 6, "h": 4, "shape": [[0, 4], [3, 0.5], [6, 4]], "side": "wrong", "stitch": [[1.1, 2.6], [4.9, 2.6]], "folds": [[3, 0.5, 3, 4]] }] }
+      ],
+      "looks": "You can look at any bag and guess its pieces and the order they were sewn.",
+      "mistakes": [["Thinking it's all one piece", "Look for seams at the sides, bottom, and where straps attach."]],
+      "practice": "Turn three bags or pouches inside out. Sketch the pieces of one of them on paper."
+    },
+    {
+      "id": "l2-drawstring", "title": "Project: drawstring bag", "kind": "project", "minutes": 75,
+      "summary": "Your first machine-sewn project: straight seams, pivots, finishing, and a casing.",
+      "finished": "{{10 in}} wide × {{12 in}} tall",
+      "learn": ["Sewing a whole project at {{SA}}", "Making a casing", "Threading a drawstring"],
+      "fabric": ["{{1/2 yd}} of medium-weight cotton, 44 in (112 cm) wide (prewashed)"],
+      "need": ["Matching thread", "{{40 in}} of cord or ribbon, about {{1/4 in}} wide", "A safety pin", "Pins, chalk, and a ruler", "Iron"],
+      "cut": [{ "name": "Front and back", "qty": 2, "w": 11.25, "h": 14.125 }],
+      "cutNote": "The tall edges run along the lengthwise grain (parallel to the selvedge).",
+      "layout": { "fw": 44, "len": 18, "pieces": [{ "name": "Front", "w": 11.25, "h": 14.125, "x": 1, "y": 1.5 }, { "name": "Back", "w": 11.25, "h": 14.125, "x": 13, "y": 1.5 }] },
+      "words": ["casing", "right sides together", "backstitch"],
+      "steps": [
+        { "text": "Cut two rectangles {{11 1/4 in}} × {{14 1/8 in}}.", "dia": ["layout", { "fw": 44, "len": 18, "pieces": [{ "name": "Front", "w": 11.25, "h": 14.125, "x": 1, "y": 1.5 }, { "name": "Back", "w": 11.25, "h": 14.125, "x": 13, "y": 1.5 }] }] },
+        { "text": "Zigzag the two long sides and the bottom of each piece. Leave the top edge plain.", "dia": ["panel", { "w": 11.25, "h": 14.125, "side": "right", "zig": ["l", "r", "b"] }], "why": "The sides get pressed open, so each edge needs its own finish. The top gets folded inside the casing, so it doesn't." },
+        { "text": "On both long sides of one piece, mark {{2 1/2 in}} down from the top.", "dia": ["panel", { "w": 11.25, "h": 14.125, "side": "right", "zig": ["l", "r", "b"], "marks": [[0, 2.5, "Mark"], [11.25, 2.5, "Mark"]], "dims": [[0, 0, 0, 2.5, "{{2 1/2 in}}", 16]] }] },
+        { "text": "Pin the pieces right sides together. Sew from one mark down the side, pivot {{SA}} from the corner, across the bottom, pivot, and up to the other mark. Backstitch at both marks.", "dia": ["panel", { "w": 11.25, "h": 14.125, "side": "wrong", "under": "right", "marks": [[0, 2.5], [11.25, 2.5]], "stitch": [[0.625, 2.5], [0.625, 13.5], [10.625, 13.5], [10.625, 2.5]], "stitchHi": 0 }], "tip": "The top {{2 1/2 in}} of each side stays open. That's where the cord comes out." },
+        { "text": "Trim the two bottom corners.", "dia": ["panel", { "w": 11.25, "h": 14.125, "side": "wrong", "under": "right", "stitch": [[0.625, 2.5], [0.625, 13.5], [10.625, 13.5], [10.625, 2.5]], "trim": ["bl", "br"] }] },
+        { "text": "Press the side seams open all the way to the top, including the open part above the marks.", "dia": ["xsec", { "kind": "open" }] },
+        { "text": "Stitch the open part flat: sew down one side of the opening {{1/4 in}} from the fold, across just below the opening, and up the other side.", "dia": ["panel", { "w": 4, "h": 4, "side": "wrong", "folds": [[2, 0, 2, 2.5]], "stitch": [[[2, 2.5], [2, 4]], [[1.75, 0], [1.75, 2.7], [2.25, 2.7], [2.25, 0]]], "stitchHi": 1, "labels": [[2, 1.2, "Opening"]], "label": "Close-up of one side seam" }] },
+        { "text": "Fold the top edge {{1/2 in}} to the wrong side all the way around and press.", "dia": ["fold", { "step": 2, "a": 0.5, "b": 1 }] },
+        { "text": "Fold again by {{1 in}}, press, and pin. This is the [[casing]], the tunnel for the cord.", "dia": ["fold", { "step": 3, "a": 0.5, "b": 1 }] },
+        { "text": "Stitch all the way around close to the lower fold, about {{1/8 in}} from it. Overlap your starting stitches by {{1/2 in}} to lock them.", "dia": ["fold", { "step": 4, "a": 0.5, "b": 1 }], "tip": "Sew with the inside of the bag facing you. If your machine has a free arm (the bed narrows when you slide off a section), slip the bag around it." },
+        { "text": "Turn the bag right side out and press.", "dia": ["panel", { "w": 10, "h": 12, "side": "right", "stitch": [[0, 0.875], [10, 0.875]] }] },
+        { "text": "Pin a safety pin to one end of the cord. Push it in at one side opening, through the front casing, out the other side, then back through the back casing to where you started.", "dia": ["panel", { "w": 10, "h": 12, "side": "right", "stitch": [[0, 0.875], [10, 0.875]], "cord": [[-1.5, 2.5], [-0.2, 0.55], [5, 0.45], [10.2, 0.5], [10.6, 0.7], [10.2, 0.9], [5, 0.75], [-0.3, 0.7], [-1.8, 1.8]] }] },
+        { "text": "Knot the two ends together. Pull to close!", "dia": ["tools", { "list": ["cord"] }] }
+      ],
+      "looks": "A neat bag with straight side seams, square bottom corners, a casing of even width, and a cord that slides freely.",
+      "mistakes": [
+        ["Cord won't go through", "A seam allowance may be caught in the casing. Check that the side openings are stitched flat."],
+        ["Casing is uneven", "Press both folds carefully and check with a seam gauge before stitching."],
+        ["Side seams pucker", "Don't pull the fabric; let the feed dogs move it."]
+      ],
+      "practice": "Look at your bag's seams. Measure a few: are they {{SA}}? Write in your notes what you'd do differently next time."
+    },
+    {
+      "id": "l2-pillowcase", "title": "Project: pillowcase with a cuff", "kind": "project", "minutes": 90,
+      "summary": "A big, satisfying project with long straight seams and a contrast cuff.",
+      "finished": "about {{20 3/8 in}} × {{31 1/2 in}}, for a standard {{20 in}} × {{26 in}} pillow",
+      "learn": ["Long straight seams", "Attaching a folded band", "Finishing seams together"],
+      "fabric": ["Body: {{7/8 yd}} of cotton, 44 in (112 cm) wide", "Cuff: {{3/8 yd}} of a contrast cotton, 44 in (112 cm) wide", "Or {{1 1/8 yd}} of one fabric for both"],
+      "need": ["Thread", "Pins", "Ruler and chalk, or a rotary cutter and mat", "Iron"],
+      "cut": [{ "name": "Body", "qty": 1, "w": 42, "h": 27 }, { "name": "Cuff", "qty": 1, "w": 42, "h": 10.25 }],
+      "cutNote": "Trim off the selvedges first. The 42 in edges run across the fabric, from selvedge side to selvedge side, which is fine for a pillowcase. If your fabric is narrower after washing, cut as wide as it allows: the case will just be a little snugger.",
+      "layout": { "fw": 44, "len": 40.5, "pieces": [{ "name": "Body", "w": 42, "h": 27, "x": 1, "y": 1 }, { "name": "Cuff", "w": 42, "h": 10.25, "x": 1, "y": 29.5, "side": "right2" }] },
+      "steps": [
+        { "text": "Cut the body {{42 in}} × {{27 in}} and the cuff {{42 in}} × {{10 1/4 in}}.", "dia": ["layout", { "fw": 44, "len": 40.5, "pieces": [{ "name": "Body", "w": 42, "h": 27, "x": 1, "y": 1 }, { "name": "Cuff", "w": 42, "h": 10.25, "x": 1, "y": 29.5, "side": "right2" }] }] },
+        { "text": "Fold the cuff in half the long way, wrong sides together, so it's {{5 1/8 in}} tall. Press.", "dia": ["panel", { "w": 42, "h": 10.25, "side": "right2", "folds": [[0, 5.125, 42, 5.125]], "arrows": [[21, 9.5, 21, 5.8]], "labels": [[21, 3, "Fold here, wrong sides together"]] }] },
+        { "text": "Pin the cuff's raw edges to the top edge of the body, on the body's right side. Sew at {{SA}}.", "dia": ["panel", { "w": 42, "h": 27, "side": "right", "pieces": [{ "x": 0, "y": 0, "w": 42, "h": 5.125, "side": "right2" }], "stitch": [[0, 0.625], [42, 0.625]], "stitchHi": 0, "labels": [[21, 3.2, "Cuff (folded)"], [21, 16, "Body, right side up"]] }] },
+        { "text": "Zigzag the raw edges together, then press the seam toward the body.", "dia": ["xsec", { "kind": "side" }], "tip": "For extra neatness, topstitch on the body {{1/8 in}} from the seam to hold it down." },
+        { "text": "Fold the whole piece in half, right sides together, so it's {{21 in}} wide. Line up the cuff seams. Pin the long side and the bottom.", "dia": ["panel", { "w": 21, "h": 31.5, "side": "wrong", "under": "right", "folds": [[0, 4.5, 21, 4.5]], "pins": [[20.6, 8, 180], [20.6, 18, 180], [20.6, 28, 180], [10, 31.1, 270]], "labels": [[1.5, 16, "Fold", "start"], [10.5, 2.4, "Cuff"]] }] },
+        { "text": "Sew down the long side from the cuff, pivot {{SA}} from the corner, and sew across the bottom to the fold.", "dia": ["panel", { "w": 21, "h": 31.5, "side": "wrong", "under": "right", "folds": [[0, 4.5, 21, 4.5]], "stitch": [[20.375, 0], [20.375, 30.875], [0, 30.875]], "stitchHi": 0 }] },
+        { "text": "Trim the corner, and zigzag the raw edges together along the side and bottom.", "dia": ["panel", { "w": 21, "h": 31.5, "side": "wrong", "under": "right", "stitch": [[20.375, 0], [20.375, 30.875], [0, 30.875]], "trim": ["br"], "zig": ["r", "b"] }] },
+        { "text": "Turn right side out, push out the corner gently, and press. Put a pillow in it!", "dia": ["panel", { "w": 20.375, "h": 31.5, "side": "right", "pieces": [{ "x": 0, "y": 0, "w": 20.375, "h": 4.5, "side": "right2" }] }] }
+      ],
+      "looks": "Straight seams, a cuff of even depth all the way around, and a sharp bottom corner.",
+      "mistakes": [
+        ["Cuff seam doesn't line up at the side", "Pin the cuff seams together first, then work outward."],
+        ["Long seam wanders", "Use a masking-tape guide and keep your eyes on the edge, not the needle."]
+      ],
+      "practice": "Measure your finished case. How close is it to {{20 3/8 in}} wide? Note it.",
+      "more": "Many pillowcase patterns use a neat \"burrito\" method that encloses the cuff seam completely. It's a fun puzzle once you're comfortable."
+    },
+    {
+      "id": "l2-tote", "title": "Project: lined tote bag", "kind": "project", "minutes": 150,
+      "summary": "Straps, a lining, and topstitching: a bag you'll actually carry.",
+      "finished": "{{14 in}} wide × {{15 in}} tall, straps about {{24 in}} long",
+      "learn": ["Making sturdy straps", "Bagging out a lining", "Topstitching an edge"],
+      "fabric": ["Outer and straps: {{3/4 yd}} of cotton canvas or duck (medium weight), 44 in (112 cm) wide", "Lining: {{1/2 yd}} of quilting cotton, 44 in (112 cm) wide"],
+      "need": ["Thread", "A denim needle, size 100/16 (or 90/14)", "Pins or clips", "Ruler, chalk, and a seam gauge", "Iron"],
+      "cut": [{ "name": "Outer (canvas)", "qty": 2, "w": 15.25, "h": 16.25 }, { "name": "Lining (cotton)", "qty": 2, "w": 15.25, "h": 16.25 }, { "name": "Strap (canvas)", "qty": 2, "w": 4, "h": 26 }],
+      "cutNote": "All pieces run their long side along the lengthwise grain.",
+      "layout": { "fw": 44, "len": 27, "pieces": [{ "name": "Outer", "w": 15.25, "h": 16.25, "x": 0.75, "y": 1 }, { "name": "Outer", "w": 15.25, "h": 16.25, "x": 16.5, "y": 1 }, { "name": "Strap", "w": 4, "h": 26, "x": 33, "y": 0.5, "side": "right2" }, { "name": "Strap", "w": 4, "h": 26, "x": 37.75, "y": 0.5, "side": "right2" }] },
+      "words": ["lining", "edgestitch", "topstitch", "baste"],
+      "steps": [
+        { "text": "Cut two outer pieces and two straps from canvas, and two lining pieces from cotton. Put in the denim needle.", "dia": ["layout", { "fw": 44, "len": 27, "pieces": [{ "name": "Outer", "w": 15.25, "h": 16.25, "x": 0.75, "y": 1 }, { "name": "Outer", "w": 15.25, "h": 16.25, "x": 16.5, "y": 1 }, { "name": "Strap", "w": 4, "h": 26, "x": 33, "y": 0.5, "side": "right2" }, { "name": "Strap", "w": 4, "h": 26, "x": 37.75, "y": 0.5, "side": "right2" }] }] },
+        { "text": "Straps: fold each strip in half the long way and press. Open it, fold both long edges in to meet the center crease, and press.", "dia": ["panel", { "w": 4, "h": 10, "side": "wrong", "folds": [[1, 0, 1, 10], [2, 0, 2, 10], [3, 0, 3, 10]], "arrows": [[0.3, 5, 0.9, 5], [3.7, 5, 3.1, 5]], "labels": [[2, 1.5, "Center crease"]], "label": "Strap folding (part of the strip)" }] },
+        { "text": "Fold in half again so it's {{1 in}} wide with all raw edges inside. [[edgestitch|Edgestitch]] both long edges {{1/8 in}} from the edge.", "dia": ["panel", { "w": 1, "h": 10, "side": "right2", "stitch": [[[0.125, 0], [0.125, 10]], [[0.875, 0], [0.875, 10]]], "dims": [[0, 10, 1, 10, "{{1 in}}", 16]], "label": "Finished strap (part)" }] },
+        { "text": "Outer bag: pin the canvas pieces right sides together. Sew down one side, across the bottom, and up the other side, pivoting at the corners. Leave the top open.", "dia": ["panel", { "w": 15.25, "h": 16.25, "side": "wrong", "under": "right", "stitch": [[0.625, 0], [0.625, 15.625], [14.625, 15.625], [14.625, 0]], "stitchHi": 0 }] },
+        { "text": "Trim the bottom corners and press the seams open. Turn the outer bag right side out.", "dia": ["panel", { "w": 15.25, "h": 16.25, "side": "wrong", "under": "right", "stitch": [[0.625, 0], [0.625, 15.625], [14.625, 15.625], [14.625, 0]], "trim": ["bl", "br"] }], "why": "This bag is lined, so these raw edges will be hidden. No zigzag needed!" },
+        { "text": "Lining: sew the same way, but leave a {{5 in}} gap in the middle of the bottom for turning later. Backstitch on both sides of the gap. Trim corners, press seams open, and leave it wrong side out.", "dia": ["panel", { "w": 15.25, "h": 16.25, "side": "lining", "under": "lining", "stitch": [[[0.625, 0], [0.625, 15.625], [5.125, 15.625]], [[10.125, 15.625], [14.625, 15.625], [14.625, 0]]], "gap": [[5.125, 15.625, 10.125, 15.625]], "trim": ["bl", "br"], "labels": [[7.625, 14.6, "Gap"]] }] },
+        { "text": "Pin one strap's ends to the top edge of the outer bag, raw ends lined up with the top, {{3 1/2 in}} in from each side seam. The strap hangs down. Do the same on the back. Check that neither strap is twisted.", "dia": ["panel", { "w": 14, "h": 15.625, "side": "right", "straps": [[3.5, 0, 1, 8], [9.5, 0, 1, 8]], "dims": [[0, 0, 3.5, 0, "{{3 1/2 in}}", -14]], "labels": [[7, 11, "Strap hangs down"]] }] },
+        { "text": "[[baste|Baste]] the straps in place {{3/8 in}} from the top edge. This stitching hides inside the seam allowance.", "dia": ["panel", { "w": 14, "h": 15.625, "side": "right", "straps": [[3.5, 0, 1, 8], [9.5, 0, 1, 8]], "stitch": [[[3.4, 0.375], [4.6, 0.375]], [[9.4, 0.375], [10.6, 0.375]]], "stitchHi": "all" }] },
+        { "text": "Slip the outer bag (right side out) inside the lining (wrong side out), so their right sides face each other. Match the side seams and top edges, and pin all the way around. The straps are sandwiched in between.", "dia": ["panel", { "w": 14, "h": 15.625, "side": "lining", "pins": [[3, 0.5, 90], [7, 0.5, 90], [11, 0.5, 90]], "labels": [[7, 6, "Lining, outside"], [7, 9, "Outer bag hidden inside"]] }] },
+        { "text": "Sew all the way around the top at {{SA}}. Sew over the straps slowly.", "dia": ["panel", { "w": 14, "h": 15.625, "side": "lining", "stitch": [[0, 0.625], [14, 0.625]], "stitchHi": 0 }], "tip": "Use your machine's free arm, or sew with the lining facing you and the opening around the bed." },
+        { "text": "Reach into the gap in the lining and pull the whole outer bag out through it. It looks like a mess for a moment. That's normal!", "dia": ["panel", { "w": 14, "h": 15.625, "side": "lining", "gap": [[4.5, 15.625, 9.5, 15.625]], "arrows": [[7, 12, 7, 17.5]] }] },
+        { "text": "Close the gap: fold its edges in and edgestitch them by machine, or ladder stitch by hand.", "dia": ["hand", { "type": "ladder", "step": 3 }] },
+        { "text": "Push the lining down into the bag. Roll the top seam so the lining sits just inside, and press the top edge crisp.", "dia": ["xsec", { "kind": "set" }] },
+        { "text": "[[topstitch|Topstitch]] all the way around the top, {{1/4 in}} from the edge, through all layers and the straps.", "dia": ["panel", { "w": 14, "h": 15.625, "side": "right", "straps": [[3.5, 0, 1, 6, "up"], [9.5, 0, 1, 6, "up"]], "stitch": [[0, 0.25], [14, 0.25]], "stitchHi": 0 }], "why": "Topstitching keeps the lining from rolling out and strengthens the straps." }
+      ],
+      "looks": "A sturdy bag with a lining that stays inside, straight even straps, and crisp topstitching around the top.",
+      "mistakes": [
+        ["A strap got twisted", "Unpick the top seam there, untwist, re-baste, and sew again."],
+        ["Machine struggles over the strap layers", "Go slowly, use the handwheel over the thickest bit, and use a 100/16 needle."],
+        ["Lining peeks out at the top", "Press the edge so the seam rolls slightly to the inside before topstitching."]
+      ],
+      "practice": "Level 2 complete! Check your skill list on the level page, and write in your notes what felt hardest."
+    }
+  ]
+}
