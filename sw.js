@@ -1,6 +1,6 @@
 // Offline support: serve the saved copy right away, refresh it in the background when online.
 // Bump CACHE with every release so phones pick up the new files.
-const CACHE = 'notch-v1';
+const CACHE = 'notch-v2';
 const ASSETS = [
   './', './index.html', './css/style.css', './manifest.webmanifest',
   './js/app.js', './js/db.js', './js/diagrams.js', './js/pdf.js', './js/units.js',

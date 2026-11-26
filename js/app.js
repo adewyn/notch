@@ -111,7 +111,7 @@ function setTab(tab) {
 const BUTTON_ICON = (n, state) => `<svg class="btnface" viewBox="0 0 60 60" aria-hidden="true">
   <circle cx="30" cy="30" r="27" fill="${state === 'done' ? 'var(--sage)' : state === 'here' ? 'var(--accent)' : 'var(--card2)'}" stroke="var(--line)" stroke-width="1.5"/>
   <circle cx="30" cy="30" r="21" fill="none" stroke="${state === 'soon' ? 'var(--line)' : 'rgba(255,255,255,.45)'}" stroke-width="1.5" stroke-dasharray="3 3"/>
-  <text x="30" y="37" text-anchor="middle" font-family="ui-serif, Georgia, serif" font-size="25" font-weight="700" fill="${state === 'soon' ? 'var(--soft)' : state === 'done' || state === 'here' ? 'var(--on-accent)' : 'var(--ink)'}">${n}</text></svg>`;
+  <text x="30" y="37" text-anchor="middle" font-family="ui-serif, Georgia, serif" font-size="25" font-weight="700" style="fill:${state === 'soon' ? 'var(--soft)' : state === 'done' || state === 'here' ? 'var(--on-accent)' : 'var(--ink)'}">${n}</text></svg>`;
 
 function viewPath() {
   setTab('path');
